@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "tagline": "Bau • Tuning & Mechanik • Informatik"
+  },
+  "home": {
+    "heroHint": "Wähle einen Bereich für Leistungen und Projekte.",
+    "construction": "Bau",
+    "mechanics": "Tuning & Mechanik",
+    "it": "Informatik"
+  },
+  "domains": {
+    "common": {
+      "services": "Leistungen",
+      "projects": "Projekte",
+      "projectsText": "Projektbeispiele werden in der nächsten Phase ergänzt.",
+      "contact": "Kontakt",
+      "contactText": "Schreib uns für ein Angebot oder ein Beratungsgespräch."
+    },
+    "construction": {
+      "title": "Bau",
+      "subtitle": "Sanierung und Ausbau mit präziser Ausführung und klarer Planung.",
+      "services": [
+        "Objektsanierung",
+        "Badsanierung",
+        "Fliesenverlegung",
+        "Treppen",
+        "Innenraumrenovierung",
+        "Abschlussarbeiten"
+      ]
+    },
+    "mechanics": {
+      "title": "Tuning & Mechanik",
+      "subtitle": "Tuning, Reparatur und Vor-Ort-Service für Fahrzeuge und Maschinen.",
+      "services": [
+        "Auto-Tuning",
+        "Traktor-Tuning",
+        "Tuning von Baumaschinen",
+        "Maschinenreparatur",
+        "Vor-Ort-Service",
+        "Fahrzeug- und Maschinendiagnostik"
+      ]
+    },
+    "it": {
+      "title": "Informatik",
+      "subtitle": "Web-, Desktop- und Automatisierungslösungen für echte Abläufe.",
+      "services": [
+        "Webseiten",
+        "Webanwendungen",
+        "Dashboard-Systeme",
+        "Desktop-Anwendungen",
+        "Softwarelösungen für Lagerhäuser",
+        "Automatisierung von Geschäftsprozessen"
+      ]
+    }
+  }
+}

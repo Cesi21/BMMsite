@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "tagline": "Građevina • Tuning i mehanika • Računarstvo"
+  },
+  "home": {
+    "heroHint": "Odaberi područje za pregled usluga i projekata.",
+    "construction": "Građevina",
+    "mechanics": "Tuning i mehanika",
+    "it": "Računarstvo"
+  },
+  "domains": {
+    "common": {
+      "services": "Usluge",
+      "projects": "Projekti",
+      "projectsText": "Prikaz projekata dolazi u sljedećoj fazi.",
+      "contact": "Kontakt",
+      "contactText": "Javi nam se za ponudu ili savjetovanje."
+    },
+    "construction": {
+      "title": "Građevina",
+      "subtitle": "Sanacije i završni građevinski radovi izvedeni precizno i pouzdano.",
+      "services": [
+        "Sanacije objekata",
+        "Izrada kupaonica",
+        "Polaganje keramike",
+        "Stepeništa",
+        "Obnova unutarnjih prostora",
+        "Završni građevinski radovi"
+      ]
+    },
+    "mechanics": {
+      "title": "Tuning i mehanika",
+      "subtitle": "Tuning i servis vozila te strojeva, uključujući teren.",
+      "services": [
+        "Auto tuning",
+        "Tuning traktora",
+        "Tuning građevinskih strojeva",
+        "Popravak strojeva",
+        "Servis na terenu",
+        "Dijagnostika vozila i strojeva"
+      ]
+    },
+    "it": {
+      "title": "Računarstvo",
+      "subtitle": "Razvoj web i desktop rješenja za stvarne poslovne procese.",
+      "services": [
+        "Web stranice",
+        "Web aplikacije",
+        "Dashboard sustavi",
+        "Desktop aplikacije",
+        "Softverska rješenja za skladišta",
+        "Automatizacija poslovnih procesa"
+      ]
+    }
+  }
+}

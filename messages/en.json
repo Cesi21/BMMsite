@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "tagline": "Construction • Tuning & Mechanics • Computer Science"
+  },
+  "home": {
+    "heroHint": "Choose a domain to explore services and projects.",
+    "construction": "Construction",
+    "mechanics": "Tuning & Mechanics",
+    "it": "Computer Science"
+  },
+  "domains": {
+    "common": {
+      "services": "Services",
+      "projects": "Projects",
+      "projectsText": "Project showcases will be added in the next phase.",
+      "contact": "Contact",
+      "contactText": "Message us for a quote or a consultation."
+    },
+    "construction": {
+      "title": "Construction",
+      "subtitle": "Renovation and finishing work delivered with precision and a clear plan.",
+      "services": [
+        "Building remediation",
+        "Bathroom construction",
+        "Ceramic tiling",
+        "Staircases",
+        "Interior renovation",
+        "Final construction works"
+      ]
+    },
+    "mechanics": {
+      "title": "Tuning & Mechanics",
+      "subtitle": "Vehicle and machinery tuning, repairs, and field service support.",
+      "services": [
+        "Car tuning",
+        "Tractor tuning",
+        "Construction machinery tuning",
+        "Machine repair",
+        "Field service",
+        "Vehicle and machine diagnostics"
+      ]
+    },
+    "it": {
+      "title": "Computer Science",
+      "subtitle": "Web, desktop, and automation software designed around real workflows.",
+      "services": [
+        "Websites",
+        "Web applications",
+        "Dashboard systems",
+        "Desktop applications",
+        "Warehouse software solutions",
+        "Business process automation"
+      ]
+    }
+  }
+}

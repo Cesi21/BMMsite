@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "tagline": "Gradbeništvo • Tuning & mehanika • Računalništvo"
+  },
+  "home": {
+    "heroHint": "Izberi področje za ogled projektov in storitev.",
+    "construction": "Gradbeništvo",
+    "mechanics": "Tuning & mehanika",
+    "it": "Računalništvo"
+  },
+  "domains": {
+    "common": {
+      "services": "Storitve",
+      "projects": "Projekti",
+      "projectsText": "Projekti bodo prikazani v naslednji fazi.",
+      "contact": "Kontakt",
+      "contactText": "Pišite nam za ponudbo ali posvet."
+    },
+    "construction": {
+      "title": "Gradbeništvo",
+      "subtitle": "Sanacije in prenove izvedemo natančno, hitro in z jasnim planom.",
+      "services": [
+        "Sanacije objektov",
+        "Izdelava kopalnic",
+        "Polaganje keramike",
+        "Stopnišča",
+        "Prenova notranjih prostorov",
+        "Zaključna gradbena dela"
+      ]
+    },
+    "mechanics": {
+      "title": "Tuning & mehanika",
+      "subtitle": "Tuning in servis vozil ter strojev, tudi na terenu.",
+      "services": [
+        "Avto tuning",
+        "Tuning traktorjev",
+        "Tuning gradbenih strojev",
+        "Popravilo strojev",
+        "Servis na terenu",
+        "Diagnostika vozil in strojev"
+      ]
+    },
+    "it": {
+      "title": "Računalništvo",
+      "subtitle": "Razvijamo spletne in namizne rešitve za dejanske poslovne procese.",
+      "services": [
+        "Spletne strani",
+        "Spletne aplikacije",
+        "Dashboard sistemi",
+        "Namizne aplikacije",
+        "Programske rešitve za skladišča",
+        "Avtomatizacija poslovnih procesov"
+      ]
+    }
+  }
+}
