@@ -1,6 +1,13 @@
 {
   "nav": {
-    "tagline": "Gradbeništvo • Tuning & mehanika • Računalništvo"
+    "tagline": "Gradbeništvo • Tuning & mehanika • Računalništvo",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
   },
   "home": {
     "construction": "Gradbeništvo",
@@ -119,6 +126,80 @@
         "Vzdrževanje in nadgradnje"
       ],
       "contact": "Kontaktirajte nas za razvoj rešitve po meri vašega poslovanja."
+    }
+  },
+  "footer": {
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis, lacus id commodo cursus, mi eros pharetra sapien, non lacinia nibh elit sed metus.",
+    "copyright": "© 2026 BMM Cesar. All rights reserved."
+  },
+  "pages": {
+    "about": {
+      "eyebrow": "BMM Cesar",
+      "title": "About BMM Cesar",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat sem vitae tortor aliquet suscipit.",
+      "missionTitle": "Our Mission",
+      "missionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium, augue in sollicitudin faucibus, massa purus posuere eros, et aliquam mauris dui at ligula. Proin cursus orci vitae vestibulum faucibus.",
+      "storyTitle": "Our Story",
+      "storyText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt ex vitae posuere posuere. Praesent luctus, velit sed luctus lacinia, metus lectus gravida nibh, a scelerisque turpis nisi eu augue.",
+      "teamTitle": "Our Team",
+      "teamText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit sapien at metus laoreet, id malesuada mauris dictum. Nullam eget tortor non mi aliquet interdum ut vel erat."
+    },
+    "services": {
+      "eyebrow": "BMM Cesar",
+      "title": "All Services",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur, massa in faucibus volutpat, justo dui viverra orci, id vulputate velit leo vitae nulla.",
+      "categoriesTitle": "Service Categories",
+      "categories": [
+        "Construction works",
+        "Vehicle mechanics",
+        "Machine diagnostics",
+        "Software development",
+        "Process automation",
+        "Field support"
+      ],
+      "approachTitle": "How We Work",
+      "approachText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in ligula erat. Suspendisse commodo diam eget malesuada iaculis. Vestibulum condimentum erat vel velit egestas, id facilisis lectus aliquet."
+    },
+    "projects": {
+      "eyebrow": "BMM Cesar",
+      "title": "Selected Projects",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non posuere leo, non varius tellus. Integer facilisis pretium porta.",
+      "featuredTitle": "Featured Case Studies",
+      "featured": [
+        {
+          "title": "Residential renovation program",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam sit amet odio luctus luctus."
+        },
+        {
+          "title": "Agricultural machinery overhaul",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Pellentesque in suscipit lorem."
+        },
+        {
+          "title": "Operations dashboard suite",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Aenean tristique sollicitudin tristique."
+        }
+      ],
+      "workflowTitle": "Delivery Workflow",
+      "workflow": [
+        "Initial consultation",
+        "Planning and proposal",
+        "Execution phase",
+        "Review and long-term support"
+      ]
+    },
+    "contact": {
+      "eyebrow": "BMM Cesar",
+      "title": "Contact Us",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur feugiat neque ac malesuada.",
+      "detailsTitle": "Office & Availability",
+      "detailsText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut eleifend sem. Donec ac volutpat lectus. Email: info@bmm-cesar.si • Phone: +386 40 000 000 • Address: Trg Lorem 12, 1000 Ljubljana.",
+      "ctaTitle": "Start Your Project",
+      "ctaText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Send us your requirements and we will prepare a tailored next-step plan.",
+      "ctaButton": "Send inquiry"
     }
   }
 }
