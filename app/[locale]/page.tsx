@@ -7,7 +7,7 @@ export default function HomePage() {
       <div className="hidden h-full md:block">
         <HeroTriangle />
       </div>
-      <div className="block h-full px-4 pb-4 md:hidden">
+      <div className="h-full px-4 py-4 md:hidden">
         <MobileTiles />
       </div>
     </section>

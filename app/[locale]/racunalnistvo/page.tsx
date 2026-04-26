@@ -6,15 +6,19 @@ export default async function ITPage() {
 
   return (
     <DomainPage
+      accent="rgba(16,185,129,0.35)"
+      eyebrow={t("common.eyebrow")}
       title={t("it.title")}
       subtitle={t("it.subtitle")}
       servicesTitle={t("common.services")}
-      projectsTitle={t("common.projects")}
-      projectsText={t("common.projectsText")}
-      contactTitle={t("common.contact")}
-      contactText={t("common.contactText")}
       services={t.raw("it.services") as string[]}
-      accent="it"
+      projectsTitle={t("common.projects")}
+      projects={t.raw("it.projects") as { title: string; text: string }[]}
+      processTitle={t("common.process")}
+      processSteps={t.raw("it.process") as string[]}
+      contactTitle={t("common.contact")}
+      contactText={t("it.contact")}
+      contactButton={t("common.contactCta")}
     />
   )
 }

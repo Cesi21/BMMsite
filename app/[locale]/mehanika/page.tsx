@@ -6,15 +6,19 @@ export default async function MechanicsPage() {
 
   return (
     <DomainPage
+      accent="rgba(59,130,246,0.35)"
+      eyebrow={t("common.eyebrow")}
       title={t("mechanics.title")}
       subtitle={t("mechanics.subtitle")}
       servicesTitle={t("common.services")}
-      projectsTitle={t("common.projects")}
-      projectsText={t("common.projectsText")}
-      contactTitle={t("common.contact")}
-      contactText={t("common.contactText")}
       services={t.raw("mechanics.services") as string[]}
-      accent="mechanics"
+      projectsTitle={t("common.projects")}
+      projects={t.raw("mechanics.projects") as { title: string; text: string }[]}
+      processTitle={t("common.process")}
+      processSteps={t.raw("mechanics.process") as string[]}
+      contactTitle={t("common.contact")}
+      contactText={t("mechanics.contact")}
+      contactButton={t("common.contactCta")}
     />
   )
 }
