@@ -5,7 +5,12 @@
   "home": {
     "construction": "Construction",
     "mechanics": "Tuning & Mechanics",
-    "it": "Computer Science"
+    "it": "Computer Science",
+    "eyebrow": "BMM Cesar",
+    "title": "Three disciplines. One team that builds, tunes, and ships.",
+    "subtitle": "Choose your area and jump directly to services, projects, and a clear next step.",
+    "explore": "Explore",
+    "activeLabel": "Selected focus"
   },
   "domains": {
     "common": {
@@ -19,37 +24,100 @@
     "construction": {
       "title": "Construction",
       "subtitle": "Renovation and finishing work delivered with precision, planning, and premium execution.",
-      "services": ["Building remediation", "Bathroom construction", "Ceramic tiling", "Staircases", "Interior renovation", "Final construction works"],
-      "projects": [
-        { "title": "Full interior renovations", "text": "Managed from preparation and demolition to final finishes." },
-        { "title": "Custom bathrooms", "text": "Layout, installation, and tiling with durable material choices." },
-        { "title": "Stair systems", "text": "Build and restoration work with high structural and visual standards." }
+      "services": [
+        "Building remediation",
+        "Bathroom construction",
+        "Ceramic tiling",
+        "Staircases",
+        "Interior renovation",
+        "Final construction works"
       ],
-      "process": ["On-site inspection", "Scope and timeline", "Phased execution", "Delivery and follow-up"],
+      "projects": [
+        {
+          "title": "Full interior renovations",
+          "text": "Managed from preparation and demolition to final finishes."
+        },
+        {
+          "title": "Custom bathrooms",
+          "text": "Layout, installation, and tiling with durable material choices."
+        },
+        {
+          "title": "Stair systems",
+          "text": "Build and restoration work with high structural and visual standards."
+        }
+      ],
+      "process": [
+        "On-site inspection",
+        "Scope and timeline",
+        "Phased execution",
+        "Delivery and follow-up"
+      ],
       "contact": "Send us your plans and we will prepare a custom project proposal."
     },
     "mechanics": {
       "title": "Tuning & Mechanics",
       "subtitle": "Diagnostics, upgrades, and repairs for vehicles and machines with fast turnaround.",
-      "services": ["Car tuning", "Tractor tuning", "Construction machinery tuning", "Machine repair", "Field service", "Vehicle and machine diagnostics"],
-      "projects": [
-        { "title": "Fleet optimization", "text": "Performance tuning for higher efficiency and lower downtime." },
-        { "title": "Vehicle upgrades", "text": "Mechanical and software adjustments for better response." },
-        { "title": "On-site service", "text": "Rapid diagnostics and repair directly at your location." }
+      "services": [
+        "Car tuning",
+        "Tractor tuning",
+        "Construction machinery tuning",
+        "Machine repair",
+        "Field service",
+        "Vehicle and machine diagnostics"
       ],
-      "process": ["Diagnostic check", "Upgrade plan", "Repair or tuning", "Testing and handover"],
+      "projects": [
+        {
+          "title": "Fleet optimization",
+          "text": "Performance tuning for higher efficiency and lower downtime."
+        },
+        {
+          "title": "Vehicle upgrades",
+          "text": "Mechanical and software adjustments for better response."
+        },
+        {
+          "title": "On-site service",
+          "text": "Rapid diagnostics and repair directly at your location."
+        }
+      ],
+      "process": [
+        "Diagnostic check",
+        "Upgrade plan",
+        "Repair or tuning",
+        "Testing and handover"
+      ],
       "contact": "Contact us for regular maintenance, emergency repair, or custom tuning work."
     },
     "it": {
       "title": "Computer Science",
       "subtitle": "We deliver modern software products that improve real business operations.",
-      "services": ["Websites", "Web applications", "Dashboard systems", "Desktop applications", "Warehouse software solutions", "Business process automation"],
-      "projects": [
-        { "title": "Web platforms", "text": "Fast, secure products with clear user journeys." },
-        { "title": "Operational dashboards", "text": "Live metrics for sales, service, and production workflows." },
-        { "title": "Automation systems", "text": "Integrated tools that remove repetitive manual tasks." }
+      "services": [
+        "Websites",
+        "Web applications",
+        "Dashboard systems",
+        "Desktop applications",
+        "Warehouse software solutions",
+        "Business process automation"
       ],
-      "process": ["Discovery workshop", "UX and architecture", "Iterative build", "Support and scaling"],
+      "projects": [
+        {
+          "title": "Web platforms",
+          "text": "Fast, secure products with clear user journeys."
+        },
+        {
+          "title": "Operational dashboards",
+          "text": "Live metrics for sales, service, and production workflows."
+        },
+        {
+          "title": "Automation systems",
+          "text": "Integrated tools that remove repetitive manual tasks."
+        }
+      ],
+      "process": [
+        "Discovery workshop",
+        "UX and architecture",
+        "Iterative build",
+        "Support and scaling"
+      ],
       "contact": "Reach out to discuss a custom software solution for your team."
     }
   }

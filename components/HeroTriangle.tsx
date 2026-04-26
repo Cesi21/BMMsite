@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion"
 import { useLocale, useTranslations } from "next-intl"
-import { useRouter } from "next/navigation"
-import { useState } from "react"
+import Link from "next/link"
+import { useMemo, useState } from "react"
 
 type Segment = "construction" | "mechanics" | "it"
 
@@ -13,114 +13,116 @@ type SegmentConfig = {
   polygon: string
   accent: string
   tint: string
-  labelPosition: string
+  textClass: string
 }
-
-const viewWidth = 1000
-const viewHeight = 1000
-const topX = 500
-const topY = 0
-const centerX = 500
-const centerY = 470
-const leftX = 0
-const leftY = 1000
-const rightX = 1000
-const rightY = 1000
 
 const segments: SegmentConfig[] = [
   {
     key: "construction",
     path: "gradbenistvo",
-    polygon: `${topX},${topY} ${centerX},${centerY} ${leftX},${leftY}`,
+    polygon: "500,40 500,500 70,920",
     accent: "rgb(245,158,11)",
-    tint: "rgba(245,158,11,0.26)",
-    labelPosition: "left-[15%] top-[34%]"
+    tint: "rgba(245,158,11,0.22)",
+    textClass: "text-[rgb(245,158,11)]"
   },
   {
     key: "mechanics",
     path: "mehanika",
-    polygon: `${topX},${topY} ${centerX},${centerY} ${rightX},${rightY}`,
+    polygon: "500,40 930,920 500,500",
     accent: "rgb(59,130,246)",
-    tint: "rgba(59,130,246,0.26)",
-    labelPosition: "right-[15%] top-[34%]"
+    tint: "rgba(59,130,246,0.22)",
+    textClass: "text-[rgb(59,130,246)]"
   },
   {
     key: "it",
     path: "racunalnistvo",
-    polygon: `${leftX},${leftY} ${centerX},${centerY} ${rightX},${rightY}`,
+    polygon: "70,920 500,500 930,920",
     accent: "rgb(16,185,129)",
-    tint: "rgba(16,185,129,0.24)",
-    labelPosition: "bottom-[16%] left-1/2 -translate-x-1/2"
+    tint: "rgba(16,185,129,0.22)",
+    textClass: "text-[rgb(16,185,129)]"
   }
 ]
 
 export default function HeroTriangle() {
   const t = useTranslations("home")
   const locale = useLocale()
-  const router = useRouter()
-  const [hovered, setHovered] = useState<Segment | null>(null)
+
+  const [activeSegment, setActiveSegment] = useState<Segment>("construction")
+
+  const activeData = useMemo(() => segments.find((segment) => segment.key === activeSegment) ?? segments[0], [activeSegment])
 
   return (
-    <div className="relative h-full w-full overflow-hidden bg-background">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_10%,rgba(255,255,255,0.08),rgba(255,255,255,0)_42%)]" />
-      <svg viewBox={`0 0 ${viewWidth} ${viewHeight}`} preserveAspectRatio="none" className="absolute inset-0 h-full w-full" aria-hidden>
-        <defs>
-          <filter id="hover-glow" x="-40%" y="-40%" width="180%" height="180%">
-            <feGaussianBlur stdDeviation="14" result="blur" />
-            <feMerge>
-              <feMergeNode in="blur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-        </defs>
+    <div className="grid gap-5 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+      <div className="space-y-5 rounded-3xl border border-white/10 bg-[rgba(18,22,30,0.72)] p-6 backdrop-blur-xl md:p-8">
+        <div className="space-y-3">
+          <p className="text-xs uppercase tracking-[0.22em] text-white/55">{t("eyebrow")}</p>
+          <h1 className="text-3xl font-semibold tracking-tight text-foreground md:text-5xl">{t("title")}</h1>
+          <p className="max-w-xl text-sm text-white/75 md:text-base">{t("subtitle")}</p>
+        </div>
 
-        {segments.map((segment) => {
-          const active = hovered === segment.key
-          return (
-            <motion.polygon
-              key={segment.key}
-              points={segment.polygon}
-              fill={active ? segment.tint : "rgba(255,255,255,0.03)"}
-              stroke={active ? segment.accent : "rgba(255,255,255,0.08)"}
-              strokeWidth={active ? 2.6 : 1}
-              animate={{ opacity: active ? 1 : hovered ? 0.82 : 0.95 }}
-              transition={{ duration: 0.22 }}
-              onMouseEnter={() => setHovered(segment.key)}
-              onMouseLeave={() => setHovered(null)}
-              onClick={() => router.push(`/${locale}/${segment.path}`)}
-              className="cursor-pointer"
-              style={{ filter: active ? "url(#hover-glow)" : "none" }}
-            />
-          )
-        })}
+        <div className="grid gap-2">
+          {segments.map((segment) => {
+            const active = segment.key === activeSegment
 
-        <line x1={topX} y1={topY} x2={centerX} y2={centerY} stroke="rgba(255,255,255,0.28)" strokeWidth="2" />
-        <line x1={centerX} y1={centerY} x2={leftX} y2={leftY} stroke="rgba(255,255,255,0.28)" strokeWidth="2" />
-        <line x1={centerX} y1={centerY} x2={rightX} y2={rightY} stroke="rgba(255,255,255,0.28)" strokeWidth="2" />
-        <circle cx={centerX} cy={centerY} r="4" fill="rgba(235,238,245,0.8)" />
-      </svg>
+            return (
+              <Link
+                key={segment.key}
+                href={`/${locale}/${segment.path}`}
+                onMouseEnter={() => setActiveSegment(segment.key)}
+                onFocus={() => setActiveSegment(segment.key)}
+                className="group flex items-center justify-between rounded-2xl border px-4 py-3 transition-all duration-200"
+                style={{
+                  borderColor: active ? segment.accent : "rgba(255,255,255,0.12)",
+                  background: active ? segment.tint : "rgba(255,255,255,0.02)"
+                }}
+              >
+                <span className={`text-base font-medium ${active ? segment.textClass : "text-white/85"}`}>{t(segment.key)}</span>
+                <span className="text-xs uppercase tracking-[0.2em] text-white/50 transition group-hover:text-white/80">{t("explore")}</span>
+              </Link>
+            )
+          })}
+        </div>
+      </div>
 
-      <div className="absolute inset-0">
-        {segments.map((segment) => {
-          const active = hovered === segment.key
-          return (
-            <motion.button
-              key={segment.key}
-              type="button"
-              onMouseEnter={() => setHovered(segment.key)}
-              onMouseLeave={() => setHovered(null)}
-              onFocus={() => setHovered(segment.key)}
-              onBlur={() => setHovered(null)}
-              onClick={() => router.push(`/${locale}/${segment.path}`)}
-              className={`absolute ${segment.labelPosition} rounded-xl border border-white/10 bg-[rgba(18,22,30,0.58)] px-6 py-3 text-left backdrop-blur-md`}
-              animate={{ y: active ? -3 : 0, scale: active ? 1.02 : 1 }}
-              transition={{ duration: 0.2 }}
-              style={{ borderColor: active ? segment.accent : "rgba(255,255,255,0.12)" }}
-            >
-              <span className="text-2xl font-semibold tracking-tight text-foreground md:text-4xl">{t(segment.key)}</span>
-            </motion.button>
-          )
-        })}
+      <div className="relative hidden overflow-hidden rounded-3xl border border-white/10 bg-[rgba(18,22,30,0.58)] p-4 backdrop-blur-xl lg:block">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.09),transparent_48%)]" />
+
+        <svg viewBox="0 0 1000 960" className="relative h-[540px] w-full" aria-hidden>
+          <defs>
+            <filter id="soft-glow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="14" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          {segments.map((segment) => {
+            const active = segment.key === activeSegment
+
+            return (
+              <motion.polygon
+                key={segment.key}
+                points={segment.polygon}
+                fill={active ? segment.tint : "rgba(255,255,255,0.04)"}
+                stroke={active ? segment.accent : "rgba(255,255,255,0.14)"}
+                strokeWidth={active ? 2.6 : 1.1}
+                animate={{ opacity: active ? 1 : 0.9 }}
+                transition={{ duration: 0.18 }}
+                style={{ filter: active ? "url(#soft-glow)" : "none" }}
+                onMouseEnter={() => setActiveSegment(segment.key)}
+              />
+            )
+          })}
+
+          <circle cx="500" cy="500" r="6" fill="rgba(235,238,245,0.9)" />
+        </svg>
+
+        <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-[rgba(10,12,16,0.72)] p-4">
+          <p className="text-xs uppercase tracking-[0.2em] text-white/55">{t("activeLabel")}</p>
+          <p className={`mt-1 text-xl font-semibold ${activeData.textClass}`}>{t(activeData.key)}</p>
+        </div>
       </div>
     </div>
   )
