@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server"
-import PageHero from "@/components/PageHero"
 import InfoSection from "@/components/InfoSection"
+import PageHero from "@/components/PageHero"
 
 export default async function AboutPage() {
   const t = await getTranslations("pages.about")

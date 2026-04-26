@@ -2,11 +2,11 @@
   "nav": {
     "tagline": "Gradbeništvo • Tuning & mehanika • Računalništvo",
     "links": {
-      "home": "Home",
-      "about": "About",
-      "services": "Services",
-      "projects": "Projects",
-      "contact": "Contact"
+      "home": "Domov",
+      "about": "O nas",
+      "services": "Storitve",
+      "projects": "Projekti",
+      "contact": "Kontakt"
     }
   },
   "home": {
@@ -15,191 +15,185 @@
     "it": "Računalništvo",
     "eyebrow": "BMM Cesar",
     "title": "Tri področja. Ena ekipa, ki gradi, optimizira in razvija.",
-    "subtitle": "Izberite področje in takoj odprite storitve, projekte ter jasen naslednji korak.",
+    "subtitle": "Družinsko podjetje treh bratov, kjer povezujemo terensko izvedbo, strojno znanje in digitalne rešitve.",
     "explore": "Odpri",
-    "activeLabel": "Izbrano področje"
+    "activeLabel": "Izbrano področje",
+    "descriptions": {
+      "construction": "Prenove, kopalnice, keramika in zaključna gradbena dela.",
+      "mechanics": "Diagnostika, popravila in tuning vozil ter delovnih strojev.",
+      "it": "Spletne strani, aplikacije, dashboardi in avtomatizacija procesov."
+    }
   },
   "domains": {
     "common": {
       "eyebrow": "BMM Cesar",
       "services": "Storitve",
-      "projects": "Projekti",
-      "process": "Proces",
-      "contact": "Kontakt",
-      "contactCta": "Pošljite povpraševanje"
+      "projects": "Primeri rešitev",
+      "process": "Kako poteka sodelovanje",
+      "contact": "Naslednji korak",
+      "contactCta": "Kontaktirajte nas"
     },
     "construction": {
       "title": "Gradbeništvo",
-      "subtitle": "Sanacije in prenove izvedemo z natančnostjo, jasnim planom in kakovostnimi zaključki.",
+      "subtitle": "Prenove in zaključna dela izvedemo natančno, čisto in po dogovorjenem planu.",
       "services": [
-        "Sanacije objektov",
-        "Izdelava kopalnic",
+        "Celovite in delne prenove",
+        "Izdelava in obnova kopalnic",
         "Polaganje keramike",
-        "Stopnišča",
-        "Prenova notranjih prostorov",
-        "Zaključna gradbena dela"
+        "Stopnišča in finalizacija",
+        "Zaključna gradbena dela",
+        "Svetovanje pred izvedbo"
       ],
       "projects": [
-        {
-          "title": "Celovita prenova stanovanj",
-          "text": "Vodenje projekta od priprave prostora do finalnih zaključkov."
-        },
-        {
-          "title": "Kopalnice po meri",
-          "text": "Natančna izvedba keramike in funkcionalne razporeditve elementov."
-        },
-        {
-          "title": "Stopnišča in finalizacija",
-          "text": "Izdelava, obnova in estetski zaključki za dolgo življenjsko dobo."
-        }
+        { "title": "Prenove stanovanj", "text": "Od priprave prostora do zadnjih detajlov zaključnih del." },
+        { "title": "Kopalnice po meri", "text": "Funkcionalna razporeditev, kakovostna keramika in natančna izvedba." },
+        { "title": "Stopnišča", "text": "Obnova ali nova izvedba s poudarkom na trajnosti in estetiki." }
       ],
       "process": [
-        "Ogled in svetovanje",
-        "Ponudba in terminski plan",
-        "Izvedba po fazah",
-        "Predaja in podpora"
+        "Ogled in uskladitev želja",
+        "Predlog rešitve in ponudba",
+        "Fazna izvedba na terenu",
+        "Zaključni pregled in predaja"
       ],
-      "contact": "Pišite nam za ogled objekta in pripravo personalizirane ponudbe."
+      "contact": "Pošljite kratek opis prenove in dogovorili se bomo za ogled objekta."
     },
     "mechanics": {
       "title": "Tuning & mehanika",
-      "subtitle": "Servis, diagnostika in tuning vozil ter strojev za več zmogljivosti in zanesljivosti.",
+      "subtitle": "Zanesljiva diagnostika, popravila in tuning za osebna vozila, traktorje in delovne stroje.",
       "services": [
-        "Avto tuning",
-        "Tuning traktorjev",
+        "Car tuning",
+        "Tractor tuning",
         "Tuning gradbenih strojev",
+        "Diagnostika",
         "Popravilo strojev",
-        "Servis na terenu",
-        "Diagnostika vozil in strojev"
+        "Terenski servis"
       ],
       "projects": [
-        {
-          "title": "Optimizacija delovnih strojev",
-          "text": "Prilagoditve nastavitev za boljšo učinkovitost in manj izpadov."
-        },
-        {
-          "title": "Nadgradnje vozil",
-          "text": "Programske in mehanske izboljšave za boljši odziv in navor."
-        },
-        {
-          "title": "Terenski servis",
-          "text": "Hitra diagnostika in popravila neposredno na lokaciji dela."
-        }
+        { "title": "Diagnostika na terenu", "text": "Hitra ugotovitev napake in predlog učinkovitega posega." },
+        { "title": "Optimizacija delovnih strojev", "text": "Nastavitve za boljši odziv, navor in učinkovitost." },
+        { "title": "Popravila brez dolgih izpadov", "text": "Praktične rešitve, da je oprema čim prej spet v pogonu." }
       ],
       "process": [
-        "Diagnostika",
-        "Načrt posega",
-        "Tuning ali popravilo",
-        "Testiranje in prevzem"
+        "Diagnostika in pregled stanja",
+        "Dogovor o obsegu in terminu",
+        "Izvedba posega ali tuninga",
+        "Testiranje in priporočila"
       ],
-      "contact": "Na voljo smo za redne servise, nujna popravila in razvoj tuning rešitev."
+      "contact": "Za servis ali tuning nam pošljite model stroja/vozila in opis težave."
     },
     "it": {
       "title": "Računalništvo",
-      "subtitle": "Gradimo sodobne digitalne produkte, ki podpirajo realne procese podjetja.",
+      "subtitle": "Razvijamo digitalne rešitve, ki rešujejo realne operativne izzive podjetij.",
       "services": [
         "Spletne strani",
         "Spletne aplikacije",
         "Dashboard sistemi",
         "Namizne aplikacije",
-        "Programske rešitve za skladišča",
+        "Programska oprema po meri",
         "Avtomatizacija poslovnih procesov"
       ],
       "projects": [
-        {
-          "title": "Spletne platforme",
-          "text": "Hitre in varne aplikacije z jasno uporabniško izkušnjo."
-        },
-        {
-          "title": "Operativni dashboardi",
-          "text": "Pregled ključnih metrik za prodajo, servise in proizvodnjo."
-        },
-        {
-          "title": "Avtomatizacija procesov",
-          "text": "Povezava orodij in avtomatizacija ponavljajočih nalog."
-        }
+        { "title": "Predstavitvene spletne strani", "text": "Moderen nastop podjetja s poudarkom na hitrosti in jasnem sporočilu." },
+        { "title": "Operativni dashboardi", "text": "Pregled ključnih kazalnikov za prodajo, servis ali proizvodnjo." },
+        { "title": "Poslovna avtomatizacija", "text": "Manj ročnega dela z integracijami in avtomatiziranimi tokovi." }
       ],
       "process": [
-        "Analiza potreb",
-        "UX in tehnična zasnova",
-        "Iterativni razvoj",
-        "Vzdrževanje in nadgradnje"
+        "Kratek discovery klic",
+        "Predlog arhitekture in obsega",
+        "Iterativni razvoj in sprotne potrditve",
+        "Objava, podpora in nadgradnje"
       ],
-      "contact": "Kontaktirajte nas za razvoj rešitve po meri vašega poslovanja."
+      "contact": "Opišite vaš proces in pripravili bomo predlog digitalne rešitve."
     }
   },
   "footer": {
-    "about": "About",
-    "services": "Services",
-    "projects": "Projects",
-    "contact": "Contact",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis, lacus id commodo cursus, mi eros pharetra sapien, non lacinia nibh elit sed metus.",
-    "copyright": "© 2026 BMM Cesar. All rights reserved."
+    "about": "O nas",
+    "services": "Storitve",
+    "projects": "Projekti",
+    "contact": "Kontakt",
+    "description": "BMM Cesar je družinska ekipa treh bratov. Združujemo gradbeništvo, mehaniko in računalništvo, da strankam ponudimo praktične in izvedljive rešitve.",
+    "copyright": "© 2026 BMM Cesar. Vse pravice pridržane."
   },
   "pages": {
     "about": {
       "eyebrow": "BMM Cesar",
-      "title": "About BMM Cesar",
-      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat sem vitae tortor aliquet suscipit.",
-      "missionTitle": "Our Mission",
-      "missionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium, augue in sollicitudin faucibus, massa purus posuere eros, et aliquam mauris dui at ligula. Proin cursus orci vitae vestibulum faucibus.",
-      "storyTitle": "Our Story",
-      "storyText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt ex vitae posuere posuere. Praesent luctus, velit sed luctus lacinia, metus lectus gravida nibh, a scelerisque turpis nisi eu augue.",
-      "teamTitle": "Our Team",
-      "teamText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit sapien at metus laoreet, id malesuada mauris dictum. Nullam eget tortor non mi aliquet interdum ut vel erat."
+      "title": "O nas",
+      "subtitle": "BMM Cesar gradimo trije bratje z različnimi znanji in skupnim ciljem: kakovostna izvedba in pošten odnos.",
+      "missionTitle": "Kaj gradimo",
+      "missionText": "Ne želimo biti generičen ponudnik. Želimo biti ekipa, ki razume teren, stroje in digitalno podporo ter zna med temi področji povezati stvari v celoto.",
+      "storyTitle": "Zakaj tri področja",
+      "storyText": "V praksi se projekti pogosto prepletajo: prenova potrebuje zanesljivo izvedbo, stroji morajo delovati brez izpadov, podjetje pa potrebuje dober digitalni pregled. Zato gradimo eno znamko s tremi specializiranimi vejami.",
+      "teamTitle": "Način dela",
+      "teamText": "Smo v začetni fazi razvoja podjetja, zato ostajamo realni, odzivni in neposredni. Vsak projekt obravnavamo individualno in brez praznih obljub."
     },
     "services": {
       "eyebrow": "BMM Cesar",
-      "title": "All Services",
-      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur, massa in faucibus volutpat, justo dui viverra orci, id vulputate velit leo vitae nulla.",
-      "categoriesTitle": "Service Categories",
-      "categories": [
-        "Construction works",
-        "Vehicle mechanics",
-        "Machine diagnostics",
-        "Software development",
-        "Process automation",
-        "Field support"
+      "title": "Storitve",
+      "subtitle": "Vsaka veja ima svoj fokus, skupaj pa tvorimo ekipo, ki lahko pokrije izvedbo od terena do programske rešitve.",
+      "branches": [
+        {
+          "title": "Gradbeništvo",
+          "description": "Prenove in zaključna gradbena dela za stanovanjske in poslovne prostore.",
+          "services": ["prenove", "kopalnice", "keramika", "stopnišča", "zaključna dela"],
+          "cta": "Poglej področje",
+          "path": "gradbenistvo",
+          "accent": "rgba(245,158,11,0.35)"
+        },
+        {
+          "title": "Tuning & mehanika",
+          "description": "Diagnostika, tuning in servis za vozila ter delovne stroje, tudi na terenu.",
+          "services": ["car tuning", "tractor tuning", "diagnostika", "popravila", "field service"],
+          "cta": "Poglej področje",
+          "path": "mehanika",
+          "accent": "rgba(59,130,246,0.35)"
+        },
+        {
+          "title": "Računalništvo",
+          "description": "Digitalne rešitve za predstavitev podjetja, operativni pregled in avtomatizacijo procesov.",
+          "services": ["websites", "web apps", "dashboards", "desktop apps", "avtomatizacija"],
+          "cta": "Poglej področje",
+          "path": "racunalnistvo",
+          "accent": "rgba(16,185,129,0.35)"
+        }
       ],
-      "approachTitle": "How We Work",
-      "approachText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in ligula erat. Suspendisse commodo diam eget malesuada iaculis. Vestibulum condimentum erat vel velit egestas, id facilisis lectus aliquet."
+      "approachTitle": "Kako sodelujemo",
+      "approachText": "Začnemo s kratkim pogovorom, kjer definiramo cilj, obseg in časovni okvir. Nato pripravimo jasen predlog dela in izvedbo vodimo transparentno, brez nepotrebnega kompliciranja."
     },
     "projects": {
       "eyebrow": "BMM Cesar",
-      "title": "Selected Projects",
-      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non posuere leo, non varius tellus. Integer facilisis pretium porta.",
-      "featuredTitle": "Featured Case Studies",
+      "title": "Področja dela in primeri rešitev",
+      "subtitle": "Namesto napihnjenega portfelja prikazujemo realne tipe nalog, ki jih izvajamo.",
+      "noteTitle": "Pošten prikaz",
+      "noteText": "BMM Cesar je v razvoju, zato tukaj predstavljamo tipične primere dela in rešitve, ne pa velikih marketinških zgodb brez osnove.",
+      "featuredTitle": "Primeri rešitev",
       "featured": [
-        {
-          "title": "Residential renovation program",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam sit amet odio luctus luctus."
-        },
-        {
-          "title": "Agricultural machinery overhaul",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Pellentesque in suscipit lorem."
-        },
-        {
-          "title": "Operations dashboard suite",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Aenean tristique sollicitudin tristique."
-        }
+        { "title": "Kopalnice, keramika, prenove", "text": "Od priprave prostora do končnih detajlov pri obnovah notranjih prostorov." },
+        { "title": "Diagnostika in tuning strojev", "text": "Terenski posegi, optimizacije in popravila za manj izpadov delovne opreme." },
+        { "title": "Spletne strani in dashboardi", "text": "Programske rešitve, ki izboljšajo pregled nad poslovanjem in vsakodnevnimi procesi." }
       ],
-      "workflowTitle": "Delivery Workflow",
-      "workflow": [
-        "Initial consultation",
-        "Planning and proposal",
-        "Execution phase",
-        "Review and long-term support"
-      ]
+      "workflowTitle": "Tipičen potek sodelovanja",
+      "workflow": ["Uvodni pogovor", "Jasen predlog rešitve", "Izvedba in sprotna komunikacija", "Predaja in nadaljnja podpora"]
     },
     "contact": {
       "eyebrow": "BMM Cesar",
-      "title": "Contact Us",
-      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur feugiat neque ac malesuada.",
-      "detailsTitle": "Office & Availability",
-      "detailsText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut eleifend sem. Donec ac volutpat lectus. Email: info@bmm-cesar.si • Phone: +386 40 000 000 • Address: Trg Lorem 12, 1000 Ljubljana.",
-      "ctaTitle": "Start Your Project",
-      "ctaText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Send us your requirements and we will prepare a tailored next-step plan.",
-      "ctaButton": "Send inquiry"
+      "title": "Kontakt",
+      "subtitle": "Pošljite povpraševanje in napišite, za katero področje gre. Odgovorimo vam v najkrajšem možnem času.",
+      "detailsTitle": "Kontaktni podatki",
+      "detailsText": "Za hiter odziv dopišite lokacijo in kratek opis projekta ali težave.",
+      "labels": {
+        "email": "E-pošta",
+        "phone": "Telefon",
+        "location": "Lokacija"
+      },
+      "email": "info@bmm-cesar.si",
+      "phone": "+386 40 000 000",
+      "location": "Ljubljana in okolica",
+      "hours": "Dosegljivi: pon–pet, 08:00–17:00",
+      "branchTitle": "Izberite področje",
+      "branches": ["Gradbeništvo", "Tuning & mehanika", "Računalništvo"],
+      "ctaTitle": "Pošljite povpraševanje",
+      "ctaText": "Če imate osnutek, fotografije ali osnovne zahteve, jih vključite v sporočilo.",
+      "ctaButton": "Pošlji e-pošto"
     }
   }
 }
