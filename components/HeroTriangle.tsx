@@ -122,6 +122,7 @@ export default function HeroTriangle() {
         <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-[rgba(10,12,16,0.72)] p-4">
           <p className="text-xs uppercase tracking-[0.2em] text-white/55">{t("activeLabel")}</p>
           <p className={`mt-1 text-xl font-semibold ${activeData.textClass}`}>{t(activeData.key)}</p>
+          <p className="mt-2 text-sm text-white/70">{t(`descriptions.${activeData.key}`)}</p>
         </div>
       </div>
     </div>

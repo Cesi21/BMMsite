@@ -1,11 +1,13 @@
 import { getTranslations } from "next-intl/server"
 import DomainPage from "@/components/DomainPage"
 
-export default async function ITPage() {
+export default async function ITPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
   const t = await getTranslations("domains")
 
   return (
     <DomainPage
+      locale={locale}
       accent="rgba(16,185,129,0.35)"
       eyebrow={t("common.eyebrow")}
       title={t("it.title")}

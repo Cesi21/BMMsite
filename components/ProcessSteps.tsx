@@ -5,9 +5,10 @@ import { motion } from "framer-motion"
 type ProcessStepsProps = {
   title: string
   steps: string[]
+  accent?: string
 }
 
-export default function ProcessSteps({ title, steps }: ProcessStepsProps) {
+export default function ProcessSteps({ title, steps, accent }: ProcessStepsProps) {
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -15,6 +16,7 @@ export default function ProcessSteps({ title, steps }: ProcessStepsProps) {
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.4 }}
       className="rounded-3xl border border-white/10 bg-[rgba(18,22,30,0.55)] p-6 md:p-8"
+      style={accent ? { boxShadow: `inset 0 0 0 1px ${accent}` } : undefined}
     >
       <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
       <ol className="mt-4 grid gap-3 md:grid-cols-2">

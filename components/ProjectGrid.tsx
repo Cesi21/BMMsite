@@ -5,9 +5,10 @@ import { motion } from "framer-motion"
 type ProjectGridProps = {
   title: string
   items: { title: string; text: string }[]
+  accent?: string
 }
 
-export default function ProjectGrid({ title, items }: ProjectGridProps) {
+export default function ProjectGrid({ title, items, accent }: ProjectGridProps) {
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -15,6 +16,7 @@ export default function ProjectGrid({ title, items }: ProjectGridProps) {
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.4 }}
       className="rounded-3xl border border-white/10 bg-[rgba(18,22,30,0.55)] p-6 md:p-8"
+      style={accent ? { boxShadow: `inset 0 0 0 1px ${accent}` } : undefined}
     >
       <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
       <div className="mt-4 grid gap-4 md:grid-cols-3">
