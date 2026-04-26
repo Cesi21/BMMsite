@@ -1,56 +1,56 @@
 {
   "nav": {
-    "tagline": "Građevina • Tuning i mehanika • Računarstvo"
+    "tagline": "Gradbeništvo • Tuning & mehanika • Računalništvo"
   },
   "home": {
-    "heroHint": "Odaberi područje za pregled usluga i projekata.",
-    "construction": "Građevina",
-    "mechanics": "Tuning i mehanika",
-    "it": "Računarstvo"
+    "construction": "Gradbeništvo",
+    "mechanics": "Tuning & mehanika",
+    "it": "Računalništvo"
   },
   "domains": {
     "common": {
-      "services": "Usluge",
+      "eyebrow": "BMM Cesar",
+      "services": "Storitve",
       "projects": "Projekti",
-      "projectsText": "Prikaz projekata dolazi u sljedećoj fazi.",
+      "process": "Proces",
       "contact": "Kontakt",
-      "contactText": "Javi nam se za ponudu ili savjetovanje."
+      "contactCta": "Pošljite povpraševanje"
     },
     "construction": {
-      "title": "Građevina",
-      "subtitle": "Sanacije i završni građevinski radovi izvedeni precizno i pouzdano.",
-      "services": [
-        "Sanacije objekata",
-        "Izrada kupaonica",
-        "Polaganje keramike",
-        "Stepeništa",
-        "Obnova unutarnjih prostora",
-        "Završni građevinski radovi"
-      ]
+      "title": "Gradbeništvo",
+      "subtitle": "Sanacije in prenove izvedemo z natančnostjo, jasnim planom in kakovostnimi zaključki.",
+      "services": ["Sanacije objektov", "Izdelava kopalnic", "Polaganje keramike", "Stopnišča", "Prenova notranjih prostorov", "Zaključna gradbena dela"],
+      "projects": [
+        { "title": "Celovita prenova stanovanj", "text": "Vodenje projekta od priprave prostora do finalnih zaključkov." },
+        { "title": "Kopalnice po meri", "text": "Natančna izvedba keramike in funkcionalne razporeditve elementov." },
+        { "title": "Stopnišča in finalizacija", "text": "Izdelava, obnova in estetski zaključki za dolgo življenjsko dobo." }
+      ],
+      "process": ["Ogled in svetovanje", "Ponudba in terminski plan", "Izvedba po fazah", "Predaja in podpora"],
+      "contact": "Pišite nam za ogled objekta in pripravo personalizirane ponudbe."
     },
     "mechanics": {
-      "title": "Tuning i mehanika",
-      "subtitle": "Tuning i servis vozila te strojeva, uključujući teren.",
-      "services": [
-        "Auto tuning",
-        "Tuning traktora",
-        "Tuning građevinskih strojeva",
-        "Popravak strojeva",
-        "Servis na terenu",
-        "Dijagnostika vozila i strojeva"
-      ]
+      "title": "Tuning & mehanika",
+      "subtitle": "Servis, diagnostika in tuning vozil ter strojev za več zmogljivosti in zanesljivosti.",
+      "services": ["Avto tuning", "Tuning traktorjev", "Tuning gradbenih strojev", "Popravilo strojev", "Servis na terenu", "Diagnostika vozil in strojev"],
+      "projects": [
+        { "title": "Optimizacija delovnih strojev", "text": "Prilagoditve nastavitev za boljšo učinkovitost in manj izpadov." },
+        { "title": "Nadgradnje vozil", "text": "Programske in mehanske izboljšave za boljši odziv in navor." },
+        { "title": "Terenski servis", "text": "Hitra diagnostika in popravila neposredno na lokaciji dela." }
+      ],
+      "process": ["Diagnostika", "Načrt posega", "Tuning ali popravilo", "Testiranje in prevzem"],
+      "contact": "Na voljo smo za redne servise, nujna popravila in razvoj tuning rešitev."
     },
     "it": {
-      "title": "Računarstvo",
-      "subtitle": "Razvoj web i desktop rješenja za stvarne poslovne procese.",
-      "services": [
-        "Web stranice",
-        "Web aplikacije",
-        "Dashboard sustavi",
-        "Desktop aplikacije",
-        "Softverska rješenja za skladišta",
-        "Automatizacija poslovnih procesa"
-      ]
+      "title": "Računalništvo",
+      "subtitle": "Gradimo sodobne digitalne produkte, ki podpirajo realne procese podjetja.",
+      "services": ["Spletne strani", "Spletne aplikacije", "Dashboard sistemi", "Namizne aplikacije", "Programske rešitve za skladišča", "Avtomatizacija poslovnih procesov"],
+      "projects": [
+        { "title": "Spletne platforme", "text": "Hitre in varne aplikacije z jasno uporabniško izkušnjo." },
+        { "title": "Operativni dashboardi", "text": "Pregled ključnih metrik za prodajo, servise in proizvodnjo." },
+        { "title": "Avtomatizacija procesov", "text": "Povezava orodij in avtomatizacija ponavljajočih nalog." }
+      ],
+      "process": ["Analiza potreb", "UX in tehnična zasnova", "Iterativni razvoj", "Vzdrževanje in nadgradnje"],
+      "contact": "Kontaktirajte nas za razvoj rešitve po meri vašega poslovanja."
     }
   }
 }
