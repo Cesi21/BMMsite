@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl"
 import { getMessages, setRequestLocale } from "next-intl/server"
 import { isLocale, locales } from "@/i18n/routing"
 import Header from "@/components/Header"
+import SiteFooter from "@/components/SiteFooter"
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -29,6 +30,7 @@ export default async function LocaleLayout({
       <div className="min-h-dvh bg-background text-foreground">
         <Header />
         <main>{children}</main>
+        <SiteFooter locale={locale} />
       </div>
     </NextIntlClientProvider>
   )
