@@ -25,11 +25,11 @@ export default function LanguageSwitcher() {
       <select
         value={locale}
         onChange={(event) => switchLocale(event.target.value)}
-        className="h-10 rounded-xl border border-white/15 bg-[rgba(255,255,255,0.06)] px-3 text-sm font-medium text-white outline-none transition hover:border-white/30 focus:border-white/45"
+        className="header-nav-link h-10 rounded-xl border px-3 text-sm font-medium outline-none transition"
         aria-label="Language"
       >
         {locales.map((entry) => (
-          <option key={entry} value={entry} className="bg-[rgb(18,22,30)]">
+          <option key={entry} value={entry} className="bg-surface">
             {entry.toUpperCase()}
           </option>
         ))}

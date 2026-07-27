@@ -16,11 +16,11 @@ export default async function SiteFooter({ locale }: SiteFooterProps) {
   ]
 
   return (
-    <footer className="border-t border-white/10 bg-[rgba(12,14,20,0.92)]">
+    <footer className="site-footer border-t">
       <div className="mx-auto grid w-full max-w-7xl gap-6 px-4 py-8 md:px-6 md:py-10">
         <div>
           <p className="text-lg font-semibold">BMM Cesar</p>
-          <p className="mt-2 max-w-2xl text-sm text-white/65">{t("description")}</p>
+          <p className="muted-text mt-2 max-w-2xl text-sm">{t("description")}</p>
         </div>
 
         <div className="flex flex-wrap gap-3">
@@ -28,14 +28,14 @@ export default async function SiteFooter({ locale }: SiteFooterProps) {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-lg border border-white/15 px-3 py-2 text-sm text-white/80 transition hover:border-white/30 hover:text-white"
+              className="header-nav-link rounded-lg border px-3 py-2 text-sm transition"
             >
               {link.label}
             </Link>
           ))}
         </div>
 
-        <p className="text-xs text-white/45">{t("copyright")}</p>
+        <p className="soft-text text-xs">{t("copyright")}</p>
       </div>
     </footer>
   )

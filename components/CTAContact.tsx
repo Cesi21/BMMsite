@@ -19,14 +19,14 @@ export default function CTAContact({ title, text, button, href }: CTAContactProp
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.4 }}
-      className="rounded-3xl border border-white/10 bg-[rgba(18,22,30,0.65)] p-6 md:p-8"
+      className="surface-panel rounded-3xl border p-6 md:p-8"
     >
       <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
-      <p className="mt-3 max-w-2xl text-white/75">{text}</p>
+      <p className="muted-text mt-3 max-w-2xl">{text}</p>
       <Link
         href={href}
         {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
-        className="mt-5 inline-flex rounded-xl border border-white/20 bg-[rgba(255,255,255,0.05)] px-5 py-2.5 text-sm font-medium text-white transition hover:border-white/40"
+        className="header-nav-link mt-5 inline-flex rounded-xl border px-5 py-2.5 text-sm font-medium transition"
       >
         {button}
       </Link>

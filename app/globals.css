@@ -3,13 +3,57 @@
 :root {
   color-scheme: dark;
 
-  --bg: 10 12 16;
-  --fg: 235 238 245;
-  --surface: 18 22 30;
+  --bg: 10 18 43;
+  --fg: 242 245 255;
+  --surface: 24 33 69;
+  --page-background:
+    radial-gradient(circle at 12% 4%, rgba(37, 99, 235, 0.34), transparent 32rem),
+    radial-gradient(circle at 88% 2%, rgba(139, 92, 246, 0.3), transparent 34rem),
+    radial-gradient(circle at 50% 92%, rgba(14, 165, 233, 0.2), transparent 40rem),
+    linear-gradient(145deg, #07132f 0%, #13204a 48%, #211747 100%);
+  --text-primary: rgb(242, 245, 255);
+  --text-muted: rgba(226, 232, 240, 0.72);
+  --text-soft: rgba(226, 232, 240, 0.52);
+  --line: rgba(186, 230, 253, 0.16);
+  --line-strong: rgba(186, 230, 253, 0.32);
+  --panel: rgba(18, 39, 86, 0.68);
+  --panel-solid: rgba(7, 18, 47, 0.88);
+  --subtle: rgba(255, 255, 255, 0.045);
+  --header: rgba(7, 18, 47, 0.8);
+  --footer: rgba(7, 14, 34, 0.92);
+  --hero-shell: linear-gradient(145deg, rgba(18, 39, 86, 0.78), rgba(37, 27, 78, 0.66));
+  --home-link: rgba(7, 18, 47, 0.58);
+  --home-link-active: rgba(7, 18, 47, 0.84);
 
   --construction: 245 158 11;
   --mechanics: 59 130 246;
   --it: 16 185 129;
+}
+
+.light {
+  color-scheme: light;
+
+  --bg: 238 244 255;
+  --fg: 15 23 42;
+  --surface: 255 255 255;
+  --page-background:
+    radial-gradient(circle at 12% 4%, rgba(96, 165, 250, 0.35), transparent 31rem),
+    radial-gradient(circle at 88% 3%, rgba(196, 181, 253, 0.42), transparent 34rem),
+    radial-gradient(circle at 52% 96%, rgba(110, 231, 183, 0.2), transparent 40rem),
+    linear-gradient(145deg, #f7faff 0%, #e8f1ff 48%, #f5efff 100%);
+  --text-primary: rgb(15, 23, 42);
+  --text-muted: rgba(30, 41, 59, 0.72);
+  --text-soft: rgba(51, 65, 85, 0.56);
+  --line: rgba(30, 64, 175, 0.13);
+  --line-strong: rgba(37, 99, 235, 0.26);
+  --panel: rgba(255, 255, 255, 0.72);
+  --panel-solid: rgba(248, 251, 255, 0.94);
+  --subtle: rgba(37, 99, 235, 0.045);
+  --header: rgba(247, 250, 255, 0.84);
+  --footer: rgba(230, 238, 252, 0.94);
+  --hero-shell: linear-gradient(145deg, rgba(240, 247, 255, 0.9), rgba(242, 237, 255, 0.84));
+  --home-link: rgba(255, 255, 255, 0.68);
+  --home-link-active: rgba(255, 255, 255, 0.94);
 }
 
 * {
@@ -20,8 +64,9 @@ html,
 body {
   margin: 0;
   min-height: 100%;
-  background-color: rgb(var(--bg));
-  color: rgb(var(--fg));
+  background: var(--page-background);
+  background-attachment: fixed;
+  color: var(--text-primary);
 }
 
 body {
@@ -35,13 +80,105 @@ body {
 }
 
 .bg-background {
-  background-color: rgb(var(--bg));
+  background: var(--page-background);
 }
 
 .text-foreground {
-  color: rgb(var(--fg));
+  color: var(--text-primary);
 }
 
 .bg-surface {
   background-color: rgb(var(--surface));
+}
+
+.surface-panel {
+  border-color: var(--line);
+  background: var(--panel);
+}
+
+.surface-subtle {
+  border-color: var(--line);
+  background: var(--subtle);
+}
+
+.muted-text {
+  color: var(--text-muted);
+}
+
+.soft-text {
+  color: var(--text-soft);
+}
+
+.site-header {
+  border-color: var(--line);
+  background: var(--header);
+}
+
+.site-footer {
+  border-color: var(--line);
+  background: var(--footer);
+}
+
+.header-brand-mark {
+  border-color: var(--line-strong);
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.35), rgba(139, 92, 246, 0.3));
+}
+
+.header-nav-link,
+.theme-toggle {
+  border-color: var(--line);
+  background: var(--subtle);
+  color: var(--text-muted);
+}
+
+.header-nav-link:hover,
+.theme-toggle:hover {
+  border-color: var(--line-strong);
+  color: var(--text-primary);
+}
+
+.theme-toggle-knob {
+  transform: translateX(18px);
+}
+
+.light .theme-toggle-knob {
+  transform: translateX(0);
+}
+
+.home-hero {
+  border-color: var(--line);
+  background: var(--hero-shell);
+}
+
+.home-link-card {
+  background: var(--home-link);
+  color: var(--text-primary);
+}
+
+.home-link-card[data-active="true"] {
+  background: var(--home-link-active);
+}
+
+.light .home-hero {
+  box-shadow: 0 28px 80px rgba(65, 88, 140, 0.2);
+}
+
+.light .home-hero-glow {
+  opacity: 0.72;
+}
+
+.light .mobile-branch-card {
+  box-shadow: 0 18px 42px rgba(66, 90, 145, 0.18);
+}
+
+.light .text-amber-300 {
+  color: rgb(180, 83, 9);
+}
+
+.light .text-blue-300 {
+  color: rgb(29, 78, 216);
+}
+
+.light .text-emerald-300 {
+  color: rgb(4, 120, 87);
 }

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation"
 import { NextIntlClientProvider } from "next-intl"
 import { getMessages, setRequestLocale } from "next-intl/server"
 import { isLocale, locales } from "@/i18n/routing"
-import Header from "@/components/Header"
+import SiteShell from "@/components/SiteShell"
 import SiteFooter from "@/components/SiteFooter"
 
 export function generateStaticParams() {
@@ -27,11 +27,9 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <div className="min-h-dvh bg-background text-foreground">
-        <Header />
-        <main>{children}</main>
-        <SiteFooter locale={locale} />
-      </div>
+      <SiteShell locale={locale} footer={<SiteFooter locale={locale} />}>
+        {children}
+      </SiteShell>
     </NextIntlClientProvider>
   )
 }
