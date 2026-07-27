@@ -5,11 +5,13 @@
 
   --bg: 10 12 16;
   --fg: 235 238 245;
+  --card: 18 22 30;
   --surface: 18 22 30;
+  --border: 255 255 255;
 
-  --construction: 245 158 11;
-  --mechanics: 59 130 246;
-  --it: 16 185 129;
+  --amber: 245 158 11;
+  --blue: 59 130 246;
+  --green: 16 185 129;
 }
 
 * {
@@ -40,6 +42,10 @@ body {
 
 .text-foreground {
   color: rgb(var(--fg));
+}
+
+.bg-card {
+  background-color: rgb(var(--card));
 }
 
 .bg-surface {

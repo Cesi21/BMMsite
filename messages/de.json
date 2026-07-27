@@ -12,13 +12,18 @@
     "common": {
       "services": "Leistungen",
       "projects": "Projekte",
-      "projectsText": "Projektbeispiele werden in der nächsten Phase ergänzt.",
-      "contact": "Kontakt",
-      "contactText": "Schreib uns für ein Angebot oder ein Beratungsgespräch."
+      "process": "Prozess",
+      "contactButton": "Kontakt aufnehmen",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "emailValue": "info@bmm-cesar.si",
+      "phoneValue": "+386 40 000 000"
     },
     "construction": {
-      "title": "Bau",
-      "subtitle": "Sanierung und Ausbau mit präziser Ausführung und klarer Planung.",
+      "hero": {
+        "title": "Bau",
+        "subtitle": "Sanierung, Fliesen und Innenausbau mit präziser und verlässlicher Ausführung."
+      },
       "services": [
         "Objektsanierung",
         "Badsanierung",
@@ -26,11 +31,49 @@
         "Treppen",
         "Innenraumrenovierung",
         "Abschlussarbeiten"
-      ]
+      ],
+      "projects": [
+        {
+          "title": "Badsanierung im Wohnbereich",
+          "description": "Komplette Modernisierung mit neuer Keramik und hochwertigen Details."
+        },
+        {
+          "title": "Sanierung einer Gewerbeeinheit",
+          "description": "Sanierungs- und Ausbauarbeiten mit minimaler Betriebsunterbrechung."
+        },
+        {
+          "title": "Innenausbau einer Wohnung",
+          "description": "Koordinierte Renovierung mit klarer Materiallinie und sauberer Ausführung."
+        }
+      ],
+      "process": [
+        {
+          "title": "Beratung",
+          "description": "Wir prüfen das Objekt und definieren Umfang sowie Prioritäten."
+        },
+        {
+          "title": "Planung",
+          "description": "Wir erstellen Zeitplan, Materialvorschlag und transparentes Angebot."
+        },
+        {
+          "title": "Ausführung",
+          "description": "Die Arbeiten erfolgen kontrolliert mit laufender Abstimmung."
+        },
+        {
+          "title": "Übergabe",
+          "description": "Abschlussprüfung und geordnete Übergabe des Projekts."
+        }
+      ],
+      "cta": {
+        "title": "Planen Sie eine Renovierung oder einen Ausbau?",
+        "description": "Senden Sie uns Ihre Projektinfos und wir erstellen einen klaren Umsetzungsplan."
+      }
     },
     "mechanics": {
-      "title": "Tuning & Mechanik",
-      "subtitle": "Tuning, Reparatur und Vor-Ort-Service für Fahrzeuge und Maschinen.",
+      "hero": {
+        "title": "Tuning & Mechanik",
+        "subtitle": "Tuning, Reparatur und Diagnose für Fahrzeuge und Maschinen in Werkstatt oder vor Ort."
+      },
       "services": [
         "Auto-Tuning",
         "Traktor-Tuning",
@@ -38,11 +81,49 @@
         "Maschinenreparatur",
         "Vor-Ort-Service",
         "Fahrzeug- und Maschinendiagnostik"
-      ]
+      ],
+      "projects": [
+        {
+          "title": "Optimierung einer Arbeitsmaschine",
+          "description": "Mechanische und leistungsbezogene Anpassungen für stabilen Betrieb."
+        },
+        {
+          "title": "Service für Fahrzeugflotte",
+          "description": "Geplante Wartung und Fehlerbehebung für mehrere Fahrzeuge."
+        },
+        {
+          "title": "Diagnose und Reparatur",
+          "description": "Schnelle Fehleranalyse und zielgerichtete technische Instandsetzung."
+        }
+      ],
+      "process": [
+        {
+          "title": "Analyse",
+          "description": "Wir bewerten Zustand und Einsatzprofil der Technik."
+        },
+        {
+          "title": "Serviceplan",
+          "description": "Wir definieren Leistungsumfang, Zeitfenster und Kostenrahmen."
+        },
+        {
+          "title": "Umsetzung",
+          "description": "Die vereinbarten Maßnahmen werden mit Prüfungen je Phase durchgeführt."
+        },
+        {
+          "title": "Test & Übergabe",
+          "description": "Abschließender Funktionstest und Empfehlungen zur Wartung."
+        }
+      ],
+      "cta": {
+        "title": "Brauchen Sie schnellen Service oder Tuning?",
+        "description": "Kontaktieren Sie uns für Werkstatttermine oder Vor-Ort-Einsätze."
+      }
     },
     "it": {
-      "title": "Informatik",
-      "subtitle": "Web-, Desktop- und Automatisierungslösungen für echte Abläufe.",
+      "hero": {
+        "title": "Informatik",
+        "subtitle": "Web-, Desktop- und Automatisierungslösungen für messbare Geschäftsergebnisse."
+      },
       "services": [
         "Webseiten",
         "Webanwendungen",
@@ -50,7 +131,43 @@
         "Desktop-Anwendungen",
         "Softwarelösungen für Lagerhäuser",
         "Automatisierung von Geschäftsprozessen"
-      ]
+      ],
+      "projects": [
+        {
+          "title": "B2B-Webplattform",
+          "description": "Modulare Lösung für Bestellungen, Nutzerverwaltung und digitale Abläufe."
+        },
+        {
+          "title": "KPI-Dashboard für Führungskräfte",
+          "description": "Echtzeitkennzahlen mit klaren Warnungen und fokussierten Reports."
+        },
+        {
+          "title": "Automatisierung im Lagerfluss",
+          "description": "Verknüpfte Datenabläufe zur Reduktion manueller Arbeit und Fehler."
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery",
+          "description": "Wir definieren Ziele, Rollen und kritische Prozessengpässe."
+        },
+        {
+          "title": "Architektur",
+          "description": "Wir planen Systemstruktur, Datenfluss und Umsetzungsphasen."
+        },
+        {
+          "title": "Entwicklung",
+          "description": "Iterative Umsetzung mit regelmäßigen Demos und Feedbackschleifen."
+        },
+        {
+          "title": "Go-live",
+          "description": "Produktivstart, Team-Onboarding und laufende Optimierung."
+        }
+      ],
+      "cta": {
+        "title": "Benötigen Sie eine individuelle Softwarelösung?",
+        "description": "Teilen Sie uns Ihr Ziel mit und wir schlagen einen klaren Umsetzungsweg vor."
+      }
     }
   }
 }

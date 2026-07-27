@@ -12,13 +12,18 @@
     "common": {
       "services": "Storitve",
       "projects": "Projekti",
-      "projectsText": "Projekti bodo prikazani v naslednji fazi.",
-      "contact": "Kontakt",
-      "contactText": "Pišite nam za ponudbo ali posvet."
+      "process": "Proces dela",
+      "contactButton": "Kontaktirajte nas",
+      "email": "E-pošta",
+      "phone": "Telefon",
+      "emailValue": "info@bmm-cesar.si",
+      "phoneValue": "+386 40 000 000"
     },
     "construction": {
-      "title": "Gradbeništvo",
-      "subtitle": "Sanacije in prenove izvedemo natančno, hitro in z jasnim planom.",
+      "hero": {
+        "title": "Gradbeništvo",
+        "subtitle": "Sanacije, keramika in prenova prostorov z zanesljivo izvedbo od začetka do predaje."
+      },
       "services": [
         "Sanacije objektov",
         "Izdelava kopalnic",
@@ -26,11 +31,49 @@
         "Stopnišča",
         "Prenova notranjih prostorov",
         "Zaključna gradbena dela"
-      ]
+      ],
+      "projects": [
+        {
+          "title": "Prenova kopalniškega prostora",
+          "description": "Celovita prenova z novo keramiko, hidroizolacijo in detajlnimi zaključki."
+        },
+        {
+          "title": "Sanacija poslovnega objekta",
+          "description": "Sanacijska in zaključna dela v aktivnem poslovnem okolju brez izpadov."
+        },
+        {
+          "title": "Notranja prenova stanovanja",
+          "description": "Posodobitev bivalnih prostorov z usklajenimi materiali in natančno izvedbo."
+        }
+      ],
+      "process": [
+        {
+          "title": "Posvet",
+          "description": "Pregledamo objekt, potrebe in prioritete ter določimo jasen obseg del."
+        },
+        {
+          "title": "Načrtovanje",
+          "description": "Pripravimo terminski plan, materialni predlog in transparentno ponudbo."
+        },
+        {
+          "title": "Izvedba",
+          "description": "Dela vodimo natančno in sproti usklajujemo podrobnosti z naročnikom."
+        },
+        {
+          "title": "Predaja",
+          "description": "Projekt zaključimo s pregledom izvedbe in predajo urejenega prostora."
+        }
+      ],
+      "cta": {
+        "title": "Imate projekt v načrtu?",
+        "description": "Pošljite osnovne informacije in pripravimo vam konkreten predlog izvedbe."
+      }
     },
     "mechanics": {
-      "title": "Tuning & mehanika",
-      "subtitle": "Tuning in servis vozil ter strojev, tudi na terenu.",
+      "hero": {
+        "title": "Tuning & mehanika",
+        "subtitle": "Tuning, popravila in diagnostika vozil ter strojev v delavnici ali na terenu."
+      },
       "services": [
         "Avto tuning",
         "Tuning traktorjev",
@@ -38,11 +81,49 @@
         "Popravilo strojev",
         "Servis na terenu",
         "Diagnostika vozil in strojev"
-      ]
+      ],
+      "projects": [
+        {
+          "title": "Optimizacija delovnega stroja",
+          "description": "Nastavitve in mehanične izboljšave za boljši izkoristek na terenu."
+        },
+        {
+          "title": "Celoten servis voznega parka",
+          "description": "Načrtovan servis in odprava napak na več vozilih v kratkem časovnem oknu."
+        },
+        {
+          "title": "Diagnostika in odprava napak",
+          "description": "Natančna diagnostika elektronskih in mehanskih sistemov s hitro izvedbo popravila."
+        }
+      ],
+      "process": [
+        {
+          "title": "Pregled",
+          "description": "Analiziramo stanje vozila ali stroja in določimo prioritetne posege."
+        },
+        {
+          "title": "Načrt posega",
+          "description": "Predlagamo tuning ali servisni paket ter časovnico izvedbe."
+        },
+        {
+          "title": "Mehanska izvedba",
+          "description": "Izvedemo dogovorjene posege in sproti preverjamo delovanje sistema."
+        },
+        {
+          "title": "Test in predaja",
+          "description": "Opravimo testiranje in zagotovimo navodila za nadaljnje vzdrževanje."
+        }
+      ],
+      "cta": {
+        "title": "Potrebujete hiter servis ali tuning?",
+        "description": "Kontaktirajte nas za termin v delavnici ali servis na lokaciji."
+      }
     },
     "it": {
-      "title": "Računalništvo",
-      "subtitle": "Razvijamo spletne in namizne rešitve za dejanske poslovne procese.",
+      "hero": {
+        "title": "Računalništvo",
+        "subtitle": "Spletne, namizne in avtomatizacijske rešitve za rast in optimizacijo procesov."
+      },
       "services": [
         "Spletne strani",
         "Spletne aplikacije",
@@ -50,7 +131,43 @@
         "Namizne aplikacije",
         "Programske rešitve za skladišča",
         "Avtomatizacija poslovnih procesov"
-      ]
+      ],
+      "projects": [
+        {
+          "title": "B2B spletna platforma",
+          "description": "Modularna aplikacija za naročila, uporabnike in digitalno podporo prodaji."
+        },
+        {
+          "title": "Dashboard za vodstvo",
+          "description": "KPI spremljanje v realnem času z jasnimi grafi in opozorili."
+        },
+        {
+          "title": "Avtomatizacija skladiščnega toka",
+          "description": "Povezava podatkovnih virov za manj ročnega dela in manj napak pri odpremi."
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery",
+          "description": "Definiramo poslovne cilje, uporabnike in ključne scenarije uporabe."
+        },
+        {
+          "title": "Arhitektura",
+          "description": "Postavimo tehnični načrt, podatkovni model in razvojne faze."
+        },
+        {
+          "title": "Razvoj",
+          "description": "Gradimo rešitev iterativno z rednimi demonstracijami in povratnimi informacijami."
+        },
+        {
+          "title": "Zagon",
+          "description": "Izvedemo produkcijski zagon, onboarding ekipe in nadaljnjo optimizacijo."
+        }
+      ],
+      "cta": {
+        "title": "Želite digitalno rešitev po meri?",
+        "description": "Povejte nam vaš cilj in predlagamo izvedbo, ki se ujema z vašim poslovanjem."
+      }
     }
   }
 }

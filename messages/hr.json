@@ -12,13 +12,18 @@
     "common": {
       "services": "Usluge",
       "projects": "Projekti",
-      "projectsText": "Prikaz projekata dolazi u sljedećoj fazi.",
-      "contact": "Kontakt",
-      "contactText": "Javi nam se za ponudu ili savjetovanje."
+      "process": "Proces",
+      "contactButton": "Kontaktirajte nas",
+      "email": "Email",
+      "phone": "Telefon",
+      "emailValue": "info@bmm-cesar.si",
+      "phoneValue": "+386 40 000 000"
     },
     "construction": {
-      "title": "Građevina",
-      "subtitle": "Sanacije i završni građevinski radovi izvedeni precizno i pouzdano.",
+      "hero": {
+        "title": "Građevina",
+        "subtitle": "Sanacije, keramika i obnova interijera uz preciznu i pouzdanu izvedbu."
+      },
       "services": [
         "Sanacije objekata",
         "Izrada kupaonica",
@@ -26,11 +31,49 @@
         "Stepeništa",
         "Obnova unutarnjih prostora",
         "Završni građevinski radovi"
-      ]
+      ],
+      "projects": [
+        {
+          "title": "Obnova kupaonice",
+          "description": "Potpuna renovacija s novom keramikom i kvalitetnim završnim detaljima."
+        },
+        {
+          "title": "Sanacija poslovnog prostora",
+          "description": "Građevinski i završni radovi uz minimalan prekid poslovanja."
+        },
+        {
+          "title": "Preuređenje stambenog interijera",
+          "description": "Koordinirana obnova prostora s pažljivo odabranim materijalima."
+        }
+      ],
+      "process": [
+        {
+          "title": "Konzultacije",
+          "description": "Analiziramo stanje objekta i definiramo prioritete izvedbe."
+        },
+        {
+          "title": "Planiranje",
+          "description": "Pripremamo raspored, materijale i jasnu ponudu."
+        },
+        {
+          "title": "Izvedba",
+          "description": "Radove izvodimo kontrolirano uz stalnu komunikaciju."
+        },
+        {
+          "title": "Primopredaja",
+          "description": "Završni pregled i predaja uredno izvedenog prostora."
+        }
+      ],
+      "cta": {
+        "title": "Planirate obnovu ili gradnju?",
+        "description": "Pošaljite detalje projekta i pripremit ćemo konkretan prijedlog."
+      }
     },
     "mechanics": {
-      "title": "Tuning i mehanika",
-      "subtitle": "Tuning i servis vozila te strojeva, uključujući teren.",
+      "hero": {
+        "title": "Tuning i mehanika",
+        "subtitle": "Tuning, popravci i dijagnostika vozila i strojeva u radionici ili na terenu."
+      },
       "services": [
         "Auto tuning",
         "Tuning traktora",
@@ -38,11 +81,49 @@
         "Popravak strojeva",
         "Servis na terenu",
         "Dijagnostika vozila i strojeva"
-      ]
+      ],
+      "projects": [
+        {
+          "title": "Optimizacija radnog stroja",
+          "description": "Mehanička i performansna poboljšanja za stabilniji rad na terenu."
+        },
+        {
+          "title": "Servis voznog parka",
+          "description": "Planirani servis i otklanjanje kvarova na više vozila."
+        },
+        {
+          "title": "Dijagnostika i popravak",
+          "description": "Brza identifikacija kvara i ciljano otklanjanje problema."
+        }
+      ],
+      "process": [
+        {
+          "title": "Pregled",
+          "description": "Procjenjujemo stanje i određujemo ključne zahvate."
+        },
+        {
+          "title": "Plan servisa",
+          "description": "Definiramo opseg, rok i trošak servisa ili tuninga."
+        },
+        {
+          "title": "Izvedba",
+          "description": "Dogovoreni zahvati izvode se uz tehničku kontrolu svake faze."
+        },
+        {
+          "title": "Testiranje",
+          "description": "Završna provjera i smjernice za daljnje održavanje."
+        }
+      ],
+      "cta": {
+        "title": "Trebate brzi servis ili tuning?",
+        "description": "Javite nam se za termin u radionici ili izlazak na teren."
+      }
     },
     "it": {
-      "title": "Računarstvo",
-      "subtitle": "Razvoj web i desktop rješenja za stvarne poslovne procese.",
+      "hero": {
+        "title": "Računarstvo",
+        "subtitle": "Web, desktop i automatizacijska rješenja za mjerljive poslovne rezultate."
+      },
       "services": [
         "Web stranice",
         "Web aplikacije",
@@ -50,7 +131,43 @@
         "Desktop aplikacije",
         "Softverska rješenja za skladišta",
         "Automatizacija poslovnih procesa"
-      ]
+      ],
+      "projects": [
+        {
+          "title": "B2B web platforma",
+          "description": "Modularna platforma za narudžbe, korisnike i digitalne procese."
+        },
+        {
+          "title": "Dashboard za menadžment",
+          "description": "KPI prikaz u realnom vremenu s jasnim upozorenjima i izvještajima."
+        },
+        {
+          "title": "Automatizacija skladišta",
+          "description": "Povezani tokovi podataka koji smanjuju ručni rad i greške."
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery",
+          "description": "Definiramo ciljeve, korisničke uloge i ključne procese."
+        },
+        {
+          "title": "Arhitektura",
+          "description": "Postavljamo strukturu sustava, model podataka i faze izvedbe."
+        },
+        {
+          "title": "Razvoj",
+          "description": "Rješenje gradimo iterativno uz redovite povratne informacije."
+        },
+        {
+          "title": "Pokretanje",
+          "description": "Produkcijsko puštanje, onboarding i daljnja optimizacija."
+        }
+      ],
+      "cta": {
+        "title": "Treba vam prilagođeno softversko rješenje?",
+        "description": "Pošaljite nam cilj i predložit ćemo jasan plan implementacije."
+      }
     }
   }
 }

@@ -12,13 +12,18 @@
     "common": {
       "services": "Services",
       "projects": "Projects",
-      "projectsText": "Project showcases will be added in the next phase.",
-      "contact": "Contact",
-      "contactText": "Message us for a quote or a consultation."
+      "process": "Process",
+      "contactButton": "Get in touch",
+      "email": "Email",
+      "phone": "Phone",
+      "emailValue": "info@bmm-cesar.si",
+      "phoneValue": "+386 40 000 000"
     },
     "construction": {
-      "title": "Construction",
-      "subtitle": "Renovation and finishing work delivered with precision and a clear plan.",
+      "hero": {
+        "title": "Construction",
+        "subtitle": "Remediation, tiling, and interior renovation delivered with precision and control."
+      },
       "services": [
         "Building remediation",
         "Bathroom construction",
@@ -26,11 +31,49 @@
         "Staircases",
         "Interior renovation",
         "Final construction works"
-      ]
+      ],
+      "projects": [
+        {
+          "title": "Residential bathroom rebuild",
+          "description": "Complete bathroom renewal with modern ceramics and durable finishing details."
+        },
+        {
+          "title": "Commercial unit remediation",
+          "description": "Structural and finishing remediation delivered with minimal operational interruption."
+        },
+        {
+          "title": "Apartment interior refresh",
+          "description": "Coordinated interior renovation with clean execution and material consistency."
+        }
+      ],
+      "process": [
+        {
+          "title": "Consultation",
+          "description": "We inspect the site, define constraints, and align on scope and priorities."
+        },
+        {
+          "title": "Planning",
+          "description": "We prepare timeline, materials, and a transparent implementation proposal."
+        },
+        {
+          "title": "Execution",
+          "description": "Work is delivered with regular updates and strict quality control."
+        },
+        {
+          "title": "Delivery",
+          "description": "Final walkthrough, handover, and practical guidance for long-term upkeep."
+        }
+      ],
+      "cta": {
+        "title": "Planning a renovation or build?",
+        "description": "Share your project details and we will send a clear execution proposal."
+      }
     },
     "mechanics": {
-      "title": "Tuning & Mechanics",
-      "subtitle": "Vehicle and machinery tuning, repairs, and field service support.",
+      "hero": {
+        "title": "Tuning & Mechanics",
+        "subtitle": "Performance tuning, machine repair, and diagnostics for vehicles and equipment."
+      },
       "services": [
         "Car tuning",
         "Tractor tuning",
@@ -38,11 +81,49 @@
         "Machine repair",
         "Field service",
         "Vehicle and machine diagnostics"
-      ]
+      ],
+      "projects": [
+        {
+          "title": "Heavy machine optimization",
+          "description": "Mechanical and performance upgrades for improved field output and reliability."
+        },
+        {
+          "title": "Fleet maintenance cycle",
+          "description": "Scheduled servicing and issue resolution across multiple vehicles."
+        },
+        {
+          "title": "Diagnostic intervention",
+          "description": "Fast fault isolation and targeted mechanical/electronic repair delivery."
+        }
+      ],
+      "process": [
+        {
+          "title": "Assessment",
+          "description": "We assess condition, operating context, and the most valuable interventions."
+        },
+        {
+          "title": "Service plan",
+          "description": "We define tuning/service scope, costs, and implementation timing."
+        },
+        {
+          "title": "Workshop execution",
+          "description": "Agreed interventions are implemented with technical checks at each stage."
+        },
+        {
+          "title": "Testing & handover",
+          "description": "We test under load and provide maintenance recommendations."
+        }
+      ],
+      "cta": {
+        "title": "Need fast tuning or field service?",
+        "description": "Contact us to schedule workshop service or on-site intervention."
+      }
     },
     "it": {
-      "title": "Computer Science",
-      "subtitle": "Web, desktop, and automation software designed around real workflows.",
+      "hero": {
+        "title": "Computer Science",
+        "subtitle": "Web, desktop, and automation software built around measurable business outcomes."
+      },
       "services": [
         "Websites",
         "Web applications",
@@ -50,7 +131,43 @@
         "Desktop applications",
         "Warehouse software solutions",
         "Business process automation"
-      ]
+      ],
+      "projects": [
+        {
+          "title": "B2B web platform",
+          "description": "A modular platform for orders, access control, and digital operations support."
+        },
+        {
+          "title": "Executive KPI dashboard",
+          "description": "Real-time metrics, alerting, and focused reporting for decision-makers."
+        },
+        {
+          "title": "Warehouse flow automation",
+          "description": "Integrated workflows reducing manual work and shipping errors."
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery",
+          "description": "We define business goals, user roles, and critical workflow bottlenecks."
+        },
+        {
+          "title": "Architecture",
+          "description": "We design system structure, data flow, and delivery milestones."
+        },
+        {
+          "title": "Development",
+          "description": "The product is built iteratively with regular stakeholder feedback loops."
+        },
+        {
+          "title": "Launch",
+          "description": "Production rollout, team onboarding, and post-launch optimization."
+        }
+      ],
+      "cta": {
+        "title": "Need a custom software solution?",
+        "description": "Tell us your goals and we will propose a practical implementation path."
+      }
     }
   }
 }
