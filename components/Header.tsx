@@ -16,18 +16,18 @@ export default function Header() {
     { label: home("mechanics"), href: `/${locale}/mehanika` },
     { label: home("it"), href: `/${locale}/racunalnistvo` },
     { label: t("links.about"), href: `/${locale}/o-nas` },
-    { label: t("links.projects"), href: `/${locale}/projekti` },
+    { label: `${t("links.services")} & ${t("links.projects")}`, href: `/${locale}/projekti` },
     { label: t("links.contact"), href: `/${locale}/kontakt` }
   ]
 
   return (
     <header className="site-header sticky top-0 z-50 border-b shadow-[0_10px_40px_rgba(7,18,47,0.18)] backdrop-blur-2xl">
-      <div className="mx-auto grid w-full max-w-[1600px] grid-cols-[1fr_auto] items-center gap-x-4 gap-y-3 px-4 py-3 md:grid-cols-[auto_1fr_auto] md:px-6">
-        <Link href={`/${locale}`} className="flex min-w-0 items-center gap-3">
+      <div className="grid w-full grid-cols-[1fr_auto] items-center gap-x-4 gap-y-3 px-4 py-3 md:grid-cols-[auto_1fr_auto] md:px-6">
+        <Link href={`/${locale}`} className="flex shrink-0 items-center gap-3 whitespace-nowrap">
           <div className="header-brand-mark grid h-10 w-10 shrink-0 place-items-center rounded-xl border text-xs font-semibold tracking-[0.22em] text-white shadow-[0_8px_30px_rgba(59,130,246,0.2)]">
             B
           </div>
-          <div className="min-w-0 leading-tight">
+          <div className="leading-tight">
             <p className="text-base font-semibold tracking-[0.08em]">BMM Cesar</p>
             <p className="muted-text hidden truncate text-[11px] xl:block">{t("tagline")}</p>
           </div>

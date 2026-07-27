@@ -60,7 +60,6 @@ export default function HeroTriangle() {
     () => segments.find((segment) => segment.key === activeSegment) ?? segments[0],
     [activeSegment]
   )
-
   return (
     <section className="home-hero relative h-full overflow-hidden rounded-[2rem] border shadow-[0_32px_90px_rgba(3,7,18,0.28)] backdrop-blur-xl">
       <div className="home-hero-glow pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_15%,rgba(96,165,250,0.18),transparent_30%),radial-gradient(circle_at_16%_76%,rgba(245,158,11,0.13),transparent_32%),radial-gradient(circle_at_84%_76%,rgba(16,185,129,0.12),transparent_32%)]" />
@@ -72,14 +71,28 @@ export default function HeroTriangle() {
         <p className="muted-text mt-4 max-w-md text-sm leading-relaxed xl:text-base">{t("subtitle")}</p>
       </div>
 
-      <div className="surface-panel absolute right-8 top-8 z-20 hidden w-72 rounded-2xl border p-4 backdrop-blur-xl xl:block">
+      <div className="surface-panel absolute right-8 top-8 z-20 hidden w-80 rounded-2xl border p-5 backdrop-blur-xl xl:block">
         <p className="soft-text text-[10px] font-medium uppercase tracking-[0.22em]">{t("activeLabel")}</p>
-        <p className={`mt-1 text-lg font-semibold ${activeData.textClass}`}>{t(activeData.key)}</p>
-        <p className="muted-text mt-1.5 text-sm leading-relaxed">{t(`descriptions.${activeData.key}`)}</p>
+        <p className={`mt-2 text-xl font-semibold ${activeData.textClass}`}>{t(activeData.key)}</p>
+        <p className="muted-text mt-2 text-sm leading-relaxed">{t(`descriptions.${activeData.key}`)}</p>
+        <Link
+          href={`/${locale}/${activeData.path}`}
+          className="header-nav-link mt-4 flex items-center justify-between rounded-xl border px-3 py-2 text-xs font-medium uppercase tracking-[0.14em]"
+        >
+          {t("explore")}
+          <span aria-hidden>↗</span>
+        </Link>
       </div>
 
       <div className="absolute inset-x-[1%] bottom-[-2%] top-[1%]">
-        <svg viewBox="0 0 1200 720" preserveAspectRatio="xMidYMid meet" className="h-full w-full" aria-hidden>
+        <svg
+          viewBox="0 0 1200 720"
+          preserveAspectRatio="xMidYMid meet"
+          className="h-full w-full"
+          role="group"
+          aria-label={t("title")}
+        >
+          <title>{t("title")}</title>
           <defs>
             <filter id="soft-glow" x="-40%" y="-40%" width="180%" height="180%">
               <feGaussianBlur stdDeviation="18" result="blur" />
@@ -98,17 +111,24 @@ export default function HeroTriangle() {
               const active = segment.key === activeSegment
 
               return (
-                <motion.polygon
+                <a
                   key={segment.key}
-                  points={segment.polygon}
-                  fill={active ? segment.activeFill : segment.fill}
-                  stroke={active ? segment.accent : "rgba(186,230,253,0.24)"}
-                  strokeWidth={active ? 3.2 : 1.5}
-                  animate={{ opacity: active ? 1 : 0.82 }}
-                  transition={{ duration: 0.2 }}
-                  style={{ filter: active ? "url(#soft-glow)" : "none" }}
+                  href={`/${locale}/${segment.path}`}
+                  aria-label={t(segment.key)}
                   onMouseEnter={() => setActiveSegment(segment.key)}
-                />
+                  onFocus={() => setActiveSegment(segment.key)}
+                >
+                  <motion.polygon
+                    points={segment.polygon}
+                    fill={active ? segment.activeFill : segment.fill}
+                    stroke={active ? segment.accent : "rgba(186,230,253,0.24)"}
+                    strokeWidth={active ? 3.2 : 1.5}
+                    animate={{ opacity: active ? 1 : 0.82 }}
+                    transition={{ duration: 0.2 }}
+                    style={{ filter: active ? "url(#soft-glow)" : "none" }}
+                    className="cursor-pointer"
+                  />
+                </a>
               )
             })}
           </g>
@@ -127,19 +147,18 @@ export default function HeroTriangle() {
             href={`/${locale}/${segment.path}`}
             onMouseEnter={() => setActiveSegment(segment.key)}
             onFocus={() => setActiveSegment(segment.key)}
-            className={`home-link-card group absolute z-30 w-56 -translate-x-1/2 -translate-y-1/2 rounded-2xl border p-4 text-left shadow-[0_16px_45px_rgba(3,7,18,0.2)] backdrop-blur-xl transition duration-200 hover:-translate-y-[54%] xl:w-64 ${segment.linkPosition}`}
+            className={`home-link-card group absolute z-30 w-52 -translate-x-1/2 -translate-y-1/2 rounded-2xl border px-4 py-3 text-left shadow-[0_16px_45px_rgba(3,7,18,0.2)] backdrop-blur-xl transition duration-200 hover:-translate-y-[54%] xl:w-56 ${segment.linkPosition}`}
             data-active={active}
             style={{
               borderColor: active ? segment.accent : "var(--line)"
             }}
           >
             <div className="flex items-center justify-between gap-3">
-              <span className={`text-lg font-semibold tracking-tight ${active ? segment.textClass : ""}`}>{t(segment.key)}</span>
+              <span className={`font-semibold tracking-tight ${active ? segment.textClass : ""}`}>{t(segment.key)}</span>
               <span className="surface-subtle grid h-8 w-8 shrink-0 place-items-center rounded-full border text-sm transition group-hover:rotate-45">
                 ↗
               </span>
             </div>
-            <p className="muted-text mt-2 hidden text-xs leading-relaxed xl:block">{t(`descriptions.${segment.key}`)}</p>
           </Link>
         )
       })}

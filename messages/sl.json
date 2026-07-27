@@ -192,8 +192,30 @@
       "branchTitle": "Izberite področje",
       "branches": ["Gradbeništvo", "Tuning & mehanika", "Računalništvo"],
       "ctaTitle": "Pošljite povpraševanje",
-      "ctaText": "Če imate osnutek, fotografije ali osnovne zahteve, jih vključite v sporočilo.",
-      "ctaButton": "Pošlji e-pošto"
+      "ctaText": "Opišite, kaj potrebujete. Vaš odgovor bomo poslali neposredno na navedeni e-poštni naslov.",
+      "ctaButton": "Pošlji e-pošto",
+      "form": {
+        "email": "E-pošta",
+        "emailPlaceholder": "ime@podjetje.si",
+        "phone": "Telefon (neobvezno)",
+        "phonePlaceholder": "+386 ...",
+        "area": "Področje",
+        "subject": "Zadeva",
+        "subjectPlaceholder": "Kratek naslov povpraševanja",
+        "message": "Sporočilo",
+        "messagePlaceholder": "Opišite projekt, težavo ali želeni rezultat.",
+        "consent": "Strinjam se, da BMM Cesar uporabi te podatke za odgovor na moje povpraševanje.",
+        "submit": "Pošlji povpraševanje",
+        "sending": "Pošiljanje ...",
+        "success": "Hvala. Vaše povpraševanje je bilo poslano.",
+        "error": "Sporočila ni bilo mogoče poslati. Poskusite znova ali nam pišite po e-pošti.",
+        "areas": {
+          "general": "Splošno povpraševanje",
+          "construction": "Gradbeništvo",
+          "mechanics": "Tuning & mehanika",
+          "it": "Računalništvo"
+        }
+      }
     }
   }
 }

@@ -3,27 +3,27 @@
 :root {
   color-scheme: dark;
 
-  --bg: 10 18 43;
-  --fg: 242 245 255;
-  --surface: 24 33 69;
+  --bg: 35 39 48;
+  --fg: 248 250 252;
+  --surface: 55 61 72;
   --page-background:
-    radial-gradient(circle at 12% 4%, rgba(37, 99, 235, 0.34), transparent 32rem),
-    radial-gradient(circle at 88% 2%, rgba(139, 92, 246, 0.3), transparent 34rem),
-    radial-gradient(circle at 50% 92%, rgba(14, 165, 233, 0.2), transparent 40rem),
-    linear-gradient(145deg, #07132f 0%, #13204a 48%, #211747 100%);
-  --text-primary: rgb(242, 245, 255);
-  --text-muted: rgba(226, 232, 240, 0.72);
-  --text-soft: rgba(226, 232, 240, 0.52);
-  --line: rgba(186, 230, 253, 0.16);
-  --line-strong: rgba(186, 230, 253, 0.32);
-  --panel: rgba(18, 39, 86, 0.68);
-  --panel-solid: rgba(7, 18, 47, 0.88);
-  --subtle: rgba(255, 255, 255, 0.045);
-  --header: rgba(7, 18, 47, 0.8);
-  --footer: rgba(7, 14, 34, 0.92);
-  --hero-shell: linear-gradient(145deg, rgba(18, 39, 86, 0.78), rgba(37, 27, 78, 0.66));
-  --home-link: rgba(7, 18, 47, 0.58);
-  --home-link-active: rgba(7, 18, 47, 0.84);
+    radial-gradient(circle at 12% 4%, rgba(203, 213, 225, 0.18), transparent 32rem),
+    radial-gradient(circle at 88% 2%, rgba(196, 181, 253, 0.12), transparent 34rem),
+    radial-gradient(circle at 50% 92%, rgba(255, 255, 255, 0.08), transparent 40rem),
+    linear-gradient(145deg, #252a33 0%, #343945 48%, #2b2d36 100%);
+  --text-primary: rgb(248, 250, 252);
+  --text-muted: rgba(241, 245, 249, 0.76);
+  --text-soft: rgba(226, 232, 240, 0.56);
+  --line: rgba(226, 232, 240, 0.18);
+  --line-strong: rgba(241, 245, 249, 0.34);
+  --panel: rgba(55, 61, 72, 0.8);
+  --panel-solid: rgba(36, 40, 48, 0.92);
+  --subtle: rgba(255, 255, 255, 0.07);
+  --header: rgba(39, 43, 52, 0.88);
+  --footer: rgba(31, 34, 41, 0.96);
+  --hero-shell: linear-gradient(145deg, rgba(61, 67, 78, 0.9), rgba(50, 48, 60, 0.84));
+  --home-link: rgba(35, 39, 47, 0.68);
+  --home-link-active: rgba(35, 39, 47, 0.9);
 
   --construction: 245 158 11;
   --mechanics: 59 130 246;
@@ -181,4 +181,15 @@ body {
 
 .light .text-emerald-300 {
   color: rgb(4, 120, 87);
+}
+
+.page-shell {
+  width: min(90vw, 1720px);
+  margin-inline: auto;
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: 100%;
+  }
 }

@@ -23,7 +23,7 @@ type DomainPageProps = {
 
 export default function DomainPage(props: DomainPageProps) {
   return (
-    <div className="mx-auto w-full max-w-7xl space-y-6 px-4 pb-20 pt-8 md:px-6 md:pt-10">
+    <div className="page-shell space-y-6 px-4 pb-20 pt-8 md:px-6 md:pt-10">
       <PageHero eyebrow={props.eyebrow} title={props.title} subtitle={props.subtitle} accent={props.accent} />
       <ServicesGrid title={props.servicesTitle} items={props.services} accent={props.accent} />
       <ProjectGrid title={props.projectsTitle} items={props.projects} accent={props.accent} />
