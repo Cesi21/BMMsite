@@ -44,6 +44,7 @@ export default function ContactForm({
 }: ContactFormProps) {
   const [submissionState, setSubmissionState] =
     useState<SubmissionState>("idle")
+  const [selectedArea, setSelectedArea] = useState("general")
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -80,7 +81,7 @@ export default function ContactForm({
   }
 
   return (
-    <section className="surface-panel rounded-3xl border p-6 md:p-8">
+    <section className="contact-form-section surface-panel rounded-3xl border p-6 md:p-8" data-form-tone={selectedArea}>
       <div className="max-w-3xl">
         <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
         <p className="muted-text mt-3">{intro}</p>
@@ -100,7 +101,7 @@ export default function ContactForm({
           <label className="grid gap-2 text-sm font-medium">
             {labels.email}
             <input
-              className={fieldClassName}
+              className={`${fieldClassName} form-field`}
               name="email"
               type="email"
               autoComplete="email"
@@ -113,7 +114,7 @@ export default function ContactForm({
           <label className="grid gap-2 text-sm font-medium">
             {labels.phone}
             <input
-              className={fieldClassName}
+              className={`${fieldClassName} form-field`}
               name="phone"
               type="tel"
               autoComplete="tel"
@@ -127,9 +128,10 @@ export default function ContactForm({
           <label className="grid gap-2 text-sm font-medium">
             {labels.area}
             <select
-              className={fieldClassName}
+              className={`${fieldClassName} form-field`}
               name="area"
               defaultValue="general"
+              onChange={(event) => setSelectedArea(event.target.value)}
               required
             >
               <option value="general">{areas.general}</option>
@@ -142,7 +144,7 @@ export default function ContactForm({
           <label className="grid gap-2 text-sm font-medium">
             {labels.subject}
             <input
-              className={fieldClassName}
+              className={`${fieldClassName} form-field`}
               name="subject"
               type="text"
               placeholder={labels.subjectPlaceholder}
@@ -156,7 +158,7 @@ export default function ContactForm({
         <label className="grid gap-2 text-sm font-medium">
           {labels.message}
           <textarea
-            className={`${fieldClassName} min-h-40 resize-y`}
+            className={`${fieldClassName} form-field min-h-40 resize-y`}
             name="message"
             placeholder={labels.messagePlaceholder}
             minLength={20}
@@ -177,7 +179,7 @@ export default function ContactForm({
 
         <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center">
           <button
-            className="inline-flex min-w-48 items-center justify-center rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-500 disabled:cursor-wait disabled:opacity-65"
+            className="contact-submit inline-flex min-w-48 items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-white transition disabled:cursor-wait disabled:opacity-65"
             type="submit"
             disabled={submissionState === "sending"}
           >

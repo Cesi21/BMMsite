@@ -19,7 +19,7 @@ export default function ThemeToggle() {
       <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs" aria-hidden>
         ☾
       </span>
-      <span className="theme-toggle-knob relative block h-8 w-8 rounded-lg bg-blue-500 shadow-md transition-transform duration-200" />
+      <span className="theme-toggle-knob relative block h-8 w-8 rounded-lg shadow-md transition-transform duration-200" />
     </button>
   )
 }

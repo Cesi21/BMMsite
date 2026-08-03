@@ -6,7 +6,10 @@ type SiteFooterProps = {
 }
 
 export default async function SiteFooter({ locale }: SiteFooterProps) {
-  const t = await getTranslations("footer")
+  const [t, home] = await Promise.all([
+    getTranslations("footer"),
+    getTranslations("home"),
+  ])
 
   const links = [
     { label: t("about"), href: `/${locale}/o-nas` },
@@ -14,27 +17,46 @@ export default async function SiteFooter({ locale }: SiteFooterProps) {
     { label: t("contact"), href: `/${locale}/kontakt` }
   ]
 
+  const domains = [
+    { label: home("construction"), href: `/${locale}/gradbenistvo`, tone: "construction" },
+    { label: home("mechanics"), href: `/${locale}/mehanika`, tone: "mechanics" },
+    { label: home("it"), href: `/${locale}/racunalnistvo`, tone: "it" },
+  ]
+
   return (
-    <footer className="site-footer border-t">
-      <div className="page-shell grid gap-6 px-4 py-8 md:px-6 md:py-10">
+    <footer className="site-footer relative overflow-hidden border-t">
+      <div className="footer-spectrum" aria-hidden />
+      <div className="page-shell grid gap-8 px-4 py-10 md:grid-cols-[1fr_auto] md:px-6 md:py-12">
         <div>
           <p className="text-lg font-semibold">BMM Cesar</p>
           <p className="muted-text mt-2 max-w-2xl text-sm">{t("description")}</p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {domains.map((domain) => (
+              <Link
+                key={domain.href}
+                href={domain.href}
+                className="footer-domain-link rounded-full border px-3 py-1.5 text-xs font-semibold"
+                data-tone={domain.tone}
+              >
+                {domain.label}
+              </Link>
+            ))}
+          </div>
         </div>
 
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-col items-start gap-2 md:items-end">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="header-nav-link rounded-lg border px-3 py-2 text-sm transition"
+              className="footer-link text-sm font-medium"
             >
               {link.label}
             </Link>
           ))}
         </div>
 
-        <p className="soft-text text-xs">{t("copyright")}</p>
+        <p className="soft-text text-xs md:col-span-2">{t("copyright")}</p>
       </div>
     </footer>
   )

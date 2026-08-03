@@ -29,6 +29,8 @@
       "eyebrow": "BMM Cesar",
       "services": "Storitve",
       "projects": "Primeri rešitev",
+      "sampleProject": "Vzorčni projekt",
+      "result": "Predvideni rezultat",
       "process": "Kako poteka sodelovanje",
       "contact": "Naslednji korak",
       "contactCta": "Kontaktirajte nas"
@@ -45,9 +47,36 @@
         "Svetovanje pred izvedbo"
       ],
       "projects": [
-        { "title": "Prenove stanovanj", "text": "Od priprave prostora do zadnjih detajlov zaključnih del." },
-        { "title": "Kopalnice po meri", "text": "Funkcionalna razporeditev, kakovostna keramika in natančna izvedba." },
-        { "title": "Stopnišča", "text": "Obnova ali nova izvedba s poudarkom na trajnosti in estetiki." }
+        {
+          "title": "Prenova kopalnice v vrstni hiši",
+          "text": "Nova razporeditev z walk-in prho, vgradno nišo, talnim ogrevanjem in keramiko velikega formata.",
+          "image": "/projects/construction/bathroom.jpg",
+          "alt": "Svetla sodobna kopalnica s stekleno prho in črnimi armaturami",
+          "meta": "Ljubljana • 8 delovnih dni",
+          "result": "Več uporabnega prostora in površine, ki jih je enostavno vzdrževati.",
+          "credit": "Foto: Lotus Design N Print",
+          "creditUrl": "https://unsplash.com/photos/g51F6-WYzyU"
+        },
+        {
+          "title": "Celovita prenova 62 m² stanovanja",
+          "text": "Odstranitev starih oblog, priprava sten in tlakov, prilagoditev inštalacij ter vsa zaključna dela.",
+          "image": "/projects/construction/renovation.jpg",
+          "alt": "Notranji prostor med prenovo z vidnimi betonskimi stenami",
+          "meta": "Domžale • 6 tednov",
+          "result": "Usklajen potek vseh faz in stanovanje, pripravljeno za vselitev.",
+          "credit": "Foto: Steffen Lemmerzahl",
+          "creditUrl": "https://unsplash.com/photos/pBZBbCqyW8M"
+        },
+        {
+          "title": "Obnova notranjega stopnišča",
+          "text": "Nova hrastova pohodna površina, steklena ograja in natančna navezava stopnic na obstoječe tlake.",
+          "image": "/projects/construction/staircase.jpg",
+          "alt": "Sodobno notranje stopnišče z lesenimi stopnicami in stekleno ograjo",
+          "meta": "Kranj • 9 delovnih dni",
+          "result": "Varnejše stopnišče in svetlejša povezava med etažama.",
+          "credit": "Foto: Point3D",
+          "creditUrl": "https://unsplash.com/photos/4fJvfv4rRuY"
+        }
       ],
       "process": [
         "Ogled in uskladitev želja",
@@ -69,9 +98,36 @@
         "Terenski servis"
       ],
       "projects": [
-        { "title": "Diagnostika na terenu", "text": "Hitra ugotovitev napake in predlog učinkovitega posega." },
-        { "title": "Optimizacija delovnih strojev", "text": "Nastavitve za boljši odziv, navor in učinkovitost." },
-        { "title": "Popravila brez dolgih izpadov", "text": "Praktične rešitve, da je oprema čim prej spet v pogonu." }
+        {
+          "title": "Diagnostika elektronske napake",
+          "text": "Pregled napajalnih tokokrogov, senzorjev in shranjenih napak ter potrditev vzroka pred menjavo delov.",
+          "image": "/projects/mechanics/diagnostics.jpg",
+          "alt": "Roke mehanika pri diagnostiki električnega sistema avtomobila",
+          "meta": "Ljubljana • poseg na terenu",
+          "result": "Ciljno popravilo brez nepotrebne menjave komponent.",
+          "credit": "Foto: Maxim Hopman",
+          "creditUrl": "https://unsplash.com/photos/s4d_ESS0ylA"
+        },
+        {
+          "title": "Servis in optimizacija dostavnika",
+          "text": "Preventivni servis motorja, pregled sesalnega sistema in prilagoditev odziva za vsakodnevne dostavne poti.",
+          "image": "/projects/mechanics/engine.jpg",
+          "alt": "Mehanik z orodjem pregleduje motor avtomobila",
+          "meta": "Kamnik • 1 delovni dan",
+          "result": "Mirnejši tek motorja in bolj predvidljiv odziv pod obremenitvijo.",
+          "credit": "Foto: Sasun Bughdaryan",
+          "creditUrl": "https://unsplash.com/photos/9gB7APNSquE"
+        },
+        {
+          "title": "Optimizacija traktorja za delo na klancu",
+          "text": "Meritve pred posegom, varna prilagoditev krmiljenja motorja in preizkus pri realni delovni obremenitvi.",
+          "image": "/projects/mechanics/tractor.jpg",
+          "alt": "Zelen traktor s škropilnico med delom na polju",
+          "meta": "Gorenjska • terenski servis",
+          "result": "Bolj enakomeren navor in manj prestavljanja pri težjem delu.",
+          "credit": "Foto: Mirko Fabian",
+          "creditUrl": "https://unsplash.com/photos/S_7RA_uX9sU"
+        }
       ],
       "process": [
         "Diagnostika in pregled stanja",
@@ -93,9 +149,36 @@
         "Avtomatizacija poslovnih procesov"
       ],
       "projects": [
-        { "title": "Predstavitvene spletne strani", "text": "Moderen nastop podjetja s poudarkom na hitrosti in jasnem sporočilu." },
-        { "title": "Operativni dashboardi", "text": "Pregled ključnih kazalnikov za prodajo, servis ali proizvodnjo." },
-        { "title": "Poslovna avtomatizacija", "text": "Manj ročnega dela z integracijami in avtomatiziranimi tokovi." }
+        {
+          "title": "Spletna stran za lokalnega izvajalca",
+          "text": "Večjezična predstavitvena stran z jasnimi storitvami, galerijo referenc in obrazcem za kvalificirana povpraševanja.",
+          "image": "/projects/it/web-development.jpg",
+          "alt": "Prenosnik s programsko kodo na urejeni delovni mizi",
+          "meta": "Next.js • 3 tedni",
+          "result": "Hiter mobilni nastop in jasna pot od obiska do povpraševanja.",
+          "credit": "Foto: Bayu Syaits",
+          "creditUrl": "https://unsplash.com/photos/oYzjGQ7LCVE"
+        },
+        {
+          "title": "Operativni dashboard za servisno ekipo",
+          "text": "Enoten pregled odprtih nalogov, odzivnih časov, porabljenega materiala in tedenske obremenitve ekipe.",
+          "image": "/projects/it/dashboard.jpg",
+          "alt": "Prenosnik s prikazom poslovnih grafov in statistike",
+          "meta": "Dashboard • 5 tednov",
+          "result": "Manj ločenih Excel datotek in hitrejše dnevno razporejanje dela.",
+          "credit": "Foto: Carlos Muza",
+          "creditUrl": "https://unsplash.com/photos/hpjSkU2UYSU"
+        },
+        {
+          "title": "Avtomatizacija sprejema povpraševanj",
+          "text": "Povezava spletnega obrazca, e-pošte in evidence strank z avtomatsko kategorizacijo ter opomniki.",
+          "image": "/projects/it/collaboration.jpg",
+          "alt": "Sodelavca skupaj pregledujeta vsebino na prenosniku",
+          "meta": "Integracija • 2 tedna",
+          "result": "Vsako povpraševanje dobi odgovorno osebo in sledljiv naslednji korak.",
+          "credit": "Foto: John / Unsplash",
+          "creditUrl": "https://unsplash.com/photos/FlPc9_VocJ4"
+        }
       ],
       "process": [
         "Kratek discovery klic",

@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server"
 import DomainPage from "@/components/DomainPage"
+import type { ProjectItem } from "@/components/ProjectGrid"
 
 export default async function ConstructionPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -15,7 +16,9 @@ export default async function ConstructionPage({ params }: { params: Promise<{ l
       servicesTitle={t("common.services")}
       services={t.raw("construction.services") as string[]}
       projectsTitle={t("common.projects")}
-      projects={t.raw("construction.projects") as { title: string; text: string }[]}
+      projectSampleLabel={t("common.sampleProject")}
+      projectResultLabel={t("common.result")}
+      projects={t.raw("construction.projects") as ProjectItem[]}
       processTitle={t("common.process")}
       processSteps={t.raw("construction.process") as string[]}
       contactTitle={t("common.contact")}

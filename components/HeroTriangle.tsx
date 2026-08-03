@@ -61,26 +61,31 @@ export default function HeroTriangle() {
     [activeSegment]
   )
   return (
-    <section className="home-hero relative h-full overflow-hidden rounded-[2rem] border shadow-[0_32px_90px_rgba(3,7,18,0.28)] backdrop-blur-xl">
-      <div className="home-hero-glow pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_15%,rgba(96,165,250,0.18),transparent_30%),radial-gradient(circle_at_16%_76%,rgba(245,158,11,0.13),transparent_32%),radial-gradient(circle_at_84%_76%,rgba(16,185,129,0.12),transparent_32%)]" />
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-200/50 to-transparent" />
+    <section className="home-hero relative h-full overflow-hidden rounded-[2rem] border backdrop-blur-xl">
+      <div className="home-hero-glow pointer-events-none absolute inset-0" />
+      <div className="ambient-grid pointer-events-none absolute inset-0 opacity-40" />
+      <div className="hero-spectrum-line" aria-hidden>
+        <span />
+        <span />
+        <span />
+      </div>
 
-      <div className="absolute left-8 top-8 z-20 max-w-sm xl:left-12 xl:top-10 xl:max-w-md">
+      <div className="absolute left-8 top-8 z-20 max-w-sm xl:left-12 xl:top-10 xl:max-w-lg">
         <p className="soft-text text-xs font-medium uppercase tracking-[0.24em]">{t("eyebrow")}</p>
-        <h1 className="mt-3 text-4xl font-semibold leading-[1.04] tracking-[-0.04em] text-[var(--text-primary)] xl:text-5xl">{t("title")}</h1>
+        <h1 className="mt-3 text-4xl font-semibold leading-[1.02] tracking-[-0.045em] text-[var(--text-primary)] xl:text-[3.35rem]">{t("title")}</h1>
         <p className="muted-text mt-4 max-w-md text-sm leading-relaxed xl:text-base">{t("subtitle")}</p>
       </div>
 
-      <div className="surface-panel absolute right-8 top-8 z-20 hidden w-80 rounded-2xl border p-5 backdrop-blur-xl xl:block">
-        <p className="soft-text text-[10px] font-medium uppercase tracking-[0.22em]">{t("activeLabel")}</p>
+      <div className="active-preview surface-panel absolute right-8 top-8 z-20 hidden w-80 overflow-hidden rounded-2xl border p-5 backdrop-blur-xl xl:block" data-tone={activeData.key}>
+        <div className="active-preview-mark" aria-hidden />
+        <p className="soft-text relative text-[10px] font-medium uppercase tracking-[0.22em]">{t("activeLabel")}</p>
         <p className={`mt-2 text-xl font-semibold ${activeData.textClass}`}>{t(activeData.key)}</p>
         <p className="muted-text mt-2 text-sm leading-relaxed">{t(`descriptions.${activeData.key}`)}</p>
         <Link
           href={`/${locale}/${activeData.path}`}
-          className="header-nav-link mt-4 flex items-center justify-between rounded-xl border px-3 py-2 text-xs font-medium uppercase tracking-[0.14em]"
+          className="header-nav-link mt-4 block rounded-xl border px-3 py-2 text-center text-xs font-medium uppercase tracking-[0.14em]"
         >
           {t("explore")}
-          <span aria-hidden>↗</span>
         </Link>
       </div>
 
@@ -147,18 +152,14 @@ export default function HeroTriangle() {
             href={`/${locale}/${segment.path}`}
             onMouseEnter={() => setActiveSegment(segment.key)}
             onFocus={() => setActiveSegment(segment.key)}
-            className={`home-link-card group absolute z-30 w-52 -translate-x-1/2 -translate-y-1/2 rounded-2xl border px-4 py-3 text-left shadow-[0_16px_45px_rgba(3,7,18,0.2)] backdrop-blur-xl transition duration-200 hover:-translate-y-[54%] xl:w-56 ${segment.linkPosition}`}
+            className={`home-link-card absolute z-30 w-52 -translate-x-1/2 -translate-y-1/2 rounded-2xl border px-4 py-3 text-center shadow-[0_16px_45px_rgba(3,7,18,0.2)] backdrop-blur-xl transition-colors duration-200 xl:w-56 ${segment.linkPosition}`}
             data-active={active}
+            data-tone={segment.key}
             style={{
               borderColor: active ? segment.accent : "var(--line)"
             }}
           >
-            <div className="flex items-center justify-between gap-3">
-              <span className={`font-semibold tracking-tight ${active ? segment.textClass : ""}`}>{t(segment.key)}</span>
-              <span className="surface-subtle grid h-8 w-8 shrink-0 place-items-center rounded-full border text-sm transition group-hover:rotate-45">
-                ↗
-              </span>
-            </div>
+            <span className={`font-semibold tracking-tight ${active ? segment.textClass : ""}`}>{t(segment.key)}</span>
           </Link>
         )
       })}

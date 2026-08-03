@@ -10,7 +10,7 @@ export default async function ContactPage() {
   ])
 
   return (
-    <div className="page-shell space-y-6 px-4 pb-20 pt-8 md:px-6 md:pt-10">
+    <div className="contact-page page-shell space-y-6 px-4 pb-20 pt-8 md:px-6 md:pt-10">
       <PageHero eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} accent="rgba(255,255,255,0.2)" />
       <ContactDetails
         title={t("detailsTitle")}

@@ -19,17 +19,23 @@ export default function CTAContact({ title, text, button, href }: CTAContactProp
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.4 }}
-      className="surface-panel rounded-3xl border p-6 md:p-8"
+      className="contact-cta surface-panel relative overflow-hidden rounded-3xl border p-6 md:p-9"
     >
-      <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
-      <p className="muted-text mt-3 max-w-2xl">{text}</p>
+      <div className="contact-cta-glow" aria-hidden />
+      <div className="relative flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+        <div>
+          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">{title}</h2>
+          <p className="muted-text mt-3 max-w-2xl leading-relaxed">{text}</p>
+        </div>
       <Link
         href={href}
         {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
-        className="header-nav-link mt-5 inline-flex rounded-xl border px-5 py-2.5 text-sm font-medium transition"
+          className="accent-button inline-flex shrink-0 items-center gap-3 rounded-full border px-5 py-3 text-sm font-semibold transition"
       >
-        {button}
+          {button}
+          <span aria-hidden>↗</span>
       </Link>
+      </div>
     </motion.section>
   )
 }

@@ -1,7 +1,340 @@
 {
-  "nav": {"tagline": "Bau • Tuning & Mechanik • IT / Software", "links": {"home": "Start", "about": "Über uns", "services": "Leistungen", "projects": "Projekte", "contact": "Kontakt"}},
-  "home": {"construction": "Bau", "mechanics": "Tuning & Mechanik", "it": "IT / Software", "eyebrow": "BMM Cesar", "title": "Drei Bereiche. Ein Team, das baut, optimiert und entwickelt.", "subtitle": "Familienunternehmen von drei Brüdern: Praxis vor Ort, Maschinenwissen und digitale Lösungen.", "explore": "Öffnen", "activeLabel": "Ausgewählter Bereich", "descriptions": {"construction": "Renovierungen, Bäder, Keramik und Ausbauarbeiten.", "mechanics": "Diagnose, Reparatur und Tuning von Fahrzeugen und Maschinen.", "it": "Webseiten, Apps, Dashboards und Prozessautomatisierung."}},
-  "domains": {"common": {"eyebrow": "BMM Cesar", "services": "Leistungen", "projects": "Lösungsbeispiele", "process": "Ablauf", "contact": "Nächster Schritt", "contactCta": "Kontakt aufnehmen"}, "construction": {"title": "Bau", "subtitle": "Renovierung und Ausbau mit klarer Planung und präziser Ausführung.", "services": ["Komplette/teilweise Renovierungen", "Badsanierung", "Keramikverlegung", "Treppen", "Ausbauarbeiten", "Beratung vor Projektstart"], "projects": [{"title": "Wohnungsrenovierungen", "text": "Von Vorbereitung bis zu den finalen Details."}, {"title": "Bäder nach Maß", "text": "Funktionale Aufteilung und langlebige Materialien."}, {"title": "Treppenprojekte", "text": "Neubau oder Sanierung mit Fokus auf Qualität."}], "process": ["Besichtigung", "Angebot und Plan", "Umsetzung in Phasen", "Abschluss und Übergabe"], "contact": "Senden Sie uns eine kurze Projektbeschreibung für einen Besichtigungstermin."}, "mechanics": {"title": "Tuning & Mechanik", "subtitle": "Zuverlässige Diagnose, Reparatur und Tuning für Fahrzeuge und Arbeitsmaschinen.", "services": ["Car tuning", "Tractor tuning", "Tuning von Baumaschinen", "Diagnose", "Maschinenreparatur", "Vor-Ort-Service"], "projects": [{"title": "Vor-Ort-Diagnose", "text": "Schnelle Fehleranalyse und klarer Maßnahmenplan."}, {"title": "Maschinenoptimierung", "text": "Anpassungen für bessere Leistung und Effizienz."}, {"title": "Schneller Reparaturservice", "text": "Lösungen zur Reduzierung von Ausfallzeiten."}], "process": ["Diagnose", "Leistungsumfang abstimmen", "Reparatur oder Tuning", "Test und Empfehlung"], "contact": "Für Service/Tuning bitte Modell und Problem kurz senden."}, "it": {"title": "IT / Software", "subtitle": "Digitale Lösungen für reale Geschäftsprozesse.", "services": ["Webseiten", "Web-Apps", "Dashboards", "Desktop-Anwendungen", "Individuelle Software", "Prozessautomatisierung"], "projects": [{"title": "Unternehmenswebseiten", "text": "Schnell, modern und mit klarer Botschaft."}, {"title": "Operative Dashboards", "text": "Kennzahlen und Überblick für den Alltag."}, {"title": "Automatisierung", "text": "Integrationen und Workflows für weniger manuelle Arbeit."}], "process": ["Erstgespräch", "Architektur und Umfang", "Iterative Entwicklung", "Go-live und Support"], "contact": "Beschreiben Sie Ihren Prozess – wir schlagen eine passende Lösung vor."}},
-  "footer": {"about": "Über uns", "services": "Leistungen", "projects": "Projekte", "contact": "Kontakt", "description": "BMM Cesar ist ein Familienunternehmen von drei Brüdern mit Fokus auf Bau, Mechanik und Software.", "copyright": "© 2026 BMM Cesar. Alle Rechte vorbehalten."},
-  "pages": {"about": {"eyebrow": "BMM Cesar", "title": "Über uns", "subtitle": "Drei Brüder, drei Fachbereiche, ein Qualitätsstandard.", "missionTitle": "Was wir aufbauen", "missionText": "Wir sind keine generische Agentur, sondern ein Team für praktische Umsetzung.", "storyTitle": "Warum drei Bereiche", "storyText": "Projekte überschneiden sich oft – deshalb verbinden wir Bau, Technik und Software unter einer Marke.", "teamTitle": "Arbeitsweise", "teamText": "Wir wachsen Schritt für Schritt und arbeiten ehrlich, direkt und ohne leere Versprechen."}, "services": {"eyebrow": "BMM Cesar", "title": "Leistungen", "subtitle": "Jeder Bereich hat seinen Fokus, zusammen bilden sie ein abgestimmtes Gesamtangebot.", "branches": [{"title": "Bau", "description": "Renovierung und Ausbau für Wohn- und Geschäftsobjekte.", "services": ["Renovierungen", "Bäder", "Keramik", "Treppen", "Ausbau"], "cta": "Bereich öffnen", "path": "gradbenistvo", "accent": "rgba(245,158,11,0.35)"}, {"title": "Tuning & Mechanik", "description": "Diagnose, Tuning und Service für Fahrzeuge und Maschinen.", "services": ["car tuning", "tractor tuning", "Diagnose", "Reparatur", "field service"], "cta": "Bereich öffnen", "path": "mehanika", "accent": "rgba(59,130,246,0.35)"}, {"title": "IT / Software", "description": "Digitale Lösungen für Online-Auftritt und Betriebsprozesse.", "services": ["websites", "web apps", "dashboards", "desktop apps", "Automatisierung"], "cta": "Bereich öffnen", "path": "racunalnistvo", "accent": "rgba(16,185,129,0.35)"}], "approachTitle": "So arbeiten wir", "approachText": "Start mit kurzem Gespräch, dann klare Ziele, Umfang und transparente Umsetzung."}, "projects": {"eyebrow": "BMM Cesar", "title": "Arbeitsfelder und Lösungsbeispiele", "subtitle": "Keine übertriebenen Referenzen, sondern realistische Beispiele aus unserem Alltag.", "noteTitle": "Transparente Darstellung", "noteText": "Das öffentliche Portfolio wächst noch. Die folgenden Punkte zeigen typische Aufgabenbereiche.", "featuredTitle": "Lösungsbeispiele", "featured": [{"title": "Bäder, Keramik, Renovierungen", "text": "Innenausbau von der Vorbereitung bis zur Übergabe."}, {"title": "Diagnose und Tuning", "text": "Vor-Ort-Einsätze, Optimierung und Reparatur."}, {"title": "Webseiten und Dashboards", "text": "Software für besseren Überblick und effizientere Abläufe."}], "workflowTitle": "Typischer Ablauf", "workflow": ["Erstgespräch", "Klares Angebot", "Umsetzung mit Updates", "Übergabe und Support"]}, "contact": {"eyebrow": "BMM Cesar", "title": "Kontakt", "subtitle": "Senden Sie Ihre Anfrage und nennen Sie den Bereich: Bau, Mechanik oder IT.", "detailsTitle": "Kontaktdaten", "detailsText": "Für schnelle Rückmeldung bitte Ort und kurze Beschreibung hinzufügen.", "labels": {"email": "E-Mail", "phone": "Telefon", "location": "Ort"}, "email": "info@bmm-cesar.si", "phone": "+386 40 000 000", "location": "Region Ljubljana", "hours": "Erreichbar: Mo–Fr, 08:00–17:00", "branchTitle": "Bereich wählen", "branches": ["Bau", "Tuning & Mechanik", "IT / Software"], "ctaTitle": "Anfrage senden", "ctaText": "Beschreiben Sie kurz Ihr Anliegen. Wir antworten direkt an die angegebene E-Mail-Adresse.", "ctaButton": "E-Mail senden", "form": {"email": "E-Mail", "emailPlaceholder": "name@unternehmen.de", "phone": "Telefon (optional)", "phonePlaceholder": "+49 ...", "area": "Bereich", "subject": "Betreff", "subjectPlaceholder": "Kurzer Titel der Anfrage", "message": "Nachricht", "messagePlaceholder": "Beschreiben Sie das Projekt, Problem oder gewünschte Ergebnis.", "consent": "Ich stimme zu, dass BMM Cesar diese Angaben zur Beantwortung meiner Anfrage verwendet.", "submit": "Anfrage senden", "sending": "Wird gesendet ...", "success": "Vielen Dank. Ihre Anfrage wurde gesendet.", "error": "Ihre Nachricht konnte nicht gesendet werden. Versuchen Sie es erneut oder schreiben Sie uns per E-Mail.", "areas": {"general": "Allgemeine Anfrage", "construction": "Bau", "mechanics": "Tuning & Mechanik", "it": "IT / Software"}}}}
+  "nav": {
+    "tagline": "Bau • Tuning & Mechanik • IT / Software",
+    "links": {
+      "home": "Start",
+      "about": "Über uns",
+      "services": "Leistungen",
+      "projects": "Projekte",
+      "contact": "Kontakt"
+    }
+  },
+  "home": {
+    "construction": "Bau",
+    "mechanics": "Tuning & Mechanik",
+    "it": "IT / Software",
+    "eyebrow": "BMM Cesar",
+    "title": "Drei Bereiche. Ein Team, das baut, optimiert und entwickelt.",
+    "subtitle": "Familienunternehmen von drei Brüdern: Praxis vor Ort, Maschinenwissen und digitale Lösungen.",
+    "explore": "Öffnen",
+    "activeLabel": "Ausgewählter Bereich",
+    "descriptions": {
+      "construction": "Renovierungen, Bäder, Keramik und Ausbauarbeiten.",
+      "mechanics": "Diagnose, Reparatur und Tuning von Fahrzeugen und Maschinen.",
+      "it": "Webseiten, Apps, Dashboards und Prozessautomatisierung."
+    }
+  },
+  "domains": {
+    "common": {
+      "eyebrow": "BMM Cesar",
+      "services": "Leistungen",
+      "projects": "Lösungsbeispiele",
+      "sampleProject": "Beispielprojekt",
+      "result": "Erwartetes Ergebnis",
+      "process": "Ablauf",
+      "contact": "Nächster Schritt",
+      "contactCta": "Kontakt aufnehmen"
+    },
+    "construction": {
+      "title": "Bau",
+      "subtitle": "Renovierung und Ausbau mit klarer Planung und präziser Ausführung.",
+      "services": [
+        "Komplette/teilweise Renovierungen",
+        "Badsanierung",
+        "Keramikverlegung",
+        "Treppen",
+        "Ausbauarbeiten",
+        "Beratung vor Projektstart"
+      ],
+      "projects": [
+        {
+          "title": "Badsanierung in einem Reihenhaus",
+          "text": "Neue Aufteilung mit Walk-in-Dusche, Wandnische, Fußbodenheizung und großformatigen Fliesen.",
+          "image": "/projects/construction/bathroom.jpg",
+          "alt": "Helles modernes Bad mit Glasdusche und schwarzen Armaturen",
+          "meta": "Ljubljana • 8 Arbeitstage",
+          "result": "Mehr nutzbarer Raum und pflegeleichtere Oberflächen.",
+          "credit": "Foto: Lotus Design N Print",
+          "creditUrl": "https://unsplash.com/photos/g51F6-WYzyU"
+        },
+        {
+          "title": "Komplettrenovierung einer 62-m²-Wohnung",
+          "text": "Entfernung alter Beläge, Vorbereitung von Wänden und Böden, Anpassung der Installationen und sämtliche Ausbauarbeiten.",
+          "image": "/projects/construction/renovation.jpg",
+          "alt": "Innenraum während der Renovierung mit sichtbaren Betonwänden",
+          "meta": "Domžale • 6 Wochen",
+          "result": "Koordinierte Bauphasen und eine bezugsfertige Wohnung.",
+          "credit": "Foto: Steffen Lemmerzahl",
+          "creditUrl": "https://unsplash.com/photos/pBZBbCqyW8M"
+        },
+        {
+          "title": "Sanierung einer Innentreppe",
+          "text": "Neue Eichenstufen, Glasgeländer und präzise Übergänge zu den vorhandenen Bodenbelägen.",
+          "image": "/projects/construction/staircase.jpg",
+          "alt": "Moderne Innentreppe mit Holzstufen und Glasgeländer",
+          "meta": "Kranj • 9 Arbeitstage",
+          "result": "Eine sicherere Treppe und eine hellere Verbindung zwischen den Etagen.",
+          "credit": "Foto: Point3D",
+          "creditUrl": "https://unsplash.com/photos/4fJvfv4rRuY"
+        }
+      ],
+      "process": [
+        "Besichtigung",
+        "Angebot und Plan",
+        "Umsetzung in Phasen",
+        "Abschluss und Übergabe"
+      ],
+      "contact": "Senden Sie uns eine kurze Projektbeschreibung für einen Besichtigungstermin."
+    },
+    "mechanics": {
+      "title": "Tuning & Mechanik",
+      "subtitle": "Zuverlässige Diagnose, Reparatur und Tuning für Fahrzeuge und Arbeitsmaschinen.",
+      "services": [
+        "Car tuning",
+        "Tractor tuning",
+        "Tuning von Baumaschinen",
+        "Diagnose",
+        "Maschinenreparatur",
+        "Vor-Ort-Service"
+      ],
+      "projects": [
+        {
+          "title": "Diagnose eines Elektronikfehlers",
+          "text": "Prüfung von Stromkreisen, Sensoren und gespeicherten Fehlercodes, bevor Teile ersetzt werden.",
+          "image": "/projects/mechanics/diagnostics.jpg",
+          "alt": "Hände eines Mechanikers bei der Diagnose der Fahrzeugelektrik",
+          "meta": "Ljubljana • Vor-Ort-Einsatz",
+          "result": "Gezielte Reparatur ohne unnötigen Austausch von Komponenten.",
+          "credit": "Foto: Maxim Hopman",
+          "creditUrl": "https://unsplash.com/photos/s4d_ESS0ylA"
+        },
+        {
+          "title": "Service und Optimierung eines Lieferwagens",
+          "text": "Vorbeugender Motorservice, Prüfung des Ansaugsystems und optimiertes Ansprechverhalten für tägliche Lieferfahrten.",
+          "image": "/projects/mechanics/engine.jpg",
+          "alt": "Mechaniker prüft einen Automotor mit einem Werkzeug",
+          "meta": "Kamnik • 1 Arbeitstag",
+          "result": "Ruhigerer Motorlauf und berechenbareres Verhalten unter Last.",
+          "credit": "Foto: Sasun Bughdaryan",
+          "creditUrl": "https://unsplash.com/photos/9gB7APNSquE"
+        },
+        {
+          "title": "Traktoroptimierung für Hangarbeiten",
+          "text": "Ausgangsmessung, sichere Anpassung der Motorsteuerung und Test unter realistischer Arbeitslast.",
+          "image": "/projects/mechanics/tractor.jpg",
+          "alt": "Grüner Traktor mit Spritze bei der Arbeit auf einem Feld",
+          "meta": "Gorenjska • Außendienst",
+          "result": "Gleichmäßigeres Drehmoment und weniger Schaltvorgänge bei schwerer Arbeit.",
+          "credit": "Foto: Mirko Fabian",
+          "creditUrl": "https://unsplash.com/photos/S_7RA_uX9sU"
+        }
+      ],
+      "process": [
+        "Diagnose",
+        "Leistungsumfang abstimmen",
+        "Reparatur oder Tuning",
+        "Test und Empfehlung"
+      ],
+      "contact": "Für Service/Tuning bitte Modell und Problem kurz senden."
+    },
+    "it": {
+      "title": "IT / Software",
+      "subtitle": "Digitale Lösungen für reale Geschäftsprozesse.",
+      "services": [
+        "Webseiten",
+        "Web-Apps",
+        "Dashboards",
+        "Desktop-Anwendungen",
+        "Individuelle Software",
+        "Prozessautomatisierung"
+      ],
+      "projects": [
+        {
+          "title": "Webseite für einen lokalen Handwerksbetrieb",
+          "text": "Mehrsprachige Website mit klaren Leistungen, Referenzgalerie und Formular für qualifizierte Anfragen.",
+          "image": "/projects/it/web-development.jpg",
+          "alt": "Laptop mit Programmcode auf einem aufgeräumten Schreibtisch",
+          "meta": "Next.js • 3 Wochen",
+          "result": "Schneller mobiler Auftritt und ein klarer Weg vom Besuch zur Anfrage.",
+          "credit": "Foto: Bayu Syaits",
+          "creditUrl": "https://unsplash.com/photos/oYzjGQ7LCVE"
+        },
+        {
+          "title": "Operatives Dashboard für ein Serviceteam",
+          "text": "Gemeinsamer Überblick über offene Aufträge, Reaktionszeiten, Materialverbrauch und wöchentliche Auslastung.",
+          "image": "/projects/it/dashboard.jpg",
+          "alt": "Laptop mit Geschäftsgrafiken und Statistiken",
+          "meta": "Dashboard • 5 Wochen",
+          "result": "Weniger einzelne Excel-Dateien und schnellere tägliche Einsatzplanung.",
+          "credit": "Foto: Carlos Muza",
+          "creditUrl": "https://unsplash.com/photos/hpjSkU2UYSU"
+        },
+        {
+          "title": "Automatisierte Anfrageannahme",
+          "text": "Verknüpfung von Webformular, E-Mail und Kundendaten mit automatischer Kategorisierung und Erinnerungen.",
+          "image": "/projects/it/collaboration.jpg",
+          "alt": "Zwei Kollegen prüfen gemeinsam Inhalte auf einem Laptop",
+          "meta": "Integration • 2 Wochen",
+          "result": "Jede Anfrage erhält eine verantwortliche Person und einen nachvollziehbaren nächsten Schritt.",
+          "credit": "Foto: John / Unsplash",
+          "creditUrl": "https://unsplash.com/photos/FlPc9_VocJ4"
+        }
+      ],
+      "process": [
+        "Erstgespräch",
+        "Architektur und Umfang",
+        "Iterative Entwicklung",
+        "Go-live und Support"
+      ],
+      "contact": "Beschreiben Sie Ihren Prozess – wir schlagen eine passende Lösung vor."
+    }
+  },
+  "footer": {
+    "about": "Über uns",
+    "services": "Leistungen",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "description": "BMM Cesar ist ein Familienunternehmen von drei Brüdern mit Fokus auf Bau, Mechanik und Software.",
+    "copyright": "© 2026 BMM Cesar. Alle Rechte vorbehalten."
+  },
+  "pages": {
+    "about": {
+      "eyebrow": "BMM Cesar",
+      "title": "Über uns",
+      "subtitle": "Drei Brüder, drei Fachbereiche, ein Qualitätsstandard.",
+      "missionTitle": "Was wir aufbauen",
+      "missionText": "Wir sind keine generische Agentur, sondern ein Team für praktische Umsetzung.",
+      "storyTitle": "Warum drei Bereiche",
+      "storyText": "Projekte überschneiden sich oft – deshalb verbinden wir Bau, Technik und Software unter einer Marke.",
+      "teamTitle": "Arbeitsweise",
+      "teamText": "Wir wachsen Schritt für Schritt und arbeiten ehrlich, direkt und ohne leere Versprechen."
+    },
+    "services": {
+      "eyebrow": "BMM Cesar",
+      "title": "Leistungen",
+      "subtitle": "Jeder Bereich hat seinen Fokus, zusammen bilden sie ein abgestimmtes Gesamtangebot.",
+      "branches": [
+        {
+          "title": "Bau",
+          "description": "Renovierung und Ausbau für Wohn- und Geschäftsobjekte.",
+          "services": [
+            "Renovierungen",
+            "Bäder",
+            "Keramik",
+            "Treppen",
+            "Ausbau"
+          ],
+          "cta": "Bereich öffnen",
+          "path": "gradbenistvo",
+          "accent": "rgba(245,158,11,0.35)"
+        },
+        {
+          "title": "Tuning & Mechanik",
+          "description": "Diagnose, Tuning und Service für Fahrzeuge und Maschinen.",
+          "services": [
+            "car tuning",
+            "tractor tuning",
+            "Diagnose",
+            "Reparatur",
+            "field service"
+          ],
+          "cta": "Bereich öffnen",
+          "path": "mehanika",
+          "accent": "rgba(59,130,246,0.35)"
+        },
+        {
+          "title": "IT / Software",
+          "description": "Digitale Lösungen für Online-Auftritt und Betriebsprozesse.",
+          "services": [
+            "websites",
+            "web apps",
+            "dashboards",
+            "desktop apps",
+            "Automatisierung"
+          ],
+          "cta": "Bereich öffnen",
+          "path": "racunalnistvo",
+          "accent": "rgba(16,185,129,0.35)"
+        }
+      ],
+      "approachTitle": "So arbeiten wir",
+      "approachText": "Start mit kurzem Gespräch, dann klare Ziele, Umfang und transparente Umsetzung."
+    },
+    "projects": {
+      "eyebrow": "BMM Cesar",
+      "title": "Arbeitsfelder und Lösungsbeispiele",
+      "subtitle": "Keine übertriebenen Referenzen, sondern realistische Beispiele aus unserem Alltag.",
+      "noteTitle": "Transparente Darstellung",
+      "noteText": "Das öffentliche Portfolio wächst noch. Die folgenden Punkte zeigen typische Aufgabenbereiche.",
+      "featuredTitle": "Lösungsbeispiele",
+      "featured": [
+        {
+          "title": "Bäder, Keramik, Renovierungen",
+          "text": "Innenausbau von der Vorbereitung bis zur Übergabe."
+        },
+        {
+          "title": "Diagnose und Tuning",
+          "text": "Vor-Ort-Einsätze, Optimierung und Reparatur."
+        },
+        {
+          "title": "Webseiten und Dashboards",
+          "text": "Software für besseren Überblick und effizientere Abläufe."
+        }
+      ],
+      "workflowTitle": "Typischer Ablauf",
+      "workflow": [
+        "Erstgespräch",
+        "Klares Angebot",
+        "Umsetzung mit Updates",
+        "Übergabe und Support"
+      ]
+    },
+    "contact": {
+      "eyebrow": "BMM Cesar",
+      "title": "Kontakt",
+      "subtitle": "Senden Sie Ihre Anfrage und nennen Sie den Bereich: Bau, Mechanik oder IT.",
+      "detailsTitle": "Kontaktdaten",
+      "detailsText": "Für schnelle Rückmeldung bitte Ort und kurze Beschreibung hinzufügen.",
+      "labels": {
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "location": "Ort"
+      },
+      "email": "info@bmm-cesar.si",
+      "phone": "+386 40 000 000",
+      "location": "Region Ljubljana",
+      "hours": "Erreichbar: Mo–Fr, 08:00–17:00",
+      "branchTitle": "Bereich wählen",
+      "branches": [
+        "Bau",
+        "Tuning & Mechanik",
+        "IT / Software"
+      ],
+      "ctaTitle": "Anfrage senden",
+      "ctaText": "Beschreiben Sie kurz Ihr Anliegen. Wir antworten direkt an die angegebene E-Mail-Adresse.",
+      "ctaButton": "E-Mail senden",
+      "form": {
+        "email": "E-Mail",
+        "emailPlaceholder": "name@unternehmen.de",
+        "phone": "Telefon (optional)",
+        "phonePlaceholder": "+49 ...",
+        "area": "Bereich",
+        "subject": "Betreff",
+        "subjectPlaceholder": "Kurzer Titel der Anfrage",
+        "message": "Nachricht",
+        "messagePlaceholder": "Beschreiben Sie das Projekt, Problem oder gewünschte Ergebnis.",
+        "consent": "Ich stimme zu, dass BMM Cesar diese Angaben zur Beantwortung meiner Anfrage verwendet.",
+        "submit": "Anfrage senden",
+        "sending": "Wird gesendet ...",
+        "success": "Vielen Dank. Ihre Anfrage wurde gesendet.",
+        "error": "Ihre Nachricht konnte nicht gesendet werden. Versuchen Sie es erneut oder schreiben Sie uns per E-Mail.",
+        "areas": {
+          "general": "Allgemeine Anfrage",
+          "construction": "Bau",
+          "mechanics": "Tuning & Mechanik",
+          "it": "IT / Software"
+        }
+      }
+    }
+  }
 }
