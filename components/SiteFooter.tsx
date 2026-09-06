@@ -11,10 +11,20 @@ export default async function SiteFooter({ locale }: SiteFooterProps) {
     getTranslations("home"),
   ])
 
+  const legalLabels = {
+    sl: { privacy: "Zasebnost", legal: "Podatki o podjetju" },
+    en: { privacy: "Privacy", legal: "Company details" },
+    hr: { privacy: "Privatnost", legal: "Podaci o poduzeću" },
+    de: { privacy: "Datenschutz", legal: "Unternehmensangaben" },
+  } as const
+  const labels = legalLabels[locale as keyof typeof legalLabels] ?? legalLabels.en
+
   const links = [
     { label: t("about"), href: `/${locale}/o-nas` },
     { label: `${t("services")} & ${t("projects")}`, href: `/${locale}/projekti` },
-    { label: t("contact"), href: `/${locale}/kontakt` }
+    { label: t("contact"), href: `/${locale}/kontakt` },
+    { label: labels.privacy, href: `/${locale}/zasebnost` },
+    { label: labels.legal, href: `/${locale}/pravno` },
   ]
 
   const domains = [

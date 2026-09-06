@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { RevealCard, RevealGroup } from "@/components/ScrollReveal"
 
 type ServicesGridProps = {
   title: string
@@ -22,15 +23,15 @@ export default function ServicesGrid({ title, items, accent }: ServicesGridProps
         <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">{title}</h2>
         <span className="section-signal" aria-hidden />
       </div>
-      <div className="mt-6 grid gap-3 sm:grid-cols-2">
+      <RevealGroup className="mt-6 grid gap-3 sm:grid-cols-2">
         {items.map((item, index) => (
-          <article key={item} className="service-item surface-subtle group flex items-center gap-3 rounded-2xl border px-4 py-4">
+          <RevealCard key={item} className="service-item surface-subtle group flex items-center gap-3 rounded-2xl border px-4 py-4">
             <span className="service-dot" aria-hidden />
             <span>{item}</span>
             <span className="soft-text ml-auto text-[10px] font-semibold tracking-[0.14em]">{String(index + 1).padStart(2, "0")}</span>
-          </article>
+          </RevealCard>
         ))}
-      </div>
+      </RevealGroup>
     </motion.section>
   )
 }

@@ -189,6 +189,107 @@
       "contact": "Beschreiben Sie Ihren Prozess – wir schlagen eine passende Lösung vor."
     }
   },
+  "software": {
+    "meta": {
+      "title": "Software- und Weblösungen für Unternehmen | BMM Cesar",
+      "description": "Unternehmenswebseiten, B2B-Kataloge, Anfragesysteme, Excel-Automatisierung und fokussierte Softwarelösungen für Unternehmen."
+    },
+    "page": {
+      "eyebrow": "Software- und Weblösungen",
+      "hero": {
+        "title": "Weblösungen für weniger manuelle Arbeit.",
+        "text": "Ich entwickle Unternehmenswebseiten, B2B-Kataloge, Anfragesysteme, Datenautomatisierungen und kleinere Softwarewerkzeuge, die sich an der tatsächlichen Arbeitsweise Ihres Unternehmens orientieren.",
+        "primaryCta": "Beschreiben Sie Ihren Ablauf",
+        "secondaryCta": "Möglichkeiten ansehen",
+        "todayLabel": "Daten heute",
+        "todayItems": ["Excel und CSV", "E-Mails", "Word-Dokumente"],
+        "coreLabel": "Ein klar definierter Ablauf",
+        "coreHint": "Daten werden geprüft, geordnet und nur dort eingesetzt, wo es wirklich hilft.",
+        "resultLabel": "Nutzbares Ergebnis",
+        "resultItems": ["Geordnete Daten", "Katalog oder Angebot", "Klarer nächster Schritt"]
+      },
+      "beyond": {
+        "eyebrow": "Mehr als eine Webseite",
+        "title": "Nicht nur eine Online-Präsentation",
+        "text": "Eine gute Webseite stellt ein Unternehmen klar vor. Eine Geschäftslösung kann zusätzlich am täglichen Ablauf teilnehmen und das Kopieren zwischen verschiedenen Werkzeugen reduzieren.",
+        "websiteTitle": "Eine Webseite präsentiert das Unternehmen",
+        "websiteText": "Leistungen, Referenzen, Kontaktdaten und klare Anfragewege helfen Besuchern, Ihr Angebot schnell zu verstehen und Sie einfach zu kontaktieren.",
+        "solutionTitle": "Eine Geschäftslösung bearbeitet den nächsten Schritt",
+        "solutionText": "Sie kann strukturierte Anfragen erfassen, Daten aus bestehenden Dateien anzeigen, Angaben für ein Angebot vorbereiten oder Dokumente ohne wiederholte Eingabe erzeugen."
+      },
+      "services": {
+        "eyebrow": "Was ich entwickeln kann",
+        "title": "Lösungen für konkrete Geschäftsabläufe",
+        "intro": "Der Umfang richtet sich nach dem tatsächlichen Problem. Manchmal genügt eine klare Webseite; in anderen Fällen sind ein Katalog, ein Formular, eine Automatisierung oder ein fokussiertes internes Werkzeug sinnvoll.",
+        "items": [
+          {"title": "Unternehmenswebseiten", "text": "Schnelle und übersichtliche Seiten, ausgerichtet auf Vertrauen, Leistungen, Referenzen und eine klare Kontaktaufnahme.", "features": ["Darstellung von Leistungen und Referenzen", "Kontakt- und Anfrageformulare", "Mehrsprachige Inhalte", "Darstellung auf Smartphone und Tablet", "Grundlagen für Barrierefreiheit und Leistung", "Pflege vereinbarter Inhalte"]},
+          {"title": "B2B-Kataloge und Anfragen", "text": "Für Produkte, deren Preis von Menge, Abmessungen, Ausführung, Transport, Montage oder Kundenvereinbarungen abhängt.", "features": ["Suche, Kategorien und Filter", "Produktimport aus Excel oder CSV", "Anfragekorb ohne Kaufabschluss", "Dateien, Zeichnungen oder Fotos", "Strukturierte Anfrage für den Vertrieb", "Slowenische und fremdsprachige Versionen"]},
+          {"title": "Formulare und Angebotsvorbereitung", "text": "Der Kunde gibt Maße und Optionen ein; das Unternehmen erhält Daten, die direkt für die Angebotserstellung genutzt werden können.", "features": ["Bedingte und verpflichtende Felder", "Prüfung der Eingaben", "Zusammenfassung für Vertrieb oder Ausführung", "Daten für PDF oder Arbeitsauftrag", "Automatische Berechnung bei klaren Regeln"]},
+          {"title": "Excel- und Datenautomatisierung", "text": "Weniger manuelles Kopieren bei Dateien, Preislisten, Produktlisten, Berichten und dem Datenaustausch zwischen bestehenden Systemen.", "features": ["Import von Excel- und CSV-Dateien", "Datenbereinigung und Prüfung", "Vergleich alter und neuer Dateien", "Umwandlung in ein vereinbartes Format", "Berichte und Exporte", "Daten für Webseite oder bestehendes System"]},
+          {"title": "Fokussierte Individualsoftware", "text": "Kleinere Anwendungen mit klar definiertem Eingang, Ablauf und Ergebnis — ohne unnötigen Umfang.", "features": ["Interne Webanwendungen", "Bestands- und Erfassungswerkzeuge", "Dokumentgeneratoren", "Dashboards", "Freigabeabläufe", "Verbindungen über dokumentierte Schnittstellen"]}
+        ]
+      },
+      "workflows": {
+        "eyebrow": "Beispiele möglicher Lösungen",
+        "title": "Von verstreuten Daten zu einem nutzbaren Ergebnis",
+        "intro": "Dies sind keine Referenzen oder abgeschlossenen Kundenprojekte. Es sind konkrete Beispiele für Abläufe, die vereinfacht werden können, wenn Regeln und gewünschtes Ergebnis ausreichend klar sind.",
+        "items": [
+          {"title": "Produktkatalog", "steps": ["Produktdaten in Excel", "Prüfung und Bereinigung", "Online-B2B-Katalog"]},
+          {"title": "Anfrage und Angebot", "steps": ["Kundenformular", "Strukturierte Anfrage", "Daten für das Angebot"]},
+          {"title": "Preislistenaktualisierung", "steps": ["Neue Lieferantenpreisliste", "Änderungsvergleich", "Freigegebene Exportdatei"]},
+          {"title": "Dokument vom Außendienst", "steps": ["Mobile Dateneingabe", "Prüfung der Pflichtfelder", "Fertiges PDF-Dokument"]}
+        ]
+      },
+      "commerce": {
+        "eyebrow": "Die passende Verkaufsform",
+        "title": "Onlineshop oder Anfragesystem?",
+        "text": "Beide Möglichkeiten können sinnvoll sein, unterstützen aber unterschiedliche Verkaufsprozesse. Vor dem Start sollte klar sein, wie der Preis tatsächlich entsteht und welche Angaben der Vertrieb vor einer Bestellung benötigt.",
+        "storeTitle": "Klassischer Onlineshop",
+        "storeText": "Geeignet für Produkte mit klarem Preis, Bestand, Versand und einem standardisierten Kaufprozess.",
+        "storePoints": ["Einsatz einer bewährten Shop-Plattform", "Produktimport und -pflege", "Anpassung von Darstellung und Formularen", "Anbindung bestehender Daten, wo sinnvoll"],
+        "enquiryTitle": "Katalog mit Anfrage",
+        "enquiryText": "Oft passender für B2B, Maßprodukte und Angebote, die zusätzliche Angaben oder eine Prüfung durch den Vertrieb erfordern.",
+        "enquiryPoints": ["Produktauswahl ohne direkte Zahlung", "Mengen, Maße und Ausführungen", "Dateien, Zeichnungen oder Fotos", "Vollständige und übersichtliche Anfrage für den Vertrieb"],
+        "note": "Zahlungen, Warenkörbe und bewährte Shop-Infrastruktur müssen nicht neu erfunden werden. Der Mehrwert liegt in Einrichtung, Daten, Formularen und Verbindungen rund um Ihren tatsächlichen Verkaufsprozess."
+      },
+      "process": {
+        "eyebrow": "Zusammenarbeit",
+        "title": "Von einem konkreten Problem zu einer nutzbaren Lösung",
+        "intro": "Der Ablauf passt zu kleineren Unternehmen: keine monatelange Beratung, aber genügend Prüfung, damit vor der Entwicklung klar ist, welches Problem gelöst wird.",
+        "items": [
+          {"title": "Gespräch", "text": "Wir besprechen den heutigen Ablauf und das gewünschte Ergebnis."},
+          {"title": "Ablaufprüfung", "text": "Wir sehen uns Dateien, Formulare, Dokumente und heute verwendete Systeme an."},
+          {"title": "Lösungsvorschlag", "text": "Ich definiere Umfang, Ausgabe, Grenzen und eine Aufwandsschätzung."},
+          {"title": "Umsetzung und Prüfung", "text": "Die Lösung entsteht anhand vereinbarter Beispiele und Abnahmekriterien."},
+          {"title": "Übergabe und Unterstützung", "text": "Sie erhalten die Lösung, vereinbarte Anleitung und Möglichkeiten zum Datenexport."}
+        ]
+      },
+      "principles": {
+        "eyebrow": "Grundlagen der Zusammenarbeit",
+        "title": "Klare Regeln statt großer Versprechen",
+        "items": [
+          {"title": "Klar definierter Umfang", "text": "Vor Beginn wird festgelegt, was enthalten ist und was nicht."},
+          {"title": "Keine unnötigen Funktionen", "text": "Jede Funktion muss einen echten Teil Ihres Ablaufs unterstützen."},
+          {"title": "Menschliche Bestätigung", "text": "Wichtige Entscheidungen bleiben unter der Kontrolle einer verantwortlichen Person."},
+          {"title": "Möglichkeit zum Datenexport", "text": "Wir vereinbaren, wie Sie Ihre Daten auch aus dem System erhalten können."},
+          {"title": "Passend zur bestehenden Arbeit", "text": "Nicht alles wird ersetzt; verbessert wird der richtige Schritt."},
+          {"title": "Schrittweise Umsetzung", "text": "Wir prüfen mit realistischen Beispielen und erweitern nur, wenn es sinnvoll ist."}
+        ]
+      },
+      "about": {
+        "label": "Software-Spezialisierung bei BMM",
+        "title": "Persönliche und verantwortliche Zusammenarbeit",
+        "text": "Ich entwickle Softwarelösungen als eigenständige Spezialisierung innerhalb der Marke BMM. Ich bin keine große Agentur und verspreche kein System für jedes Problem. Zuerst möchte ich einen konkreten Ablauf verstehen und dann eine Lösung vorschlagen, die sich klar erklären, prüfen und nutzen lässt."
+      },
+      "contact": {
+        "eyebrow": "Erster Schritt",
+        "title": "Beschreiben Sie, wie Ihr Ablauf heute funktioniert",
+        "text": "Wenn Sie Daten häufig zwischen E-Mail, Excel, Word und anderen Systemen übertragen, beschreiben Sie mir ein konkretes Beispiel. Gemeinsam können wir prüfen, ob eine Vereinfachung sinnvoll ist.",
+        "button": "Ablauf beschreiben",
+        "note": "Für den Anfang genügt eine kurze Beschreibung der heutigen Arbeit und des gewünschten Ergebnisses."
+      }
+    }
+  },
   "footer": {
     "about": "Über uns",
     "services": "Leistungen",
@@ -267,6 +368,14 @@
       "noteTitle": "Transparente Darstellung",
       "noteText": "Das öffentliche Portfolio wächst noch. Die folgenden Punkte zeigen typische Aufgabenbereiche.",
       "featuredTitle": "Lösungsbeispiele",
+      "possibleLabel": "Beispiel einer möglichen Lösung",
+      "softwareExample": {
+        "title": "Produktkatalog aus vorhandenen Daten",
+        "text": "Ein beispielhafter Ablauf, bei dem Daten aus einer Excel-Datei geprüft und für einen übersichtlichen B2B-Katalog vorbereitet werden.",
+        "visual": ["Excel / CSV", "Prüfung", "B2B-Katalog"],
+        "meta": "Anwendungsbeispiel",
+        "result": "Weniger doppelte Datenpflege zwischen Preisliste und Webdarstellung."
+      },
       "featured": [
         {
           "title": "Bäder, Keramik, Renovierungen",
@@ -301,9 +410,9 @@
         "location": "Ort"
       },
       "email": "info@bmm-cesar.si",
-      "phone": "+386 40 000 000",
-      "location": "Region Ljubljana",
-      "hours": "Erreichbar: Mo–Fr, 08:00–17:00",
+      "phone": "031 206 207",
+      "location": "Ravno 3, 3224 Dobje pri Planini, Slowenien",
+      "hours": "Bitte vereinbaren Sie einen Besuch im Voraus.",
       "branchTitle": "Bereich wählen",
       "branches": [
         "Bau",

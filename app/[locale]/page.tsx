@@ -1,5 +1,15 @@
+import type { Metadata } from "next"
 import HeroTriangle from "@/components/HeroTriangle"
 import MobileTiles from "@/components/MobileTiles"
+
+import { createPageMetadata } from "@/lib/seo"
+
+type PageProps = { params: Promise<{ locale: string }> }
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params
+  return createPageMetadata(locale, "home")
+}
 
 export default function HomePage() {
   return (

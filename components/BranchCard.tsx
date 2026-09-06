@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { RevealCard } from "@/components/ScrollReveal"
 
 type BranchCardProps = {
   title: string
@@ -12,7 +13,7 @@ type BranchCardProps = {
 
 export default function BranchCard({ title, description, services, cta, href, accent, tone }: BranchCardProps) {
   return (
-    <article className="branch-card surface-panel group relative overflow-hidden rounded-3xl border p-6" data-tone={tone} style={{ boxShadow: `inset 0 0 0 1px ${accent}` }}>
+    <RevealCard className="branch-card surface-panel group relative overflow-hidden rounded-3xl border p-6" data-tone={tone} style={{ boxShadow: `inset 0 0 0 1px ${accent}` }}>
       <span className="branch-card-glow" aria-hidden />
       <span className="branch-card-line" aria-hidden />
       <h3 className="relative text-2xl font-semibold tracking-tight md:text-3xl">{title}</h3>
@@ -28,6 +29,6 @@ export default function BranchCard({ title, description, services, cta, href, ac
         {cta}
         <span aria-hidden>↗</span>
       </Link>
-    </article>
+    </RevealCard>
   )
 }

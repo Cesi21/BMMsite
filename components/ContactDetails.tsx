@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react"
 import { useLocale } from "next-intl"
+import { RevealGroup, RevealItem } from "@/components/ScrollReveal"
 
 type ContactDetailsProps = {
   title: string
@@ -51,8 +52,8 @@ export default function ContactDetails(props: ContactDetailsProps) {
         <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">{props.title}</h2>
         <p className="muted-text mt-3 max-w-3xl">{props.intro}</p>
       </div>
-      <div className="relative mt-6 grid gap-3 md:grid-cols-3">
-        <div
+      <RevealGroup className="relative mt-6 grid gap-3 md:grid-cols-3">
+        <RevealItem
           className="contact-detail-item surface-subtle relative rounded-2xl border p-4"
           onDoubleClick={() => copyText("email", props.email)}
           title={copyLabel.hint}
@@ -66,8 +67,8 @@ export default function ContactDetails(props: ContactDetailsProps) {
           >
             {copied === "email" ? copyLabel.copied : copyLabel.hint}
           </span>
-        </div>
-        <div
+        </RevealItem>
+        <RevealItem
           className="contact-detail-item surface-subtle relative rounded-2xl border p-4"
           onDoubleClick={() => copyText("phone", props.phone)}
           title={copyLabel.hint}
@@ -81,8 +82,8 @@ export default function ContactDetails(props: ContactDetailsProps) {
           >
             {copied === "phone" ? copyLabel.copied : copyLabel.hint}
           </span>
-        </div>
-        <div
+        </RevealItem>
+        <RevealItem
           className="contact-detail-item surface-subtle relative rounded-2xl border p-4"
           onDoubleClick={() => copyText("location", props.location)}
           title={copyLabel.hint}
@@ -97,8 +98,8 @@ export default function ContactDetails(props: ContactDetailsProps) {
           >
             {copied === "location" ? copyLabel.copied : copyLabel.hint}
           </span>
-        </div>
-      </div>
+        </RevealItem>
+      </RevealGroup>
     </section>
   )
 }

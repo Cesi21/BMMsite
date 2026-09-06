@@ -189,6 +189,107 @@
       "contact": "Opišite proces i predložit ćemo primjenjivo rješenje."
     }
   },
+  "software": {
+    "meta": {
+      "title": "Programska i web rješenja za tvrtke | BMM Cesar",
+      "description": "Poslovne web stranice, B2B katalozi, sustavi za upite, automatizacija Excela i usmjerena programska rješenja za tvrtke."
+    },
+    "page": {
+      "eyebrow": "Programska i web rješenja",
+      "hero": {
+        "title": "Web rješenja za manje ručnog rada.",
+        "text": "Izrađujem poslovne web stranice, B2B kataloge, sustave za upite, automatizaciju podataka i manja programska rješenja prilagođena stvarnom načinu rada vaše tvrtke.",
+        "primaryCta": "Opišite mi svoj postupak",
+        "secondaryCta": "Pogledajte mogućnosti",
+        "todayLabel": "Podaci danas",
+        "todayItems": ["Excel i CSV", "E-poruke", "Word dokumenti"],
+        "coreLabel": "Jasno definiran postupak",
+        "coreHint": "Podaci se provjeravaju, uređuju i koriste samo ondje gdje to stvarno pomaže.",
+        "resultLabel": "Koristan rezultat",
+        "resultItems": ["Uređeni podaci", "Katalog ili ponuda", "Jasan sljedeći korak"]
+      },
+      "beyond": {
+        "eyebrow": "Više od web stranice",
+        "title": "Ne samo online predstavljanje",
+        "text": "Dobra web stranica jasno predstavlja tvrtku. Poslovno rješenje može sudjelovati i u svakodnevnom postupku te smanjiti prepisivanje između različitih alata.",
+        "websiteTitle": "Web stranica predstavlja tvrtku",
+        "websiteText": "Usluge, reference, kontaktni podaci i jasni pozivi na upit pomažu posjetitelju brzo razumjeti ponudu i jednostavno vas kontaktirati.",
+        "solutionTitle": "Poslovno rješenje obrađuje sljedeći korak",
+        "solutionText": "Može prikupiti strukturirani upit, prikazati podatke iz postojećih datoteka, pripremiti podatke za ponudu ili izraditi dokument bez ponavljajućeg unosa."
+      },
+      "services": {
+        "eyebrow": "Što mogu izraditi",
+        "title": "Rješenja za konkretne poslovne postupke",
+        "intro": "Opseg određujemo prema stvarnom problemu. Ponekad je dovoljna pregledna web stranica, a ponekad su smisleni katalog, obrazac, automatizacija ili manje interno rješenje.",
+        "items": [
+          {"title": "Poslovne web stranice", "text": "Brze i pregledne stranice usmjerene na povjerenje, usluge, reference i jasan kontakt s tvrtkom.", "features": ["Prikaz usluga i referenci", "Kontaktni obrasci i obrasci za upite", "Više jezika", "Prilagodba telefonima i tabletima", "Osnove pristupačnosti i brzine", "Uređivanje dogovorenog sadržaja"]},
+          {"title": "B2B katalozi i upiti", "text": "Za proizvode čija cijena ovisi o količini, mjerama, izvedbi, prijevozu, montaži ili dogovoru s kupcem.", "features": ["Pretraživanje, kategorije i filtri", "Uvoz proizvoda iz Excela ili CSV-a", "Košarica za upit bez naplate", "Datoteke, nacrti ili fotografije", "Strukturiran zahtjev za prodaju", "Hrvatska i strane jezične verzije"]},
+          {"title": "Obrasci i priprema ponuda", "text": "Kupac unosi potrebne mjere i opcije, a tvrtka dobiva podatke koje može odmah koristiti za pripremu ponude.", "features": ["Uvjetna i obvezna polja", "Provjera unosa", "Sažetak za prodaju ili izvedbu", "Podaci za PDF ili radni nalog", "Automatski izračun kada su pravila jasna"]},
+          {"title": "Automatizacija Excela i podataka", "text": "Manje ručnog prepisivanja u datotekama, cjenicima, popisima proizvoda, izvještajima i razmjeni podataka između sustava.", "features": ["Uvoz Excel i CSV datoteka", "Čišćenje i provjera podataka", "Usporedba starih i novih datoteka", "Pretvorba u dogovoreni format", "Izrada izvještaja i izvoza", "Podaci za web ili postojeći sustav"]},
+          {"title": "Usmjerena programska rješenja", "text": "Manje aplikacije s jasno definiranim ulazom, postupkom i rezultatom — bez nepotrebnog opsega.", "features": ["Interne web aplikacije", "Evidencije i pregled zaliha", "Generatori dokumenata", "Nadzorne ploče", "Postupci odobravanja", "Povezivanje dokumentiranih sučelja"]}
+        ]
+      },
+      "workflows": {
+        "eyebrow": "Primjeri mogućih rješenja",
+        "title": "Od raspršenih podataka do korisnog rezultata",
+        "intro": "Ovo nisu reference ni završeni projekti za klijente. To su konkretni primjeri postupaka koje je moguće pojednostaviti kada su pravila i željeni rezultat dovoljno jasni.",
+        "items": [
+          {"title": "Katalog proizvoda", "steps": ["Excel s podacima proizvoda", "Provjera i uređivanje", "Online B2B katalog"]},
+          {"title": "Upit i ponuda", "steps": ["Obrazac kupca", "Strukturirani upit", "Podaci za ponudu"]},
+          {"title": "Ažuriranje cjenika", "steps": ["Novi cjenik dobavljača", "Usporedba promjena", "Odobrena izvozna datoteka"]},
+          {"title": "Dokument s terena", "steps": ["Mobilni unos podataka", "Provjera obveznih polja", "Završni PDF dokument"]}
+        ]
+      },
+      "commerce": {
+        "eyebrow": "Odgovarajući način prodaje",
+        "title": "Web trgovina ili sustav za upite?",
+        "text": "Obje mogućnosti mogu biti dobre, ali podržavaju različite prodajne postupke. Prije početka treba razumjeti kako se cijena stvarno određuje i što prodaja mora znati prije potvrde narudžbe.",
+        "storeTitle": "Klasična web trgovina",
+        "storeText": "Primjerena je proizvodima s jasnom cijenom, zalihom, dostavom i standardnim postupkom kupnje.",
+        "storePoints": ["Uporaba provjerene trgovinske platforme", "Uvoz i održavanje proizvoda", "Prilagodba prikaza i obrazaca", "Povezivanje postojećih podataka gdje je korisno"],
+        "enquiryTitle": "Katalog s upitom",
+        "enquiryText": "Često je bolji za B2B, proizvode po mjeri i ponude koje zahtijevaju dodatne podatke ili pregled prodavača.",
+        "enquiryPoints": ["Odabir proizvoda bez neposrednog plaćanja", "Količine, mjere i izvedbe", "Datoteke, nacrti ili fotografije", "Cjelovit i pregledan zahtjev za prodaju"],
+        "note": "Nema smisla iznova razvijati plaćanja, košarice ili provjerenu trgovinsku infrastrukturu. Vrijednost je u pravilnom postavljanju, podacima, obrascima i povezivanjima oko vašeg stvarnog prodajnog postupka."
+      },
+      "process": {
+        "eyebrow": "Način suradnje",
+        "title": "Od jednog konkretnog problema do korisnog rješenja",
+        "intro": "Postupak je prilagođen manjim tvrtkama: bez dugotrajnog savjetovanja, ali s dovoljno pregleda da prije razvoja jasno znamo što rješavamo.",
+        "items": [
+          {"title": "Razgovor", "text": "Razgovaramo o trenutnom postupku i rezultatu koji želite."},
+          {"title": "Pregled postupka", "text": "Pregledavamo datoteke, obrasce, dokumente i sustave koje danas koristite."},
+          {"title": "Prijedlog rješenja", "text": "Definiram opseg, izlaz, ograničenja i procjenu izvedbe."},
+          {"title": "Izrada i provjera", "text": "Rješenje se razvija prema dogovorenim primjerima i kriterijima prihvata."},
+          {"title": "Predaja i podrška", "text": "Dobivate rješenje, dogovorene upute i mogućnosti izvoza podataka."}
+        ]
+      },
+      "principles": {
+        "eyebrow": "Na čemu se temelji suradnja",
+        "title": "Jasna pravila umjesto velikih obećanja",
+        "items": [
+          {"title": "Jasno definiran opseg", "text": "Prije početka određujemo što rješenje uključuje, a što ne."},
+          {"title": "Bez nepotrebnih funkcija", "text": "Svaka funkcija mora podržavati stvarni dio vašeg postupka."},
+          {"title": "Ljudska potvrda", "text": "Važne odluke ostaju pod nadzorom odgovorne osobe."},
+          {"title": "Mogućnost izvoza podataka", "text": "Dogovaramo kako svoje podatke možete dobiti i izvan sustava."},
+          {"title": "Prilagodba postojećem radu", "text": "Cilj nije zamijeniti sve, nego poboljšati pravi korak."},
+          {"title": "Postupna izvedba", "text": "Provjeravamo na stvarnim primjerima i širimo samo kada ima smisla."}
+        ]
+      },
+      "about": {
+        "label": "BMM programska specijalizacija",
+        "title": "Osobna i odgovorna suradnja",
+        "text": "Programska rješenja razvijam kao samostalnu specijalizaciju unutar brenda BMM. Nisam velika agencija i ne obećavam sustav za svaki problem. Najprije želim razumjeti jedan konkretan postupak, a zatim predložiti rješenje koje je moguće jasno objasniti, provjeriti i koristiti."
+      },
+      "contact": {
+        "eyebrow": "Prvi korak",
+        "title": "Recite mi kako vaš postupak izgleda danas",
+        "text": "Ako često prepisujete podatke između e-pošte, Excela, Worda i drugih sustava, opišite mi jedan konkretan primjer. Zajedno možemo procijeniti ima li ga smisla pojednostaviti.",
+        "button": "Opišite svoj postupak",
+        "note": "Za početak je dovoljan kratak opis današnjeg rada i rezultata koji želite postići."
+      }
+    }
+  },
   "footer": {
     "about": "O nama",
     "services": "Usluge",
@@ -267,6 +368,14 @@
       "noteTitle": "Transparentan prikaz",
       "noteText": "Javni portfolio je još u razvoju. Primjeri niže predstavljaju tipične vrste zadataka.",
       "featuredTitle": "Primjeri rješenja",
+      "possibleLabel": "Primjer mogućeg rješenja",
+      "softwareExample": {
+        "title": "Katalog proizvoda iz postojećih podataka",
+        "text": "Primjer tijeka u kojem se podaci iz Excel datoteke provjeravaju i pripremaju za pregledan B2B katalog.",
+        "visual": ["Excel / CSV", "Provjera", "B2B katalog"],
+        "meta": "Primjer upotrebe",
+        "result": "Manje dupliciranja podataka između cjenika i web prikaza."
+      },
       "featured": [
         {
           "title": "Kupaonice, keramika, renovacije",
@@ -301,9 +410,9 @@
         "location": "Lokacija"
       },
       "email": "info@bmm-cesar.si",
-      "phone": "+386 40 000 000",
-      "location": "Ljubljana i okolica",
-      "hours": "Dostupni: pon–pet, 08:00–17:00",
+      "phone": "031 206 207",
+      "location": "Ravno 3, 3224 Dobje pri Planini, Slovenija",
+      "hours": "Molimo, unaprijed dogovorite posjet.",
       "branchTitle": "Odaberite područje",
       "branches": [
         "Građevina",

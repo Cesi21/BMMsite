@@ -4,6 +4,7 @@ import { getMessages, setRequestLocale } from "next-intl/server"
 import { isLocale, locales } from "@/i18n/routing"
 import SiteShell from "@/components/SiteShell"
 import SiteFooter from "@/components/SiteFooter"
+import OrganizationSchema from "@/components/OrganizationSchema"
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -27,6 +28,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
+      <OrganizationSchema />
       <SiteShell locale={locale} footer={<SiteFooter locale={locale} />}>
         {children}
       </SiteShell>

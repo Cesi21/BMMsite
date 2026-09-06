@@ -1,9 +1,16 @@
 import type { Metadata } from "next"
 import ThemeProvider from "@/components/ThemeProvider"
+import SmoothScroll from "@/components/SmoothScroll"
+import "lenis/dist/lenis.css"
 import "./globals.css"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bmm-cesar.si"),
+  applicationName: "BMM Cesar",
+  authors: [{ name: "BMM CESAR, Blaž Cesar s.p.", url: "https://bmm-cesar.si" }],
+  creator: "BMM Cesar",
+  publisher: "BMM CESAR, Blaž Cesar s.p.",
+  robots: { index: true, follow: true },
   title: {
     default: "BMM Cesar",
     template: "%s · BMM Cesar",
@@ -38,7 +45,9 @@ export default function RootLayout({
   return (
     <html lang="sl" suppressHydrationWarning>
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <SmoothScroll>{children}</SmoothScroll>
+        </ThemeProvider>
       </body>
     </html>
   )

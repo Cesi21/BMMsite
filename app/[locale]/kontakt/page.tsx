@@ -1,9 +1,23 @@
+import type { Metadata } from "next"
 import { getLocale, getTranslations } from "next-intl/server"
 import ContactForm from "@/components/ContactForm"
 import ContactDetails from "@/components/ContactDetails"
 import PageHero from "@/components/PageHero"
+import { createPageMetadata } from "@/lib/seo"
 
-export default async function ContactPage() {
+type PageProps = {
+  params: Promise<{ locale: string }>
+  searchParams: Promise<{ area?: string }>
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params
+  return createPageMetadata(locale, "contact")
+}
+
+export default async function ContactPage({ searchParams }: PageProps) {
+  const { area } = await searchParams
+  const initialArea = area === "construction" || area === "mechanics" || area === "it" ? area : "general"
   const [t, locale] = await Promise.all([
     getTranslations("pages.contact"),
     getLocale(),
@@ -25,6 +39,7 @@ export default async function ContactPage() {
       />
       <ContactForm
         locale={locale}
+        initialArea={initialArea}
         title={t("ctaTitle")}
         intro={t("ctaText")}
         labels={{

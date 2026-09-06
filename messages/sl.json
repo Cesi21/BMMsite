@@ -189,6 +189,127 @@
       "contact": "Opišite vaš proces in pripravili bomo predlog digitalne rešitve."
     }
   },
+  "software": {
+    "meta": {
+      "title": "Programske in spletne rešitve za podjetja | BMM Cesar",
+      "description": "Poslovne spletne strani, B2B katalogi, sistemi za povpraševanja, avtomatizacija Excela in programska orodja po meri za slovenska podjetja."
+    },
+    "page": {
+      "eyebrow": "Programske in spletne rešitve",
+      "hero": {
+        "title": "Spletne rešitve za manj ročnega dela.",
+        "text": "Izdelujem poslovne spletne strani, B2B kataloge, sisteme za povpraševanja, avtomatizacijo podatkov in manjša programska orodja, prilagojena dejanskemu načinu dela vašega podjetja.",
+        "primaryCta": "Opišite mi vaš postopek",
+        "secondaryCta": "Poglejte možnosti",
+        "todayLabel": "Podatki danes",
+        "todayItems": ["Excel in CSV", "E-poštna sporočila", "Wordovi dokumenti"],
+        "coreLabel": "Jasno določen postopek",
+        "coreHint": "Podatki se preverijo, uredijo in uporabijo samo tam, kjer to res pomaga.",
+        "resultLabel": "Uporaben rezultat",
+        "resultItems": ["Urejeni podatki", "Katalog ali ponudba", "Jasen naslednji korak"]
+      },
+      "beyond": {
+        "eyebrow": "Več kot spletna stran",
+        "title": "Ne samo spletna predstavitev",
+        "text": "Dobra spletna stran jasno predstavi podjetje. Poslovna rešitev pa lahko poleg tega sodeluje v vašem vsakodnevnem postopku in zmanjša prepisovanje med različnimi orodji.",
+        "websiteTitle": "Spletna stran predstavi podjetje",
+        "websiteText": "Storitve, reference, kontaktni podatki in jasni pozivi k povpraševanju so urejeni tako, da vas obiskovalec hitro razume in vam lahko preprosto piše.",
+        "solutionTitle": "Poslovna rešitev obdela naslednji korak",
+        "solutionText": "Zbere strukturirano povpraševanje, prikaže podatke iz obstoječih datotek, pripravi podatke za ponudbo ali izdela dokument brez ponavljajočega ročnega vnosa."
+      },
+      "services": {
+        "eyebrow": "Kaj lahko izdelam",
+        "title": "Rešitve za konkretne poslovne postopke",
+        "intro": "Obseg določimo glede na dejanski problem. Včasih zadostuje pregledna spletna stran, drugič je smiselno dodati katalog, obrazec, avtomatizacijo ali manjše interno orodje.",
+        "items": [
+          {
+            "title": "Poslovne spletne strani",
+            "text": "Hitre in pregledne strani, zasnovane okoli zaupanja, storitev, referenc in jasnega stika s podjetjem.",
+            "features": ["Predstavitev storitev in referenc", "Kontaktni in povpraševalni obrazci", "Večjezična vsebina", "Prilagoditev telefonom in tablicam", "Osnove dostopnosti in hitrosti", "Možnost urejanja dogovorjenih vsebin"]
+          },
+          {
+            "title": "B2B katalogi in povpraševanja",
+            "text": "Za izdelke, pri katerih je cena odvisna od količine, mere, izvedbe, prevoza, montaže ali dogovora s kupcem.",
+            "features": ["Iskanje, kategorije in filtri", "Uvoz izdelkov iz Excela ali CSV", "Košarica za povpraševanje brez nakupa", "Dodajanje datoteke, risbe ali fotografije", "Strukturirano povpraševanje za prodajo", "Slovenska in tujejezična različica"]
+          },
+          {
+            "title": "Obrazci in priprava ponudb",
+            "text": "Kupec vnese potrebne mere in možnosti, podjetje pa prejme podatke v obliki, ki jo lahko takoj uporabi pri pripravi ponudbe.",
+            "features": ["Pogojna in obvezna polja", "Preverjanje vnesenih podatkov", "Povzetek za prodajo ali izvedbo", "Priprava podatkov za PDF ali delovni nalog", "Samodejni izračun, kadar so pravila dovolj jasna"]
+          },
+          {
+            "title": "Avtomatizacija Excela in podatkov",
+            "text": "Manj ročnega prepisovanja pri datotekah, cenikih, seznamih izdelkov, poročilih in izmenjavi podatkov med sistemi.",
+            "features": ["Uvoz Excelovih in CSV-datotek", "Čiščenje in preverjanje podatkov", "Primerjava stare in nove datoteke", "Pretvorba v drug dogovorjen format", "Priprava poročil in izvozov", "Podatki za spletno stran ali obstoječi sistem"]
+          },
+          {
+            "title": "Programska orodja po meri",
+            "text": "Manjše, osredotočene aplikacije z jasno določenim vhodom, postopkom in rezultatom — brez nepotrebnega obsega.",
+            "features": ["Interne spletne aplikacije", "Evidence in pregledi zaloge", "Generatorji dokumentov", "Nadzorne plošče", "Potrjevalni postopki", "Povezave z dokumentiranimi vmesniki"]
+          }
+        ]
+      },
+      "workflows": {
+        "eyebrow": "Primeri možnih rešitev",
+        "title": "Od razpršenih podatkov do uporabnega rezultata",
+        "intro": "To niso reference ali zaključeni naročniški projekti. Gre za konkretne primere postopkov, ki jih je mogoče poenostaviti, ko so pravila in želeni rezultat dovolj jasni.",
+        "items": [
+          {"title": "Katalog izdelkov", "steps": ["Excel s podatki o izdelkih", "Preverjanje in urejanje", "Spletni B2B katalog"]},
+          {"title": "Povpraševanje in ponudba", "steps": ["Obrazec kupca", "Strukturirano povpraševanje", "Podatki za ponudbo"]},
+          {"title": "Posodobitev cenika", "steps": ["Nov dobaviteljev cenik", "Primerjava sprememb", "Potrjena izvozna datoteka"]},
+          {"title": "Dokument s terena", "steps": ["Vnos podatkov na telefonu", "Preverjanje obveznih polj", "Končni PDF dokument"]}
+        ]
+      },
+      "commerce": {
+        "eyebrow": "Prava oblika prodaje",
+        "title": "Spletna trgovina ali sistem za povpraševanja?",
+        "text": "Obe možnosti sta smiselni, vendar rešujeta različne prodajne postopke. Pred začetkom je pomembno določiti, kako se cena v resnici oblikuje in kaj mora prodaja vedeti pred potrditvijo naročila.",
+        "storeTitle": "Klasična spletna trgovina",
+        "storeText": "Primerna je za izdelke z jasno ceno, zalogo, dostavo in standardnim nakupnim postopkom.",
+        "storePoints": ["Uporaba preverjene trgovinske platforme", "Uvoz in urejanje izdelkov", "Prilagoditev predstavitve in obrazcev", "Povezave z obstoječimi podatki, kjer so smiselne"],
+        "enquiryTitle": "Katalog s povpraševanjem",
+        "enquiryText": "Pogosto je primernejši za B2B, izdelke po meri in ponudbe, ki zahtevajo dodatne podatke ali pregled prodajalca.",
+        "enquiryPoints": ["Izbira izdelkov brez neposrednega plačila", "Vnos količin, mer in izvedb", "Priloge, risbe ali fotografije", "Prodaja prejme celovit in pregleden zahtevek"],
+        "note": "Plačil, košaric in preverjene trgovinske infrastrukture ni smiselno razvijati od začetka. Dodana vrednost je v pravilni postavitvi, podatkih, obrazcih in povezavah okoli vašega prodajnega postopka."
+      },
+      "process": {
+        "eyebrow": "Način sodelovanja",
+        "title": "Od enega konkretnega problema do uporabne rešitve",
+        "intro": "Postopek je prilagojen manjšim podjetjem: brez dolgega svetovanja, vendar z dovolj pregleda, da pred razvojem jasno vemo, kaj rešujemo.",
+        "items": [
+          {"title": "Pogovor", "text": "Pogovorimo se o trenutnem postopku in želenem rezultatu."},
+          {"title": "Pregled postopka", "text": "Pregledamo datoteke, obrazce, dokumente in sisteme, ki jih uporabljate danes."},
+          {"title": "Predlog rešitve", "text": "Določim obseg, izhod, omejitve in oceno izvedbe."},
+          {"title": "Izvedba in preverjanje", "text": "Rešitev razvijam po dogovorjenih primerih in merilih za sprejem."},
+          {"title": "Predaja in podpora", "text": "Prejmete rešitev, dogovorjena navodila in možnosti izvoza podatkov."}
+        ]
+      },
+      "principles": {
+        "eyebrow": "Na čem temelji sodelovanje",
+        "title": "Jasna pravila namesto velikih obljub",
+        "items": [
+          {"title": "Jasno določen obseg", "text": "Pred izvedbo določimo, kaj rešitev vključuje in česa ne."},
+          {"title": "Brez nepotrebnih funkcij", "text": "Vsaka funkcija mora podpirati resničen del vašega postopka."},
+          {"title": "Človeška potrditev", "text": "Pomembne odločitve ostanejo pod nadzorom odgovorne osebe."},
+          {"title": "Možnost izvoza podatkov", "text": "Dogovorimo se, kako lahko svoje podatke dobite tudi iz sistema."},
+          {"title": "Prilagoditev obstoječemu delu", "text": "Cilj ni zamenjati vsega, temveč smiselno izboljšati izbrani korak."},
+          {"title": "Postopna izvedba", "text": "Rešitev preverjamo z realnimi primeri in jo širimo samo, ko je smiselno."}
+        ]
+      },
+      "about": {
+        "label": "Programska specializacija BMM",
+        "title": "Osebno in odgovorno sodelovanje",
+        "text": "Programske rešitve razvijam kot samostojno specializacijo znotraj znamke BMM. Nisem velika agencija in ne obljubljam sistema za vsak problem. Najprej želim razumeti en konkreten postopek, nato pa predlagati rešitev, ki jo je mogoče jasno razložiti, preveriti in uporabljati."
+      },
+      "contact": {
+        "eyebrow": "Prvi korak",
+        "title": "Povejte mi, kako danes poteka vaš postopek",
+        "text": "Če pri delu pogosto prepisujete podatke med e-pošto, Excelom, Wordom in drugimi sistemi, mi opišite en konkreten primer. Skupaj lahko preverimo, ali bi ga bilo smiselno poenostaviti.",
+        "button": "Opišite postopek",
+        "note": "Za začetek zadostuje kratek opis trenutnega dela in rezultata, ki ga želite doseči."
+      }
+    }
+  },
   "footer": {
     "about": "O nas",
     "services": "Storitve",
@@ -249,6 +370,14 @@
       "noteTitle": "Pošten prikaz",
       "noteText": "BMM Cesar je v razvoju, zato tukaj predstavljamo tipične primere dela in rešitve, ne pa velikih marketinških zgodb brez osnove.",
       "featuredTitle": "Primeri rešitev",
+      "possibleLabel": "Primer možne rešitve",
+      "softwareExample": {
+        "title": "Katalog izdelkov iz obstoječih podatkov",
+        "text": "Primer postopka, kjer se podatki iz Excelove datoteke preverijo in pripravijo za pregleden B2B katalog.",
+        "visual": ["Excel / CSV", "Preverjanje", "B2B katalog"],
+        "meta": "Primer uporabe",
+        "result": "Manj podvajanja podatkov med cenikom in spletno predstavitvijo."
+      },
       "featured": [
         { "title": "Kopalnice, keramika, prenove", "text": "Od priprave prostora do končnih detajlov pri obnovah notranjih prostorov." },
         { "title": "Diagnostika in tuning strojev", "text": "Terenski posegi, optimizacije in popravila za manj izpadov delovne opreme." },
@@ -269,9 +398,9 @@
         "location": "Lokacija"
       },
       "email": "info@bmm-cesar.si",
-      "phone": "+386 40 000 000",
-      "location": "Ljubljana in okolica",
-      "hours": "Dosegljivi: pon–pet, 08:00–17:00",
+      "phone": "031 206 207",
+      "location": "Ravno 3, 3224 Dobje pri Planini",
+      "hours": "Za obisk se predhodno dogovorite.",
       "branchTitle": "Izberite področje",
       "branches": ["Gradbeništvo", "Tuning & mehanika", "Računalništvo"],
       "ctaTitle": "Pošljite povpraševanje",

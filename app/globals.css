@@ -60,6 +60,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.75rem;
+}
+
 html,
 body {
   margin: 0;
@@ -191,6 +196,469 @@ body {
 @media (max-width: 640px) {
   .page-shell {
     width: 100%;
+  }
+}
+
+/* Software specialization */
+.software-page {
+  --software-rgb: 16 185 129;
+  --software: rgb(var(--software-rgb));
+  --software-soft: rgb(var(--software-rgb) / 0.1);
+  --software-line: rgb(var(--software-rgb) / 0.3);
+}
+
+.software-kicker {
+  color: rgb(var(--software-rgb) / 0.92);
+}
+
+.software-hero {
+  min-height: 37rem;
+  border-color: rgb(var(--software-rgb) / 0.28);
+  box-shadow:
+    inset 0 0 0 1px rgb(var(--software-rgb) / 0.04),
+    0 28px 80px rgba(8, 10, 15, 0.12);
+}
+
+.software-hero-grid,
+.software-about-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.28;
+  background-image:
+    linear-gradient(rgb(var(--software-rgb) / 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--software-rgb) / 0.07) 1px, transparent 1px);
+  background-size: 3rem 3rem;
+  mask-image: linear-gradient(110deg, transparent 5%, black 58%, black 100%);
+}
+
+.software-hero-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 83% 45%, rgb(var(--software-rgb) / 0.18), transparent 36%);
+}
+
+.software-hero-visual {
+  min-height: 24rem;
+  aspect-ratio: 3 / 2;
+  border-color: rgb(var(--software-rgb) / 0.3);
+  background: #272b2f;
+  box-shadow:
+    0 28px 70px rgba(4, 12, 10, 0.22),
+    inset 0 0 0 1px rgb(var(--software-rgb) / 0.06);
+}
+
+.software-hero-visual img,
+.software-catalogue-visual img {
+  transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.software-hero-visual:hover img,
+.software-catalogue-visual:hover img {
+  transform: scale(1.018);
+}
+
+.software-visual-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5, 12, 10, 0.6), transparent 42%);
+  pointer-events: none;
+}
+
+.software-visual-shade-soft {
+  background: linear-gradient(to top, rgba(5, 12, 10, 0.38), transparent 34%);
+}
+
+.software-visual-caption,
+.software-catalogue-label {
+  border-color: rgb(var(--software-rgb) / 0.3);
+  background: color-mix(in srgb, var(--panel-solid) 82%, transparent);
+}
+
+.software-catalogue-visual {
+  aspect-ratio: 16 / 7;
+  border-color: rgb(var(--software-rgb) / 0.22);
+  background: #2b2d30;
+  box-shadow: 0 24px 56px rgba(5, 10, 9, 0.16);
+}
+
+.software-primary-button {
+  background: linear-gradient(135deg, #059669, #10b981);
+  box-shadow: 0 14px 34px rgb(var(--software-rgb) / 0.2);
+}
+
+.software-primary-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+  box-shadow: 0 18px 42px rgb(var(--software-rgb) / 0.28);
+}
+
+.software-secondary-button {
+  color: var(--text-primary);
+}
+
+.software-secondary-button:hover {
+  border-color: var(--software-line);
+  background: var(--software-soft);
+}
+
+.software-system {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(8.5rem, 0.78fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  border-color: rgb(var(--software-rgb) / 0.22);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.software-system-line {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  left: 15%;
+  height: 1px;
+  background: rgb(var(--software-rgb) / 0.34);
+}
+
+.software-system-line::after {
+  position: absolute;
+  top: 50%;
+  right: -0.2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: 1px solid rgb(var(--software-rgb) / 0.6);
+  border-right: 1px solid rgb(var(--software-rgb) / 0.6);
+  content: "";
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.software-system-column {
+  position: relative;
+  z-index: 1;
+}
+
+.software-data-pill,
+.software-output-pill {
+  border-color: var(--line);
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+.software-output-pill {
+  border-color: rgb(var(--software-rgb) / 0.3);
+  background: rgb(var(--software-rgb) / 0.08);
+}
+
+.software-system-core {
+  border-color: rgb(var(--software-rgb) / 0.45);
+  background: color-mix(in srgb, var(--panel) 88%, rgb(var(--software-rgb) / 0.12));
+  box-shadow:
+    0 16px 40px rgba(5, 12, 10, 0.18),
+    inset 0 0 0 1px rgb(var(--software-rgb) / 0.06);
+}
+
+.software-core-index,
+.software-process-number {
+  color: #d1fae5;
+  background: rgb(var(--software-rgb) / 0.2);
+  box-shadow: inset 0 0 0 1px rgb(var(--software-rgb) / 0.38);
+}
+
+#moznosti {
+  scroll-margin-top: 7rem;
+}
+
+.software-beyond,
+.software-services,
+.software-workflows,
+.software-commerce,
+.software-process,
+.software-principles,
+.software-about,
+.software-final-cta {
+  box-shadow: 0 20px 64px rgba(8, 10, 15, 0.09);
+}
+
+.software-section-heading {
+  position: relative;
+}
+
+.software-compare-card,
+.software-service-card,
+.software-workflow-card,
+.software-commerce-card,
+.software-process-step,
+.software-principle {
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.software-compare-card:hover,
+.software-service-card:hover,
+.software-workflow-card:hover,
+.software-principle:hover {
+  border-color: rgb(var(--software-rgb) / 0.34);
+  background: rgb(var(--software-rgb) / 0.055);
+}
+
+.software-compare-card-accent {
+  border-color: rgb(var(--software-rgb) / 0.28);
+  background: rgb(var(--software-rgb) / 0.06);
+}
+
+.software-compare-number,
+.software-service-index,
+.software-workflow-index {
+  color: rgb(var(--software-rgb) / 0.88);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.software-services-grid > :last-child {
+  grid-column: 1 / -1;
+}
+
+.software-service-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.software-service-card::before {
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  width: 3rem;
+  height: 2px;
+  background: var(--software);
+  content: "";
+}
+
+.software-feature {
+  color: var(--text-muted);
+}
+
+.software-feature-dot {
+  width: 0.38rem;
+  height: 0.38rem;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: var(--software);
+  box-shadow: 0 0 0 0.2rem rgb(var(--software-rgb) / 0.1);
+}
+
+.software-workflow-card {
+  border-color: rgb(var(--software-rgb) / 0.16);
+}
+
+.software-workflow-step {
+  min-height: 4.4rem;
+  border-color: var(--line);
+  background: color-mix(in srgb, var(--panel) 82%, transparent);
+}
+
+.software-step-connector {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: -0.65rem;
+  width: 0.65rem;
+  height: 1px;
+  background: rgb(var(--software-rgb) / 0.55);
+}
+
+.software-step-connector::after {
+  position: absolute;
+  top: -0.2rem;
+  right: 0;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-top: 1px solid rgb(var(--software-rgb) / 0.7);
+  border-right: 1px solid rgb(var(--software-rgb) / 0.7);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.software-commerce-card-accent {
+  border-color: rgb(var(--software-rgb) / 0.3);
+  background: rgb(var(--software-rgb) / 0.06);
+}
+
+.software-check-row span {
+  color: var(--software);
+  font-weight: 800;
+}
+
+.software-commerce-note {
+  border-color: rgb(var(--software-rgb) / 0.2);
+  color: var(--text-muted);
+  background: rgb(var(--software-rgb) / 0.045);
+}
+
+.software-process-list::before {
+  position: absolute;
+  top: 2.45rem;
+  right: 5%;
+  left: 5%;
+  height: 1px;
+  background: rgb(var(--software-rgb) / 0.22);
+  content: "";
+}
+
+.software-process-step {
+  min-height: 14rem;
+}
+
+.software-principle {
+  min-height: 8.5rem;
+}
+
+.software-about {
+  border-color: rgb(var(--software-rgb) / 0.3);
+  background:
+    linear-gradient(145deg, rgb(var(--software-rgb) / 0.08), transparent 56%),
+    var(--panel);
+}
+
+.software-about-grid {
+  opacity: 0.5;
+  mask-image: linear-gradient(145deg, black, transparent 72%);
+}
+
+.software-final-cta {
+  border-color: rgb(var(--software-rgb) / 0.28);
+}
+
+.software-final-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 88% 115%, rgb(var(--software-rgb) / 0.26), transparent 42%);
+}
+
+.light .software-hero {
+  box-shadow: 0 28px 80px rgba(65, 88, 100, 0.12);
+}
+
+.light .software-system-core {
+  box-shadow:
+    0 16px 38px rgba(41, 84, 70, 0.12),
+    inset 0 0 0 1px rgb(var(--software-rgb) / 0.08);
+}
+
+.light .software-core-index,
+.light .software-process-number {
+  color: #047857;
+}
+
+@media (max-width: 1023px) {
+  .software-process-list::before {
+    top: 0;
+    bottom: 0;
+    left: 2.45rem;
+    width: 1px;
+    height: auto;
+  }
+
+  .software-process-step {
+    min-height: auto;
+    padding-left: 5rem;
+  }
+
+  .software-process-number {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .software-hero {
+    min-height: auto;
+  }
+
+  .software-hero-visual {
+    min-height: 20rem;
+    aspect-ratio: 4 / 5;
+  }
+
+  .software-catalogue-visual {
+    aspect-ratio: 4 / 3;
+  }
+
+  .software-system {
+    grid-template-columns: 1fr;
+  }
+
+  .software-system-line {
+    top: 12%;
+    right: auto;
+    bottom: 12%;
+    left: 50%;
+    width: 1px;
+    height: auto;
+  }
+
+  .software-system-line::after {
+    top: auto;
+    right: auto;
+    bottom: -0.15rem;
+    left: 50%;
+    transform: translateX(-50%) rotate(135deg);
+  }
+
+  .software-system-core {
+    margin-inline: 1rem;
+  }
+
+  .software-system-column {
+    text-align: center;
+  }
+
+  .software-workflow-steps {
+    padding-left: 1rem;
+  }
+
+  .software-step-connector {
+    top: auto;
+    right: auto;
+    bottom: -0.65rem;
+    left: 1.4rem;
+    width: 1px;
+    height: 0.65rem;
+  }
+
+  .software-step-connector::after {
+    top: auto;
+    right: -0.18rem;
+    bottom: 0;
+    transform: rotate(135deg);
+  }
+
+  .software-services-grid > :last-child {
+    grid-column: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-scroll-reveal-item] {
+    filter: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .software-hero-visual img,
+  .software-catalogue-visual img {
+    transition: none;
+  }
+
+  .software-primary-button,
+  .software-secondary-button,
+  .software-compare-card,
+  .software-service-card,
+  .software-workflow-card,
+  .software-principle {
+    transition: none;
   }
 }
 
@@ -620,6 +1088,45 @@ body {
   background: rgb(var(--accent-rgb) / 0.08);
 }
 
+.project-workflow-visual {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 2.5rem 1.25rem 1.25rem;
+  background:
+    radial-gradient(circle at 50% 50%, rgb(var(--accent-rgb) / 0.18), transparent 62%),
+    linear-gradient(145deg, rgb(var(--accent-rgb) / 0.08), transparent);
+}
+
+.project-workflow-unit {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.project-workflow-node {
+  padding: 0.6rem 0.7rem;
+  border: 1px solid rgb(var(--accent-rgb) / 0.32);
+  border-radius: 0.7rem;
+  color: var(--text-primary);
+  background: color-mix(in srgb, var(--panel-solid) 88%, transparent);
+  font-size: 0.63rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.project-workflow-connector {
+  width: 1rem;
+  height: 1px;
+  flex: 0 0 auto;
+  background: rgb(var(--accent-rgb) / 0.7);
+}
+
 .project-image {
   transition:
     transform 500ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -954,6 +1461,59 @@ body {
 .contact-submit:hover {
   transform: translateY(-2px);
   filter: brightness(1.07);
+}
+
+.legal-document,
+.legal-section {
+  box-shadow: 0 22px 60px rgba(5, 10, 20, 0.12);
+}
+
+.company-data-grid {
+  border-color: var(--line);
+  background: var(--line);
+}
+
+.company-data-item a,
+.legal-source-link,
+.legal-inline-link {
+  color: var(--text-primary);
+  text-decoration-color: rgb(var(--it) / 0.62);
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.company-data-item a:hover,
+.legal-source-link:hover,
+.legal-inline-link:hover {
+  color: rgb(52 211 153);
+  text-decoration-color: currentColor;
+}
+
+.legal-source-link {
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.legal-list li {
+  position: relative;
+  padding-left: 1.25rem;
+  line-height: 1.75;
+}
+
+.legal-list li::before {
+  position: absolute;
+  top: 0.7rem;
+  left: 0;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgb(var(--construction)), rgb(var(--it)));
+  content: "";
+}
+
+.light .legal-document,
+.light .legal-section {
+  box-shadow: 0 24px 70px rgba(76, 88, 110, 0.1);
 }
 
 .light .footer-domain-link[data-tone="construction"] {

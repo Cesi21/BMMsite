@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { RevealList, RevealListItem } from "@/components/ScrollReveal"
 
 type ProcessStepsProps = {
   title: string
@@ -22,14 +23,14 @@ export default function ProcessSteps({ title, steps, accent }: ProcessStepsProps
         <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">{title}</h2>
         <span className="section-signal" aria-hidden />
       </div>
-      <ol className="process-list relative mt-6 grid gap-3">
+      <RevealList className="process-list relative mt-6 grid gap-3">
         {steps.map((step, idx) => (
-          <li key={step} className="process-item surface-subtle relative flex items-center gap-4 rounded-2xl border px-4 py-3.5">
+          <RevealListItem key={step} className="process-item surface-subtle relative flex items-center gap-4 rounded-2xl border px-4 py-3.5">
             <span className="process-number grid size-9 shrink-0 place-items-center rounded-full text-xs font-bold">{String(idx + 1).padStart(2, "0")}</span>
             <span>{step}</span>
-          </li>
+          </RevealListItem>
         ))}
-      </ol>
+      </RevealList>
     </motion.section>
   )
 }

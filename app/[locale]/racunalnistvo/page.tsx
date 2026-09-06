@@ -1,29 +1,18 @@
+import type { Metadata } from "next"
 import { getTranslations } from "next-intl/server"
-import DomainPage from "@/components/DomainPage"
-import type { ProjectItem } from "@/components/ProjectGrid"
+import SoftwarePage, { type SoftwarePageCopy } from "@/components/SoftwarePage"
+import { createPageMetadata } from "@/lib/seo"
 
-export default async function ITPage({ params }: { params: Promise<{ locale: string }> }) {
+type PageProps = { params: Promise<{ locale: string }> }
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations("domains")
+  return createPageMetadata(locale, "software")
+}
 
-  return (
-    <DomainPage
-      locale={locale}
-      accent="rgba(16,185,129,0.35)"
-      eyebrow={t("common.eyebrow")}
-      title={t("it.title")}
-      subtitle={t("it.subtitle")}
-      servicesTitle={t("common.services")}
-      services={t.raw("it.services") as string[]}
-      projectsTitle={t("common.projects")}
-      projectSampleLabel={t("common.sampleProject")}
-      projectResultLabel={t("common.result")}
-      projects={t.raw("it.projects") as ProjectItem[]}
-      processTitle={t("common.process")}
-      processSteps={t.raw("it.process") as string[]}
-      contactTitle={t("common.contact")}
-      contactText={t("it.contact")}
-      contactButton={t("common.contactCta")}
-    />
-  )
+export default async function ITPage({ params }: PageProps) {
+  const { locale } = await params
+  const t = await getTranslations("software")
+
+  return <SoftwarePage locale={locale} copy={t.raw("page") as SoftwarePageCopy} />
 }

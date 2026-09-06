@@ -1,11 +1,21 @@
+import type { Metadata } from "next"
 import { getTranslations } from "next-intl/server"
 import BranchCard from "@/components/BranchCard"
 import InfoSection from "@/components/InfoSection"
 import PageHero from "@/components/PageHero"
 import ProjectGrid, { type ProjectItem } from "@/components/ProjectGrid"
 import ProcessSteps from "@/components/ProcessSteps"
+import { RevealGroup } from "@/components/ScrollReveal"
+import { createPageMetadata } from "@/lib/seo"
 
-export default async function ProjectsPage({ params }: { params: Promise<{ locale: string }> }) {
+type PageProps = { params: Promise<{ locale: string }> }
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params
+  return createPageMetadata(locale, "projects")
+}
+
+export default async function ProjectsPage({ params }: PageProps) {
   const { locale } = await params
   const projects = await getTranslations("pages.projects")
   const services = await getTranslations("pages.services")
@@ -19,7 +29,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
   const featuredProjects = [
     (domains.raw("construction.projects") as ProjectItem[])[0],
     (domains.raw("mechanics.projects") as ProjectItem[])[0],
-    (domains.raw("it.projects") as ProjectItem[])[0],
+    projects.raw("softwareExample") as ProjectItem,
   ]
 
   return (
@@ -30,7 +40,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
         subtitle={services("subtitle")}
         accent="rgba(255,255,255,0.2)"
       />
-      <section className="grid gap-4 lg:grid-cols-3">
+      <RevealGroup className="grid gap-4 lg:grid-cols-3">
         {branches.map((branch) => (
           <BranchCard
             key={branch.title}
@@ -43,14 +53,14 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
             tone={toneByPath[branch.path as keyof typeof toneByPath]}
           />
         ))}
-      </section>
-      <div className="grid gap-6 lg:grid-cols-2">
+      </RevealGroup>
+      <RevealGroup className="grid gap-6 lg:grid-cols-2">
         <InfoSection title={services("approachTitle")} text={services("approachText")} tone="construction" />
         <InfoSection title={projects("noteTitle")} text={projects("noteText")} tone="it" />
-      </div>
+      </RevealGroup>
       <ProjectGrid
         title={projects("featuredTitle")}
-        sampleLabel={domains("common.sampleProject")}
+        sampleLabel={projects("possibleLabel")}
         resultLabel={domains("common.result")}
         items={featuredProjects}
       />

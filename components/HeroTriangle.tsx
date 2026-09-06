@@ -128,6 +128,7 @@ export default function HeroTriangle() {
                     fill={active ? segment.activeFill : segment.fill}
                     stroke={active ? segment.accent : "rgba(186,230,253,0.24)"}
                     strokeWidth={active ? 3.2 : 1.5}
+                    initial={{ opacity: 0.82 }}
                     animate={{ opacity: active ? 1 : 0.82 }}
                     transition={{ duration: 0.2 }}
                     style={{ filter: active ? "url(#soft-glow)" : "none" }}

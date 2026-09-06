@@ -1,9 +1,13 @@
 "use client"
 
+import Link from "next/link"
 import { FormEvent, useState } from "react"
+
+type ContactArea = "general" | "construction" | "mechanics" | "it"
 
 type ContactFormProps = {
   locale: string
+  initialArea?: ContactArea
   title: string
   intro: string
   labels: {
@@ -37,14 +41,22 @@ const fieldClassName =
 
 export default function ContactForm({
   locale,
+  initialArea = "general",
   title,
   intro,
   labels,
   areas,
 }: ContactFormProps) {
+  const privacyLabels = {
+    sl: "Politika zasebnosti",
+    en: "Privacy policy",
+    hr: "Pravila privatnosti",
+    de: "Datenschutzerklärung",
+  } as const
+  const privacyLabel = privacyLabels[locale as keyof typeof privacyLabels] ?? privacyLabels.en
   const [submissionState, setSubmissionState] =
     useState<SubmissionState>("idle")
-  const [selectedArea, setSelectedArea] = useState("general")
+  const [selectedArea, setSelectedArea] = useState(initialArea)
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -74,6 +86,7 @@ export default function ContactForm({
       }
 
       form.reset()
+      setSelectedArea(initialArea)
       setSubmissionState("success")
     } catch {
       setSubmissionState("error")
@@ -81,7 +94,7 @@ export default function ContactForm({
   }
 
   return (
-    <section className="contact-form-section surface-panel rounded-3xl border p-6 md:p-8" data-form-tone={selectedArea}>
+    <section id="contact-form" className="contact-form-section surface-panel scroll-mt-28 rounded-3xl border p-6 md:p-8" data-form-tone={selectedArea}>
       <div className="max-w-3xl">
         <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
         <p className="muted-text mt-3">{intro}</p>
@@ -130,8 +143,8 @@ export default function ContactForm({
             <select
               className={`${fieldClassName} form-field`}
               name="area"
-              defaultValue="general"
-              onChange={(event) => setSelectedArea(event.target.value)}
+              defaultValue={initialArea}
+              onChange={(event) => setSelectedArea(event.target.value as ContactArea)}
               required
             >
               <option value="general">{areas.general}</option>
@@ -174,7 +187,12 @@ export default function ContactForm({
             type="checkbox"
             required
           />
-          <span>{labels.consent}</span>
+          <span>
+            {labels.consent}{" "}
+            <Link href={`/${locale}/zasebnost`} className="legal-inline-link font-semibold underline underline-offset-4">
+              {privacyLabel}
+            </Link>
+          </span>
         </label>
 
         <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center">

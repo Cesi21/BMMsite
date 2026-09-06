@@ -189,6 +189,107 @@
       "contact": "Describe your workflow and we will suggest a practical software solution."
     }
   },
+  "software": {
+    "meta": {
+      "title": "Software and web solutions for businesses | BMM Cesar",
+      "description": "Business websites, B2B catalogues, enquiry systems, Excel automation, and focused custom software for Slovenian companies."
+    },
+    "page": {
+      "eyebrow": "Software and web solutions",
+      "hero": {
+        "title": "Web solutions for less manual work.",
+        "text": "I build business websites, B2B catalogues, enquiry systems, data automation, and focused software tools shaped around how your company actually works.",
+        "primaryCta": "Describe your workflow",
+        "secondaryCta": "Explore the options",
+        "todayLabel": "Data today",
+        "todayItems": ["Excel and CSV", "Email messages", "Word documents"],
+        "coreLabel": "A clearly defined workflow",
+        "coreHint": "Data is checked, organized, and used only where it genuinely helps.",
+        "resultLabel": "A useful outcome",
+        "resultItems": ["Organized data", "Catalogue or quotation", "A clear next step"]
+      },
+      "beyond": {
+        "eyebrow": "More than a website",
+        "title": "Not only an online presentation",
+        "text": "A good website presents a company clearly. A business solution can also participate in the daily workflow and reduce copying between separate tools.",
+        "websiteTitle": "A website presents the company",
+        "websiteText": "Services, references, contact details, and clear enquiry actions help visitors understand your business and contact you easily.",
+        "solutionTitle": "A business solution handles the next step",
+        "solutionText": "It can collect a structured enquiry, display data from existing files, prepare information for a quotation, or generate a document without repetitive entry."
+      },
+      "services": {
+        "eyebrow": "What I can build",
+        "title": "Solutions for concrete business workflows",
+        "intro": "Scope follows the actual problem. Sometimes a clear website is enough; in other cases, a catalogue, structured form, automation, or focused internal tool makes sense.",
+        "items": [
+          {"title": "Business websites", "text": "Fast, clear websites designed around trust, services, references, and a straightforward way to contact the company.", "features": ["Services and reference presentation", "Contact and enquiry forms", "Multiple languages", "Responsive layouts", "Accessibility and performance fundamentals", "Editing of agreed content"]},
+          {"title": "B2B catalogues and enquiries", "text": "For products whose prices depend on quantity, dimensions, configuration, transport, installation, or a customer agreement.", "features": ["Search, categories, and filters", "Product import from Excel or CSV", "Enquiry basket without checkout", "File, drawing, or photo attachments", "Structured requests for sales", "Slovenian and foreign-language versions"]},
+          {"title": "Forms and quotation preparation", "text": "The customer enters measurements and options, while the company receives data it can immediately use to prepare a quotation.", "features": ["Conditional and required fields", "Input validation", "Summary for sales or delivery", "Data for PDF or work orders", "Automatic calculations where rules are clear"]},
+          {"title": "Excel and data automation", "text": "Less manual copying across files, price lists, product lists, reports, and exchanges between existing systems.", "features": ["Excel and CSV imports", "Data cleaning and validation", "Comparing old and new files", "Conversion into an agreed format", "Report and export preparation", "Data for a website or existing system"]},
+          {"title": "Focused custom software", "text": "Small applications with a clearly defined input, process, and output—without unnecessary scope.", "features": ["Internal web applications", "Inventory and record tools", "Document generators", "Dashboards", "Approval workflows", "Connections through documented interfaces"]}
+        ]
+      },
+      "workflows": {
+        "eyebrow": "Examples of possible solutions",
+        "title": "From scattered data to a useful outcome",
+        "intro": "These are not references or completed customer projects. They are concrete workflow examples that can be simplified when the rules and desired result are sufficiently clear.",
+        "items": [
+          {"title": "Product catalogue", "steps": ["Excel product data", "Validation and cleanup", "Online B2B catalogue"]},
+          {"title": "Enquiry and quotation", "steps": ["Customer form", "Structured enquiry", "Quotation-ready data"]},
+          {"title": "Price-list update", "steps": ["New supplier price list", "Change comparison", "Approved export file"]},
+          {"title": "Field document", "steps": ["Mobile data entry", "Required-field checks", "Final PDF document"]}
+        ]
+      },
+      "commerce": {
+        "eyebrow": "The right sales format",
+        "title": "Online store or enquiry system?",
+        "text": "Both can be appropriate, but they support different sales processes. Before development, it is important to understand how the price is really determined and what sales needs before confirming an order.",
+        "storeTitle": "Traditional online store",
+        "storeText": "Suitable for products with a clear price, stock status, delivery method, and standard buying process.",
+        "storePoints": ["Use of an established commerce platform", "Product imports and maintenance", "Customized presentation and forms", "Connections to existing data where useful"],
+        "enquiryTitle": "Catalogue with enquiries",
+        "enquiryText": "Often a better fit for B2B, made-to-order products, and quotations that require additional data or a salesperson's review.",
+        "enquiryPoints": ["Product selection without immediate payment", "Quantities, dimensions, and configurations", "Files, drawings, or photographs", "A complete and readable request for sales"],
+        "note": "There is no value in rebuilding payments, shopping carts, or established commerce infrastructure from scratch. The useful work is in the setup, data, forms, and connections around your actual sales process."
+      },
+      "process": {
+        "eyebrow": "How we work",
+        "title": "From one concrete problem to a usable solution",
+        "intro": "The process is suitable for small businesses: no lengthy consulting engagement, but enough review to clearly understand the problem before development begins.",
+        "items": [
+          {"title": "Conversation", "text": "We discuss the current workflow and the result you want."},
+          {"title": "Workflow review", "text": "We review the files, forms, documents, and systems used today."},
+          {"title": "Solution proposal", "text": "I define the scope, output, limitations, and implementation estimate."},
+          {"title": "Build and verification", "text": "The solution is built against agreed examples and acceptance criteria."},
+          {"title": "Handover and support", "text": "You receive the solution, agreed guidance, and data-export options."}
+        ]
+      },
+      "principles": {
+        "eyebrow": "What the work is based on",
+        "title": "Clear rules instead of large promises",
+        "items": [
+          {"title": "Clearly defined scope", "text": "Before work begins, we define what is included and what is not."},
+          {"title": "No unnecessary features", "text": "Every feature must support a real part of your workflow."},
+          {"title": "Human confirmation", "text": "Important decisions remain under the control of a responsible person."},
+          {"title": "Data export options", "text": "We agree how your data can also be retrieved from the system."},
+          {"title": "Fits existing work", "text": "The goal is not to replace everything, but to improve the right step."},
+          {"title": "Incremental delivery", "text": "We verify with realistic examples and expand only where it makes sense."}
+        ]
+      },
+      "about": {
+        "label": "BMM software specialization",
+        "title": "Personal and accountable collaboration",
+        "text": "I develop software solutions as an independent specialization within the BMM brand. I am not a large agency and I do not promise a system for every problem. I first want to understand one concrete workflow, then propose a solution that can be clearly explained, verified, and used."
+      },
+      "contact": {
+        "eyebrow": "First step",
+        "title": "Tell me how your workflow works today",
+        "text": "If you often copy data between email, Excel, Word, and other systems, describe one concrete example. Together we can assess whether simplifying it would make sense.",
+        "button": "Describe your workflow",
+        "note": "A short description of the current work and the result you want is enough to begin."
+      }
+    }
+  },
   "footer": {
     "about": "About",
     "services": "Services",
@@ -267,6 +368,14 @@
       "noteTitle": "Transparent overview",
       "noteText": "BMM Cesar is developing its public portfolio. The examples below represent typical work areas and practical solutions.",
       "featuredTitle": "Solution examples",
+      "possibleLabel": "Possible solution example",
+      "softwareExample": {
+        "title": "Product catalogue from existing data",
+        "text": "An example workflow where data from an Excel file is checked and prepared for a clear B2B catalogue.",
+        "visual": ["Excel / CSV", "Validation", "B2B catalogue"],
+        "meta": "Use case",
+        "result": "Less duplicated data between the price list and the online presentation."
+      },
       "featured": [
         {
           "title": "Bathrooms, tiles, renovations",
@@ -301,9 +410,9 @@
         "location": "Location"
       },
       "email": "info@bmm-cesar.si",
-      "phone": "+386 40 000 000",
-      "location": "Ljubljana region",
-      "hours": "Availability: Mon–Fri, 08:00–17:00",
+      "phone": "031 206 207",
+      "location": "Ravno 3, 3224 Dobje pri Planini, Slovenia",
+      "hours": "Please arrange a visit in advance.",
       "branchTitle": "Choose a branch",
       "branches": [
         "Construction",

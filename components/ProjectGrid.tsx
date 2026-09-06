@@ -2,16 +2,18 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { RevealCard, RevealGroup } from "@/components/ScrollReveal"
 
 export type ProjectItem = {
   title: string
   text: string
-  image: string
-  alt: string
+  image?: string
+  alt?: string
   meta: string
   result: string
-  credit: string
-  creditUrl: string
+  credit?: string
+  creditUrl?: string
+  visual?: string[]
 }
 
 type ProjectGridProps = {
@@ -36,30 +38,45 @@ export default function ProjectGrid({ title, sampleLabel, resultLabel, items, ac
         <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">{title}</h2>
         <span className="section-signal" aria-hidden />
       </div>
-      <div className="mt-6 grid gap-5 md:grid-cols-3">
+      <RevealGroup className="mt-6 grid gap-5 md:grid-cols-3">
         {items.map((item, index) => (
-          <article key={item.title} className="project-item surface-subtle group relative flex overflow-hidden rounded-2xl border">
+          <RevealCard key={item.title} className="project-item surface-subtle group relative flex overflow-hidden rounded-2xl border">
             <div className="flex min-h-full w-full flex-col">
               <div className="project-media relative overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={item.alt}
-                  fill
-                  sizes="(min-width: 768px) 30vw, 100vw"
-                  className="project-image object-cover"
-                />
-                <div className="project-image-shade" aria-hidden />
+                {item.image ? (
+                  <>
+                    <Image
+                      src={item.image}
+                      alt={item.alt ?? ""}
+                      fill
+                      sizes="(min-width: 768px) 30vw, 100vw"
+                      className="project-image object-cover"
+                    />
+                    <div className="project-image-shade" aria-hidden />
+                  </>
+                ) : (
+                  <div className="project-workflow-visual" aria-hidden>
+                    {item.visual?.map((step, stepIndex) => (
+                      <div key={step} className="project-workflow-unit">
+                        <span className="project-workflow-node">{step}</span>
+                        {stepIndex < (item.visual?.length ?? 0) - 1 ? <span className="project-workflow-connector" /> : null}
+                      </div>
+                    ))}
+                  </div>
+                )}
                 <span className="project-sample-label absolute left-4 top-4 rounded-full border px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.14em]">
                   {sampleLabel}
                 </span>
-                <a
-                  href={item.creditUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-credit absolute bottom-3 right-3 rounded-full px-2.5 py-1 text-[9px] font-medium"
-                >
-                  {item.credit}
-                </a>
+                {item.credit && item.creditUrl ? (
+                  <a
+                    href={item.creditUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-credit absolute bottom-3 right-3 rounded-full px-2.5 py-1 text-[9px] font-medium"
+                  >
+                    {item.credit}
+                  </a>
+                ) : null}
               </div>
 
               <div className="flex flex-1 flex-col p-5">
@@ -76,9 +93,9 @@ export default function ProjectGrid({ title, sampleLabel, resultLabel, items, ac
               </div>
             </div>
             <span className="project-glow" aria-hidden />
-          </article>
+          </RevealCard>
         ))}
-      </div>
+      </RevealGroup>
     </motion.section>
   )
 }
