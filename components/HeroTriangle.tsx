@@ -70,7 +70,7 @@ export default function HeroTriangle() {
         <span />
       </div>
 
-      <div className="absolute left-8 top-8 z-20 max-w-sm xl:left-12 xl:top-10 xl:max-w-lg">
+      <div className="hero-intro absolute left-8 top-8 z-20 max-w-sm xl:left-12 xl:top-10 xl:max-w-lg">
         <p className="soft-text text-xs font-medium uppercase tracking-[0.24em]">{t("eyebrow")}</p>
         <h1 className="mt-3 text-4xl font-semibold leading-[1.02] tracking-[-0.045em] text-[var(--text-primary)] xl:text-[3.35rem]">{t("title")}</h1>
         <p className="muted-text mt-4 max-w-md text-sm leading-relaxed xl:text-base">{t("subtitle")}</p>
@@ -89,7 +89,7 @@ export default function HeroTriangle() {
         </Link>
       </div>
 
-      <div className="absolute inset-x-[1%] bottom-[-2%] top-[1%]">
+      <div className="hero-diagram">
         <svg
           viewBox="0 0 1200 720"
           preserveAspectRatio="xMidYMid meet"
@@ -142,8 +142,6 @@ export default function HeroTriangle() {
           <circle cx="600" cy="370" r="8" fill="rgba(240,249,255,0.95)" />
           <circle cx="600" cy="370" r="18" fill="none" stroke="rgba(186,230,253,0.32)" />
         </svg>
-      </div>
-
       {segments.map((segment) => {
         const active = segment.key === activeSegment
 
@@ -164,6 +162,7 @@ export default function HeroTriangle() {
           </Link>
         )
       })}
+      </div>
     </section>
   )
 }

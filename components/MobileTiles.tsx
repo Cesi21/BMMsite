@@ -27,7 +27,8 @@ export default function MobileTiles() {
   const locale = useLocale()
 
   return (
-    <div className="grid h-full grid-rows-3 gap-3">
+    <div className="mobile-tiles grid flex-1 grid-rows-3 gap-3">
+      <h1 className="sr-only">{t("title")}</h1>
       {cards.map((card, i) => (
         <motion.div
           key={card.key}

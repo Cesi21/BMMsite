@@ -31,7 +31,7 @@ export default function SiteShell({ locale, children, footer }: SiteShellProps) 
 
   return (
     <div
-      className={`site-shell flex flex-col ${isHome ? "h-dvh overflow-hidden" : "min-h-dvh"} bg-background text-foreground`}
+      className="site-shell flex min-h-dvh flex-col bg-background text-foreground"
       data-page-tone={tone}
       data-home={isHome}
     >
@@ -39,7 +39,7 @@ export default function SiteShell({ locale, children, footer }: SiteShellProps) 
         {skipLabels[locale] ?? skipLabels.en}
       </a>
       <Header />
-      <main id="main-content" className={isHome ? "min-h-0 flex-1 overflow-hidden" : "flex-1"}>{children}</main>
+      <main id="main-content" className={isHome ? "flex min-w-0 flex-1 flex-col" : "min-w-0 flex-1"}>{children}</main>
       {!isHome && footer}
     </div>
   )

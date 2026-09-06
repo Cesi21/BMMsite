@@ -189,7 +189,7 @@ body {
 }
 
 .page-shell {
-  width: min(90vw, 1720px);
+  width: min(100%, 107.5rem);
   margin-inline: auto;
 }
 
@@ -1538,6 +1538,99 @@ body {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
+}
+
+/* Keep content usable during window resizing, browser zoom and translation. */
+.page-shell,
+.header-primary {
+  overflow-wrap: anywhere;
+}
+
+.page-shell :where(.grid, .flex) > * {
+  min-width: 0;
+}
+
+.header-primary,
+.mobile-nav,
+.home-stage-inner {
+  max-width: 120rem;
+  margin-inline: auto;
+}
+
+.mobile-nav {
+  width: 100%;
+  overscroll-behavior-x: contain;
+}
+
+.site-header .header-nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+}
+
+.site-header select.header-nav-link {
+  display: block;
+  font-size: 1rem;
+}
+
+.theme-toggle {
+  min-height: 2.75rem;
+  flex-shrink: 0;
+}
+
+.home-hero {
+  container-type: size;
+  height: clamp(42rem, calc(100svh - 7rem), 70rem);
+}
+
+.hero-diagram {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: min(98%, 166.667cqh);
+  aspect-ratio: 5 / 3;
+  transform: translateX(-50%);
+}
+
+.hero-intro h1 {
+  font-size: clamp(2.25rem, 3vw, 3.35rem);
+}
+
+.mobile-tiles {
+  min-height: 30rem;
+}
+
+.software-hero h1 {
+  font-size: clamp(2.25rem, 4.2vw, 4.5rem);
+}
+
+.software-primary-button,
+.software-secondary-button {
+  max-width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 639px) {
+  .page-hero,
+  .software-page > section,
+  .software-principles,
+  .software-about {
+    padding: 1.25rem;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+    line-height: 1.08;
+  }
+}
+
+@media (max-height: 500px) {
+  .site-header {
+    position: relative;
+  }
 }
 
 @media (max-width: 1023px) {

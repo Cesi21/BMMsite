@@ -37,7 +37,7 @@ type ContactFormProps = {
 type SubmissionState = "idle" | "sending" | "success" | "error"
 
 const fieldClassName =
-  "surface-subtle w-full rounded-xl border px-4 py-3 text-sm text-[var(--text-primary)] outline-none transition placeholder:text-[var(--text-soft)] focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20"
+  "surface-subtle min-w-0 w-full rounded-xl border px-4 py-3 text-base text-[var(--text-primary)] outline-none transition placeholder:text-[var(--text-soft)] focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20"
 
 export default function ContactForm({
   locale,
